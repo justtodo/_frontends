@@ -1,0 +1,19 @@
+{
+  "name": "fronts",
+  "version": "1.0.0",
+  "description": "frontend news",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tcotidiane33/fronts.git"
+  },
+  "author": "tcotidane33",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tcotidiane33/fronts/issues"
+  },
+  "homepage": "https://github.com/tcotidiane33/fronts#readme"
+}
