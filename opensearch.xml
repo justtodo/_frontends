@@ -1,0 +1,10 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+<ShortName>Upcookie</ShortName>
+<Description>Recherche sur le site</Description>
+<Image type="image/x-icon">./1.png</Image>
+<Developer>Upcookie</Developer>
+<AdultContent>false</AdultContent>
+<Language>fr</Language>
+<InputEncoding>UTF-8</InputEncoding>
+<Url type="text/html" template="/recherche?q={searchTerms}"/>
+</OpenSearchDescription>
