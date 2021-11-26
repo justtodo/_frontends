@@ -775,7 +775,43 @@ footer .contacts h1{
   .illustration{
     display: none;
   }
-  .section2{
+  .container-section2{
     display: grid;
+  }
+  .services-contents{
+    width: 70%;
+    height: 50%;  
+    justify-content: center;  
+  }
+  .container-fluid{
+    font-size: 0.9rem;
+    padding-right: 0;
+    padding-bottom: 1.7rem;
+    padding-top: 1.7rem;
+    padding-left: 0;
+  }
+  .container-fluid .content span{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 850px){
+  body{    
+    /*background-color: red;*/
+  }
+
+}
+@media only screen and (max-width: 780px){
+  body{    
+    /*background-color: red;*/
+  }
+  .section1{
+    padding-left: 2.4rem;
+    padding-right: 0;
+  }
+  .container-section2{
+    padding-left: 1.5rem;
   }
 }
