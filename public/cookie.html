@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" style="--vh: 5.61px; --windowHeight: 561px">
   <head>
     <meta charset="UTF-8" />
     <title>Services en Ligne Côte d'ivoire | UpCookie</title>
@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../src/lib/css.css" />
     <link rel="modulepreload" href="../src/lib/js.js" />
     <script src="../src/lib/app.js" type="module" defer></script>
+    <script src="../src/lib/jquery-min.js" type="module" defer></script>
     <meta name="turbolinks-cache-control" content="no-cache" />
     <link
       rel="alternate"
@@ -28,28 +29,30 @@
     />
   </head>
 
-  <body class="light user-not-premium">
+  <body class="light user-not-premium" id="">
     <div class="page-wrapper">
       <nav class="header" id="header">
-        <ul class="header-nav">
+        <ul class="header-nav menu">
           <li class="header__home">
-            <a href="/" title="Accueil">
-              <svg class="icon icon-logo">
-                <use xlink:href="/sprite.svg?logo#logo"></use>
-              </svg>
+            <a href="/" class="menuItem" title="Accueil">
+              <span
+                class="iconify"
+                data-icon="noto:cookie"
+                style="font-size: 200px"
+              ></span>
             </a>
           </li>
           <li>
-            <a href="/accueil" aria-current="page"
-              ><span class="iconify" data-icon="akar-icons:home"></span>
+            <a href="/accueil" class="menuItem" aria-current="page"
+              ><span class="icon iconify" data-icon="akar-icons:home"></span>
 
               Accueil</a
             >
           </li>
           <li>
-            <a href="/services"
+            <a href="/services" class="menuItem"
               ><span
-                class="iconify"
+                class="icon iconify"
                 data-icon="carbon:cloud-satellite-services"
               ></span>
 
@@ -58,9 +61,9 @@
           </li>
 
           <li>
-            <a href="/stores"
+            <a href="/stores" class="menuItem"
               ><span
-                class="iconify"
+                class="icon iconify"
                 data-icon="fluent:store-microsoft-20-regular"
               ></span>
 
@@ -68,38 +71,49 @@
             >
           </li>
           <li>
-            <a href="/expert"
-              ><span class="iconify" data-icon="fa-solid:blog"></span>
+            <a href="/expert" class="menuItem"
+              ><span class="icon iconify" data-icon="fa-solid:blog"></span>
               Experts</a
             >
           </li>
           <li>
-            <a href="/contact"
-              ><span class="iconify" data-icon="cil:contact"></span> Contact</a
+            <a href="/contact" class="menuItem"
+              ><span class="icon iconify" data-icon="cil:contact"></span>
+              Contact</a
             >
           </li>
           <li>
-            <a href="/Blog"
-              ><span class="iconify" data-icon="carbon:blog"></span> Blogs</a
+            <a href="/Blog" class="menuItem"
+              ><span class="icon iconify" data-icon="carbon:blog"></span>
+              Blogs</a
             >
           </li>
         </ul>
-        <ul class="header-side">
+        <ul class="header-side" id="side-bar">
           <li class="header__notification">
-            <site-notifications></site-notifications>
+            <site-notifications
+              ><span
+                class="icon icon-bell iconify"
+                data-icon="ic:baseline-notification-add"
+              ></span>
+              <!-- <span class="notification-badge">2</span> -->
+            </site-notifications>
           </li>
           <li class="header__search">
             <search-button
-              ><span class="iconify" data-icon="bi:search"></span
+              ><span
+                class="icon icon-search iconify"
+                data-icon="bi:search"
+              ></span
             ></search-button>
           </li>
           <li class="header-side__auth">
-            <a href="/inscription">
+            <a href="/inscription" class="menuItem">
               <span class="iconify" data-icon="akar-icons:sign-out"></span>
 
               <span>S'inscrire</span>
             </a>
-            <span class="text-muted">·</span>
+            <span class="text-muted" class="menuItem">·</span>
             <a href="/connexion?redirect=/tutoriels/javascript">
               <span
                 class="iconify"
@@ -109,12 +123,32 @@
             </a>
           </li>
           <li class="header__burger">
-            <button id="js-burger"><span>Afficher le menu</span></button>
+            <button class="toggle-btn" id="js-burger">
+              <span>Afficher le menu</span>
+            </button>
           </li>
         </ul>
       </nav>
-      <div class="header-placeholder"></div>
-      <!-- end header -->
+      <div class="header-placeholder">
+        <!-- burger -->
+
+        <!--  -->
+      </div>
+      <!-- =========================================================
+        ==========================end header=======================
+      ============================================================ -->
+      <section class="content">
+        <img src="./logo.svg" alt="logo upcookie " />
+        <p class="text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit illo
+          corrupti recusandae eligendi maiores voluptatum at expedita nobis
+          quia, animi sint perferendis saepe repellendus beatae sed delectus
+          velit impedit tempore.
+        </p>
+      </section>
+      <!-- ===================================================
+        ====================================start body=================================
+      ====================================================== -->
 
       <!-- start footer -->
       <footer class="footer">
@@ -173,7 +207,8 @@
               <a href="" target="_blank" rel="noopener noreferrer"
                 >Comment devenir developpeur ?</a
               >
-
+            </div>
+            <div class="footer-tweet">
               <a href="" target="_blank" rel="noopener noreferrer"
                 >Quels pack choisir ?</a
               >
@@ -230,8 +265,8 @@
               id="theme-switcher"
               aria-label="Changer de thème"
             />
-            <label for="theme-switcher"
-              ><span class="switch">
+            <label for="theme-switcher">
+              <span class="switch theme-dark">
                 <span
                   class="icon icon-moon iconify"
                   data-icon="akar-icons:moon"
@@ -246,6 +281,12 @@
         </div>
       </footer>
     </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
   </body>
 </html>
