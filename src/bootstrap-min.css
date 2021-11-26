@@ -3841,9 +3841,7 @@ file-manager {
 }
 @media (min-width: 800px) {
   .footer {
-    justify-content: space-between;
-    display: grid;
-    grid-template-columns: 440fr 375fr 200fr;
+    
   }
 }
 .stepper {
@@ -4578,7 +4576,7 @@ file-manager {
 }
 .course-hero {
   grid-column: 1/-1;
-  max-width: 500px;
+  /*max-width: 500px;*/
 }
 @media (min-width: 840px) {
   .course-hero {
