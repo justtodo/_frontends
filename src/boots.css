@@ -745,7 +745,7 @@ footer .contacts h1{
     align-items: center;
   }
   .course-hero h2 strong{
-    width: 700px;
+    width: 450px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -758,7 +758,7 @@ footer .contacts h1{
     margin-bottom: 2rem;
   }
   .text-hero{
-    margin-bottom: 2rem;
+    /*margin-bottom: 2rem;*/
   }
   .text-hero h1{
     font-size: 3.5rem;
@@ -813,5 +813,109 @@ footer .contacts h1{
   }
   .container-section2{
     padding-left: 1.5rem;
+  }
+}
+@media only screen and (max-width: 730px){
+  body{    
+    /*background-color: red;*/
+    width: 100%;
+  }
+  .text-hero{
+    width: 80%;
+  }
+  .text-hero h1{
+    font-size: 2.5rem;
+  }
+  .course-hero h2 strong{
+    font-size: 1.4rem;
+  } 
+  .services-contents{
+    width: 80%;
+  }
+  .text-center p {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    /*text-align: left;*/
+  }
+}
+@media only screen and (max-width: 670px){
+  body{    
+    /*background-color: red;*/
+  }
+  .services-contents{
+    width: 90%;
+  }
+  .text-hero h1{
+    font-size: 3rem;
+  }
+  .text-center{
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
+  }
+  .offres-hero{
+    text-align: left;
+  }
+  .text-center p{
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .flex-wrapper{
+    width: 94%;
+  }
+  .button{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media only screen and (max-width: 560px){
+  body{    
+    /*background-color: red;*/
+  }
+  .services-contents{
+    width: 100%;
+  }
+  .flex-wrapper{
+    display: grid;
+  }
+  .container-fluid{
+    margin-bottom: 4.5rem;
+    margin-right: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media only screen and (max-width: 485px){
+  body{    
+    /*background-color: red;*/
+  }
+  .section1{
+    padding-left: 1.3rem;
+  }
+  .course-hero h2 strong {
+    font-size: 1.3rem;
+  }
+  .container-section2 {
+    padding-left: 1.1rem;
+  }
+  .section2-content h1 {
+    font-size: 2.5rem;
+  }
+  .section2-content h1 span {
+    font-size: 2.5rem;
+  }
+  .service-content{
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  .service-hero{
+    margin-left: 3rem;
+    margin-right: 5rem;
+  }
+  .flex-wrapper{
+    width: 90%;
+  }
+  .course-hero h2 strong {
+    width: 430px;    
   }
 }
