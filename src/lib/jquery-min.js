@@ -29,3 +29,12 @@
 $("#js-burger").click(function () {
   $(this).toggleClass("header");
 });
+
+
+// /DARK MOD AND LIGHT MODE 
+
+
+
+$(".icon-sun").click(function () =>{
+  $(this).toggleClass(page-wrapper).css('background-color', '#121c42')
+})
