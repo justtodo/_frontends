@@ -184,10 +184,8 @@ border-radius: 12px;
 }
 .section2-content h1 span{
   font-size: 2rem;
-  color: #ff6600;
+  color: orange;
   font-weight: bold;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
 
 .services-content{
@@ -295,7 +293,7 @@ text-align: ;}
   text-align: center;
   margin-top: 2rem;
   padding: 2rem;
-  background: rgba(20, 12, 12, 0.1);
+  /*background: rgba(20, 12, 12, 0.1);*/
 }
 .pack-standard{
   padding-right: 2rem;
@@ -947,5 +945,70 @@ footer .contacts h1{
   }
   .text-hero h1 {
     font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 385px){
+  body{    
+    /*background-color: red;*/
+  }
+  .section2-content h1 {  
+    margin-right: 2rem;
+  }
+  .flex-wrapper{
+    width: 94%;
+  }
+  .container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .services-contents {
+    width: 94%;
+  }
+  .service-hero {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+@media only screen and (max-width: 360px){
+  body{    
+    /*background-color: red;*/
+  }
+  .course-hero h2 strong {
+    width: 250px;
+  }
+  .text-hero{
+    width: 100%;
+  }
+  .service-hero {
+    margin-left: 1rem;
+    margin-right: 3rem;
+    font-size: 1.2rem;
+  }
+  .text-center .offres-hero {
+    line-height: 50px;
+  }
+}
+@media only screen and (max-width: 330px){
+  body{    
+    /*background-color: red;*/
+  }
+  .flex-wrapper{
+    width: 92%;
+  }
+}
+@media only screen and (max-width: 290px){
+  body{    
+    /*background-color: red;*/
+  }
+  .flex-wrapper{
+    /*width: 92%;*/
+  }
+  .pack-content span {
+    font-size: 1.1rem;
+  }
+  .container-fluid .content span {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 1.2rem;
   }
 }
