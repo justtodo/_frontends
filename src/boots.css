@@ -916,6 +916,36 @@ footer .contacts h1{
     width: 90%;
   }
   .course-hero h2 strong {
-    width: 430px;    
+    width: 400px;    
+  }
+  .section2-content p {    
+    margin-right: 1rem;
+  }
+}
+@media only screen and (max-width: 450px){
+  body{    
+    /*background-color: red;*/
+  }
+  .contact-expert{
+    display: grid;
+  }
+  .contact-expert-link-1{
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  .contact-expert-link-2{
+    padding: 1rem;
+    border-radius: 5px;
+  }
+}
+@media only screen and (max-width: 430px){
+  body{    
+    /*background-color: red;*/
+  }
+  .course-hero h2 strong {
+    width: 320px;
+  }
+  .text-hero h1 {
+    font-size: 2.5rem;
   }
 }
