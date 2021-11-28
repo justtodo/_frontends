@@ -1,0 +1,21 @@
+.body-section {
+  display: flex;
+  justify-content: space-around;
+}
+.img-comment {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 12px;
+  border-left: 2px solid #ccc;
+}
+.img-cookie {
+  box-decoration-break: 3xp solid red;
+  -webkit-box-decoration-break: 3xp solid red;
+}
+/* icon-sun icon-moon */
+.icon-sun,
+.icon-moon {
+  padding: 10px;
+  border-radius: 25px;
+}

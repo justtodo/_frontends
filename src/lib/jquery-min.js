@@ -25,16 +25,21 @@
 //   sideBar.classList.remove("active");
 // });
 
-// jquerie
+// jquerie make a burger
+
 $("#js-burger").click(function () {
-  $(this).toggleClass("header");
+  $("#header").slideToggle(); //fait disparaître le contenu en params
 });
 
+$("#moon").click(function () {
+  $("*").css("color", "#ccc").css("background", "#121c4299").fadeIn(200);
+});
+// $("#sun").click(function () {
+//   $("*").css("color", "#000").css("background", "#f3f9fb").fadeOut(200);
+// });
 
-// /DARK MOD AND LIGHT MODE 
+// jquerie  DARK MOD AND LIGHT MODE
 
-
-
-$(".icon-sun").click(function () =>{
-  $(this).toggleClass(page-wrapper).css('background-color', '#121c42')
-})
+// $(".icon-sun").click(function () {
+//   $(this).toggleClass("*").css("background", "#121c42");
+// });

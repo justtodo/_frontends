@@ -5,6 +5,7 @@
     <title>Services en Ligne Côte d'ivoire | UpCookie</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../src/lib/css.css" />
+    <link rel="stylesheet" href="../src/lib/custom.css" />
     <link rel="modulepreload" href="../src/lib/js.js" />
     <script src="../src/lib/app.js" type="module" defer></script>
     <script src="../src/lib/jquery-min.js" type="module" defer></script>
@@ -16,6 +17,7 @@
       href="https://upcookie.ci"
     />
     <link rel="apple-touch-icon" sizes="128x128" href="/1.png" />
+    <link rel="shortcut icon" href="/1.png" type="image/x-icon" />
     <meta property="og:title" content="UpCookie côte d'ivoire " />
     <meta property="og:site_name" content="upcookie.ci" />
     <meta property="og:language" content="fr" />
@@ -135,24 +137,30 @@
         <!--  -->
       </div>
       <!-- =========================================================
-        ==========================end header=======================
+        ==========================end header start body=======================
       ============================================================ -->
       <section class="content">
-        <img src="./logo.svg" alt="logo upcookie " />
-        <p class="text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit illo
-          corrupti recusandae eligendi maiores voluptatum at expedita nobis
-          quia, animi sint perferendis saepe repellendus beatae sed delectus
-          velit impedit tempore.
-        </p>
+        <div class="body-section">
+          <div class="img">
+            <img src="./logo.svg" class="img-cookie" alt="logo upcookie " />
+          </div>
+          <div class="img-comment">
+            <p class="text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit
+              illo corrupti recusandae eligendi maiores voluptatum at expedita
+              nobis quia, animi sint perferendis saepe repellendus beatae sed
+              delectus velit impedit tempore.
+            </p>
+          </div>
+        </div>
       </section>
       <!-- ===================================================
-        ====================================start body=================================
+        ====================================end body start footer=================================
       ====================================================== -->
 
       <!-- start footer -->
       <footer class="footer">
-        <div>
+        <div class="footer-content">
           <div class="footer-title">UPCOOKIES</div>
           <p class="text-muted mb2">
             Après avoir appris sur Internet quoi de plus normal que de partager
@@ -267,14 +275,18 @@
             />
             <label for="theme-switcher">
               <span class="switch theme-dark">
-                <span
-                  class="icon icon-moon theme-dark iconify"
-                  data-icon="akar-icons:moon"
-                ></span>
-                <span
-                  class="icon icon-sun iconify"
-                  data-icon="akar-icons:sun"
-                ></span>
+                <button id="moon">
+                  <span
+                    class="icon icon-moon iconify"
+                    data-icon="akar-icons:moon"
+                  ></span>
+                </button>
+                <button id="sun">
+                  <span
+                    class="icon icon-sun iconify"
+                    data-icon="akar-icons:sun"
+                  ></span>
+                </button>
               </span>
             </label>
           </theme-switcher>
@@ -287,6 +299,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- jquerie hors ligne  -->
+    <script src="../src/jquery.js"></script>
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
   </body>
 </html>
