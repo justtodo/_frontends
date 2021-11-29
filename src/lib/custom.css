@@ -8,21 +8,22 @@
   justify-content: center;
   top: 0;
   right: 0;
-  width: 25%;
-  height: 150vh;
+  width: 35%;
+  height: 170vh;
   background: rgba(255, 254, 254, 0.8);
   overflow: auto;
+  z-index: 1;
 }
 .modal-wrapper {
   position: absolute;
   font-size: 2.3rem;
-  width: 50vh;
-  height: 90vh;
+  width: 60vh;
+  height: 150vh;
   position: relative;
   justify-content: center;
   align-items: center;
   max-width: calc(100vw - 20px);
-  max-height: calc(100vh - 20px);
+  max-height: calc(130vh - 20px);
   margin-left: 10px;
   padding: 5px;
   background: rgba(238, 234, 234, 0.83);
@@ -43,14 +44,51 @@
   -ms-transform: translateX(10px);
   -o-transform: translateX(10px);
 }
+.modal-menu a:hover {
+  font-size: 2.4rem;
+  /* padding: 3rem; */
+  position: fixed;
+  transition: 1s;
+  width: 100%;
+  transform-style: flat;
+  background-color: #ec006e;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.modal-menu a:not(:hover) {
+  margin: 1rem 0;
+  transform: scale(10px);
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  -webkit-transform: scale(10px);
+  -moz-transform: scale(10px);
+  -ms-transform: scale(10px);
+  -o-transform: scale(10px);
+}
 .modal-menu,
 #modal-menu {
   display: block;
+
   height: 100%;
   position: relative;
+
   align-items: center;
   justify-content: center;
-  /* background: rgb(233, 229, 229); */
+
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 .modal-menu li {
   justify-content: center;
@@ -85,6 +123,13 @@
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
+}
+#burger-search {
+  width: calc(100vw - 80vw);
+  height: calc(130vh - 124vh);
+  left: 0;
+  margin: 1.4rem 0;
+  position: inherit;
 }
 /* ========================= banner promotion ========================= */
 .promotion {
