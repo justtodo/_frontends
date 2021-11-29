@@ -147,19 +147,13 @@
         <div class="modal-wrapper js-modal-stop">
           <ul class="header-nav modal-menu">
             <li>
-              <button class="js-modal-close">
-                Fermer
-                <!-- <span class="iconify" data-icon="ci:off-close"></span> -->
+              <button class="js-modal-close js-close" >
+                <!-- Fermer -->
+                <span class="iconify" data-icon="ci:off-close"></span>
               </button>
             </li>
             <li class="header__home">
-              <a href="/" class="menuItem" title="Accueil">
-                <span
-                  class="iconify"
-                  data-icon="noto:cookie"
-                  style="font-size: 200px"
-                ></span>
-              </a>
+              <a href="/" class="menuItem" title="Accueil"> "logo "</a>
             </li>
             <li>
               <a href="/accueil" class="menuItem" aria-current="page"
@@ -207,19 +201,15 @@
                 Blogs</a
               >
             </li>
-          </ul>
-          <ul class="header-side" id="modal-menu">
+            <!-- </ul>
+          <ul class="header-side" id="modal-menu"> -->
             <li class="header__notification">
-              <site-notifications
-                ><span
-                  class="icon icon-bell iconify"
-                  data-icon="ic:baseline-notification-add"
-                ></span>
+              <a href="http://#" class="button"><span>Notifications </span></a>
               </site-notifications>
             </li>
             <li class="header__search">
               <search-button
-                ><span
+                ><input type="text" name="search" id="burger-search" placeholder="Rechercher un produits" aria-autocomplete="both"><span
                   class="icon icon-search iconify"
                   data-icon="bi:search"
                 ></span
@@ -231,7 +221,8 @@
 
                 <span>S'inscrire</span>
               </a>
-              <span class="text-muted" class="menuItem">·</span>
+            </li>
+            <li>
               <a href="/connexion?redirect=/tutoriels/javascript">
                 <span
                   class="iconify"
@@ -373,7 +364,7 @@
             </li>
           </ul>
           <div class="footer-title mt3 mb1">Thème</div>
-          <!-- <theme-switcher></theme-switcher> -->
+
           <theme-switcher class="theme-switcher form-switch">
             <input
               type="checkbox"

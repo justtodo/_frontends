@@ -1,19 +1,25 @@
 // jquerie make a burger
 
 $("#js-burger").click(function () {
-  $(this).toggleClass(".modal-header");
+  $(".modal-header").show();
 });
 
-$(".switch").click(function () {
-  $("body").toggle().css("color", "#fff").css("background", "#121c4299");
+$("#theme-switcher").click(function () {
+  $(this).toggle(".theme-switcher");
+  // .css("color", "#effb")
+  // .css("background", "#000")
+  // .css("background-attachement", "fixed");
   //
 });
-// $("#sun").click(function () {
-//   $("*").css("color", "#000").css("background", "#f3f9fb").fadeOut(200);
+// light
+// $(".switch").click(function () {
+//   $("body, footer")
+//     .toggle()
+//     .css("color", "#003")
+//     .css("background", "#d8e1e8")
+//     .css("background-attachement", "fixed");
+//   //
 // });
-
-// jquerie  DARK MOD AND LIGHT MODE
-
-// $(".icon-sun").click(function () {
-//   $(this).toggleClass("*").css("background", "#121c42");
-// });
+$(".js-close").click(function () {
+  $(".modal-header").css("display", "none");
+});

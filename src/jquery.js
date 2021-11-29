@@ -6,7 +6,7 @@ const openModal = function (e) {
   e.preventDefault();
   modal = document.querySelector(e.target.getAttribute("href"));
   focusables = Array.from(modal.querySelectorAll(focusableSelector));
-  focusables[0].focus()
+  focusables[0].focus();
   modal.style.display = null;
   modal.removeAttribute("aria-hidden");
   modal.setAttribute("aria-modal", "true");
@@ -51,19 +51,18 @@ const focusInModal = function (e) {
   e.preventDefault();
 
   let index = focusables.findIndex((f) => f === modal.querySelector(":focus"));
- if(e.shiptKey === true ){
-     index--
- }else{
-     index++
- }
- if(index >= focusables.length ){
-     index = 0
- }
- if(index < 0 ){
-     index = focusables.length - 1
- }
- focusable[index].focus
-
+  if (e.shiptKey === true) {
+    index--;
+  } else {
+    index++;
+  }
+  if (index >= focusables.length) {
+    index = 0;
+  }
+  if (index < 0) {
+    index = focusables.length - 1;
+  }
+  focusable[index].focus();
 };
 
 window.addEventListener("keydown", function (e) {
@@ -77,3 +76,7 @@ window.addEventListener("keydown", function (e) {
 });
 
 // enfermer le focus pionter tous les element focussable
+const close = function (e) {
+  close.querySelector(".js-close");
+  close.addEventListener("click", closeModal);
+};
