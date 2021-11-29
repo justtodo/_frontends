@@ -1,27 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
 
 /* MODAL HEADER */
 .modal-header {
-  position: fixed;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   top: 0;
-  left: 0;
-  width: 50%;
-  height: 100vh;
+  right: 0;
+  width: 25%;
+  height: 150vh;
   background: rgba(255, 254, 254, 0.8);
+  overflow: auto;
 }
 .modal-wrapper {
-  overflow: auto;
+  position: absolute;
   font-size: 2.3rem;
-  width: 100vh;
+  width: 50vh;
+  height: 90vh;
+  position: relative;
   justify-content: center;
   align-items: center;
   max-width: calc(100vw - 20px);
   max-height: calc(100vh - 20px);
   margin-left: 10px;
-  padding: 20px;
+  padding: 5px;
   background: rgba(238, 234, 234, 0.83);
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -43,11 +46,14 @@
 .modal-menu,
 #modal-menu {
   display: block;
-  height: 72vh;
+  height: 100%;
   position: relative;
   align-items: center;
   justify-content: center;
   /* background: rgb(233, 229, 229); */
+}
+.modal-menu li {
+  justify-content: center;
 }
 #modal-menu ul {
   display: flex;
@@ -70,16 +76,34 @@
   justify-content: center;
   right: 2rem;
 }
-/* banner promotion  */
+.js-close {
+  right: 10px;
+  font-size: 2rems;
+  width: 20px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+/* ========================= banner promotion ========================= */
 .promotion {
   min-height: 10vh;
   font-family: "Josefin Sans", sans-serif;
-  display: flex;
+  display: grid;
+  grid-template-columns: 50% 50%;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   font-size: 5rem;
   font-weight: bolder;
+}
+.up,
+.cookie {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #target {
   display: flex;
@@ -116,8 +140,30 @@
     transform: translateZ(-280px) translateX(200px);
   }
 }
+@media screen and (max-width: 320px) {
+  .promotion {
+    min-height: 25vh;
+    display: block;
+    /* font-size: 2rem; */
+  }
+  .promotion h3 {
+    font-size: 2rem;
+  }
+  #target {
+    width: 300px;
+    position: relative;
+    display: block;
+    perspective: 100px;
+    transform: translateX(16px);
+    -webkit-transform: translateX(16px);
+    -moz-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    -o-transform: translateX(16px);
+  }
+}
 
 /* +++++++++++===============BODY================ */
+
 .body-section {
   display: flex;
   justify-content: space-around;

@@ -83,7 +83,14 @@ const close = function (e) {
 
 // PROMOTION HEADER
 const target = document.getElementById("target");
-let array = ["services", "Web Dev", "freelance", "stores"];
+let array = [
+  "Services",
+  "Web Dev",
+  "Freelances",
+  "Stores",
+  "Web helps",
+  "Challenges",
+];
 let wordIndex = 0;
 let letterIndex = 0;
 
