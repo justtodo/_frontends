@@ -94,19 +94,22 @@
         <ul class="header-side" id="side-bar">
           <li class="header__notification">
             <site-notifications
-              ><span
-                class="icon icon-bell iconify"
-                data-icon="ic:baseline-notification-add"
-              ></span>
+              ><a href="http://#" class="js-modal">
+                <span
+                  class="icon icon-bell iconify"
+                  data-icon="ic:baseline-notification-add"
+                ></span>
+              </a>
               <!-- <span class="notification-badge">2</span> -->
             </site-notifications>
           </li>
           <li class="header__search">
             <search-button
-              ><span
-                class="icon icon-search iconify"
-                data-icon="bi:search"
-              ></span
+              ><a href="http://#" class="js-modal"
+                ><span
+                  class="icon icon-search iconify"
+                  data-icon="bi:search"
+                ></span></a
             ></search-button>
           </li>
           <li class="header-side__auth">
@@ -125,17 +128,122 @@
             </a>
           </li>
           <li class="header__burger">
-            <button class="toggle-btn" id="js-burger">
+            <button id="js-burger">
               <span>Afficher le menu</span>
             </button>
           </li>
         </ul>
       </nav>
-      <div class="header-placeholder">
-        <!-- burger -->
+      <div class="header-placeholder"></div>
+      <!-- burger modals -->
+      <aside
+        class="modal-header"
+        aria-hidden="true"
+        role="dialog"
+        aria-labelledby="titlemodal"
+        style="display: none"
+        id="moadal-header"
+      >
+        <div class="modal-wrapper js-modal-stop">
+          <ul class="header-nav modal-menu">
+            <li>
+              <button class="js-modal-close">
+                Fermer
+                <!-- <span class="iconify" data-icon="ci:off-close"></span> -->
+              </button>
+            </li>
+            <li class="header__home">
+              <a href="/" class="menuItem" title="Accueil">
+                <span
+                  class="iconify"
+                  data-icon="noto:cookie"
+                  style="font-size: 200px"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a href="/accueil" class="menuItem" aria-current="page"
+                ><span class="icon iconify" data-icon="akar-icons:home"></span>
 
-        <!--  -->
-      </div>
+                Accueil</a
+              >
+            </li>
+            <li>
+              <a href="/services" class="menuItem"
+                ><span
+                  class="icon iconify"
+                  data-icon="carbon:cloud-satellite-services"
+                ></span>
+
+                Services</a
+              >
+            </li>
+
+            <li>
+              <a href="/stores" class="menuItem"
+                ><span
+                  class="icon iconify"
+                  data-icon="fluent:store-microsoft-20-regular"
+                ></span>
+
+                Stores</a
+              >
+            </li>
+            <li>
+              <a href="/expert" class="menuItem"
+                ><span class="icon iconify" data-icon="fa-solid:blog"></span>
+                Experts</a
+              >
+            </li>
+            <li>
+              <a href="/contact" class="menuItem"
+                ><span class="icon iconify" data-icon="cil:contact"></span>
+                Contact</a
+              >
+            </li>
+            <li>
+              <a href="/Blog" class="menuItem"
+                ><span class="icon iconify" data-icon="carbon:blog"></span>
+                Blogs</a
+              >
+            </li>
+          </ul>
+          <ul class="header-side" id="modal-menu">
+            <li class="header__notification">
+              <site-notifications
+                ><span
+                  class="icon icon-bell iconify"
+                  data-icon="ic:baseline-notification-add"
+                ></span>
+              </site-notifications>
+            </li>
+            <li class="header__search">
+              <search-button
+                ><span
+                  class="icon icon-search iconify"
+                  data-icon="bi:search"
+                ></span
+              ></search-button>
+            </li>
+            <li class="header-side__auth">
+              <a href="/inscription" class="menuItem">
+                <span class="iconify" data-icon="akar-icons:sign-out"></span>
+
+                <span>S'inscrire</span>
+              </a>
+              <span class="text-muted" class="menuItem">·</span>
+              <a href="/connexion?redirect=/tutoriels/javascript">
+                <span
+                  class="iconify"
+                  data-icon="ant-design:login-outlined"
+                ></span>
+                <span>Se connecter</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
       <!-- =========================================================
         ==========================end header start body=======================
       ============================================================ -->
@@ -273,20 +381,20 @@
               id="theme-switcher"
               aria-label="Changer de thème"
             />
-            <label for="theme-switcher">
+            <label for="theme-switcher" class="label">
               <span class="switch theme-dark">
-                <button id="moon">
-                  <span
-                    class="icon icon-moon iconify"
-                    data-icon="akar-icons:moon"
-                  ></span>
-                </button>
-                <button id="sun">
-                  <span
-                    class="icon icon-sun iconify"
-                    data-icon="akar-icons:sun"
-                  ></span>
-                </button>
+                <!-- <button id="moon"> -->
+                <span
+                  class="icon icon-moon iconify"
+                  data-icon="akar-icons:moon"
+                ></span>
+                <!-- </button> -->
+                <!-- <button id="sun"> -->
+                <span
+                  class="icon icon-sun iconify"
+                  data-icon="akar-icons:sun"
+                ></span>
+                <!-- </button> -->
               </span>
             </label>
           </theme-switcher>
