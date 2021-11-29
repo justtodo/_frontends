@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+
 /* MODAL HEADER */
 .modal-header {
   position: fixed;
@@ -9,11 +11,11 @@
   width: 50%;
   height: 100vh;
   background: rgba(255, 254, 254, 0.8);
-  /* z-index: 1; */
 }
 .modal-wrapper {
+  overflow: auto;
   font-size: 2.3rem;
-  width: 100 vh;
+  width: 100vh;
   justify-content: center;
   align-items: center;
   max-width: calc(100vw - 20px);
@@ -32,11 +34,11 @@
   padding-bottom: 1rem;
 }
 .modal-menu {
-  transform: translateX(150px);
-  -webkit-transform: translateX(150px);
-  -moz-transform: translateX(150px);
-  -ms-transform: translateX(150px);
-  -o-transform: translateX(150px);
+  transform: translateX(10px);
+  -webkit-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  -o-transform: translateX(10px);
 }
 .modal-menu,
 #modal-menu {
@@ -68,7 +70,54 @@
   justify-content: center;
   right: 2rem;
 }
+/* banner promotion  */
+.promotion {
+  min-height: 10vh;
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-size: 5rem;
+  font-weight: bolder;
+}
+#target {
+  display: flex;
+  width: 300px;
+  text-align: left;
+  animation: color 30s alternate infinite;
+  perspective: 200px;
+  transform: translateX(26px);
+}
+.word {
+  position: absolute;
+}
+@keyframes color {
+  0% {
+    color: blue;
+  }
+  50% {
+    color: #ec006e;
+  }
+  100% {
+    color: blue;
+  }
+}
+.letter {
+  transform: translateZ(200px);
+}
+@keyframes anim {
+  25% {
+    transform: translateZ(0px);
+    opacity: 1;
+  }
+  32% {
+    opacity: 0;
+    transform: translateZ(-280px) translateX(200px);
+  }
+}
 
+/* +++++++++++===============BODY================ */
 .body-section {
   display: flex;
   justify-content: space-around;
@@ -84,4 +133,3 @@
   box-decoration-break: 3xp solid red;
   -webkit-box-decoration-break: 3xp solid red;
 }
-
