@@ -84,12 +84,20 @@ const close = function (e) {
 // PROMOTION HEADER
 const target = document.getElementById("target");
 let array = [
-  "Services",
+  "Services Informatiques",
   "Web Dev",
   "Freelances",
   "Stores",
   "Web helps",
   "Challenges",
+  "Hébergement",
+  "Forums",
+  "CodesBlogs",
+  "Assistance",
+  "Accompagnement",
+  "Consultation UX / UI",
+  "Installation",
+  "Accessoires Informatiques",
 ];
 let wordIndex = 0;
 let letterIndex = 0;
