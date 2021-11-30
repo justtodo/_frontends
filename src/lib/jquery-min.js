@@ -4,12 +4,12 @@ $("#js-burger").click(function () {
   $(".modal-header").show();
 });
 
-$(".switch").click(function () {
-  $("*").toggleClass(".theme-switcher");
-});
-
 $(".js-close").click(function () {
   $(".modal-header").css("display", "none");
+});
+
+$(".switch").click(function () {
+  $("*").toggleClass("theme-light");
 });
 
 // PROMOTION HEADER

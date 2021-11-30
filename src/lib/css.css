@@ -970,24 +970,7 @@ body .mb1 {
     display: none;
   }
 }
-@font-face {
-  font-family: Inter;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/assets/Inter-Regular.0ef3708d.woff2) format("woff2");
-}
-@font-face {
-  font-family: Inter;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/assets/Inter-Medium.0b7d63d4.woff2) format("woff2");
-}
-@font-face {
-  font-family: Inter;
-  font-weight: 700;
-  font-display: swap;
-  src: url(/assets/Inter-Bold.2150f4b4.woff2) format("woff2");
-}
+
 .auth-title,
 .blog-post__title,
 .blog-single__title,

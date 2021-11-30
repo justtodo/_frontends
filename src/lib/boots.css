@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700&display=swap');
 *{
   margin: 0;
   box-sizing: border-box;
@@ -156,10 +157,6 @@ border-radius: 12px;
   -o-border-radius: 12px;}
 
 
-.img-content{
-  display: flex;
-  flex-direction: row;
-}
 .section-body{
   position: inherit;
   display: flex;
@@ -254,32 +251,6 @@ border-radius: 12px;
   }
 }
 
-.progress-bar-striped {
-  background-image: linear-gradient(
-    45deg,
-    rgba(248, 120, 120, 0.15) 25%,
-    transparent 25%,
-    transparent 50%,
-    rgba(250, 189, 58, 0.15) 50%,
-    rgba(49, 255, 8, 0.15) 75%,
-    transparent 75%,
-    transparent
-  );
-  background-size: 1rem 1rem;
-}
-
-.progress-bar-animated {
-  -webkit-animation: progress-bar-stripes 1s linear infinite;
-  animation: progress-bar-stripes 1s linear infinite;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .progress-bar-animated {
-    -webkit-animation: none;
-    animation: none;
-  }
-}
-
 .text-center{justify-content: center;
 justify-self: auto;
 text-align: ;}
@@ -367,62 +338,7 @@ padding:12px}
 
 
 /* footer */
-
-footer{
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-footer .content{
-  /*border: 1px solid red;*/
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-  display: flex;
-  justify-content: center;
-}
-footer .up h1{
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-footer .up p{
-  padding-bottom: 0.5rem;
-}
-footer .up{
-  /*border: 1px solid red;*/
-  text-align: left;
-  width: 625px;
-  height: 230px;
-  margin-right: 4rem;
-}
-footer .help{
-  /*border: 1px solid red;*/
-  margin-right: 4rem; 
-}
-footer .help a{
-  text-align: left;
-  display: flex;
-  text-decoration: underline;
-}
-footer .help h1{
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-footer .contacts{
-  /*border: 1px solid red;*/
-  width: 325px;
-  height: 231px;
-}
-footer .contacts a{
-  text-align: left;
-  display: flex;
-  text-decoration: underline;
-}
-footer .contacts h1{
-  font-weight: bold;
-  font-size: 1.5rem;
-}
+/*  */
 /*--------------------------------Un codeur dor pas------------------*/
 .section1{
   min-height: 50vh;
@@ -752,7 +668,7 @@ background:url(../../assets/collections/img-banner.svg) center/cover;
     /* grid-template-columns:100%; */
     justify-content: left;
     align-items: flex-start;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   .text-hero h1{
     display: flex;
@@ -1723,19 +1639,19 @@ body .ml5 {
   font-family: Inter;
   font-weight: 400;
   font-display: swap;
-  src: url(/assets/Inter-Regular.0ef3708d.woff2) format("woff2");
+  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap') format("woff2");
 }
 @font-face {
   font-family: Inter;
   font-weight: 500;
   font-display: swap;
-  src: url(/assets/Inter-Medium.0b7d63d4.woff2) format("woff2");
+  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&display=swap') format("woff2");
 }
 @font-face {
   font-family: Inter;
   font-weight: 700;
   font-display: swap;
-  src: url(/assets/Inter-Bold.2150f4b4.woff2) format("woff2");
+  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700&display=swap') format("woff2");
 }
 .auth-title,
 .blog-post__title,
