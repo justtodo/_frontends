@@ -4,8 +4,8 @@ $("#js-burger").click(function () {
   $(".modal-header").show();
 });
 
-$("#theme-switcher").click(function () {
-  $(this).toggle(".theme-switcher");
+$(".switch").click(function () {
+  $("*").toggleClass(".theme-switcher");
 });
 
 $(".js-close").click(function () {
@@ -13,4 +13,4 @@ $(".js-close").click(function () {
 });
 
 // PROMOTION HEADER
-// END PROMOTION 
+// END PROMOTION

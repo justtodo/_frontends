@@ -133,10 +133,11 @@
 }
 /* ========================= banner promotion ========================= */
 .promotion {
+  display: flex;
   min-height: 10vh;
   font-family: "Josefin Sans", sans-serif;
-  display: grid;
-  grid-template-columns: 50% 50%;
+  /* display: grid;
+  grid-template-columns: 50% 50%; */
   align-items: center;
   justify-content: center;
   overflow: hidden;
