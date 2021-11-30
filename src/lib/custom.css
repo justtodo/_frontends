@@ -4,52 +4,62 @@
 .modal-header {
   position: absolute;
   display: flex;
+
   align-items: center;
   justify-content: center;
   top: 0;
   right: 0;
-  width: 35%;
-  height: 170vh;
+  width: 25vw;
+  height: 130vh;
   background: rgba(255, 254, 254, 0.8);
-  overflow: auto;
+  overflow: hidden;
+  margin-right: 0.9rem;
   z-index: 1;
-}
-.modal-wrapper {
-  position: absolute;
-  font-size: 2.3rem;
-  width: 60vh;
-  height: 150vh;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  max-width: calc(100vw - 20px);
-  max-height: calc(130vh - 20px);
-  margin-left: 10px;
-  padding: 5px;
-  background: rgba(238, 234, 234, 0.83);
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
+.modal-wrapper {
+  position: absolute;
+  font-size: 2rem;
+  width: 24vw;
+  height: 100vh;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  max-width: calc(35vw - 20px);
+  max-height: calc(110vh - 20px);
+  margin-left: 10px;
+  padding: 5px;
+  background: rgba(238, 234, 234, 0.945);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  /* z-index: 1; */
+}
 .modal-wrapper li {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  /* padding-top: 2rem; */
+  padding: 1.5rem 0;
 }
 .modal-menu {
-  transform: translateX(10px);
+  display: flex;
+  /* transform: translateX(10px);
   -webkit-transform: translateX(10px);
   -moz-transform: translateX(10px);
   -ms-transform: translateX(10px);
-  -o-transform: translateX(10px);
+  -o-transform: translateX(10px); */
+}
+.modal-menu ul li {
+  padding-bottom: 1rem;
 }
 .modal-menu a:hover {
   font-size: 2.4rem;
-  /* padding: 3rem; */
-  position: fixed;
-  transition: 1s;
-  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   transform-style: flat;
   background-color: #ec006e;
   -webkit-transition: 1s;
@@ -63,17 +73,11 @@
   -o-border-radius: 50px;
 }
 .modal-menu a:not(:hover) {
-  margin: 1rem 0;
-  transform: scale(10px);
-  transition: 1s;
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
-  -ms-transition: 1s;
-  -o-transition: 1s;
-  -webkit-transform: scale(10px);
-  -moz-transform: scale(10px);
-  -ms-transform: scale(10px);
-  -o-transform: scale(10px);
+  transition: 1.9s;
+  -webkit-transition: 1.9s;
+  -moz-transition: 1.9s;
+  -ms-transition: 1.9s;
+  -o-transition: 1.9s;
 }
 .modal-menu,
 #modal-menu {
@@ -133,18 +137,25 @@
 }
 /* ========================= banner promotion ========================= */
 .promotion {
-  display: flex;
+  /*display: flex;  */
+
   min-height: 10vh;
   font-family: "Josefin Sans", sans-serif;
-  /* display: grid;
-  grid-template-columns: 50% 50%; */
+  display: grid;
+  /* grid-template-columns: 50%; */
   align-items: center;
+  place-items: grid;
   justify-content: center;
   overflow: hidden;
   font-size: 5rem;
+  transition: 2s all;
   font-weight: bolder;
+  -webkit-transition: 2s all;
+  -moz-transition: 2s all;
+  -ms-transition: 2s all;
+  -o-transition: 2s all;
 }
-.up,
+/* .up, */
 .cookie {
   position: relative;
   display: flex;

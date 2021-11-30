@@ -10,7 +10,7 @@ const openModal = function (e) {
   modal.style.display = null;
   modal.removeAttribute("aria-hidden");
   modal.setAttribute("aria-modal", "true");
-  // function pour fermer le modla
+  // function pour fermer le modal
   //   modal = target;
   modal.addEventListener("click", closeModal);
   modal.querySelector("js-modal-close").addEventListener("click", closeModal);
@@ -62,7 +62,7 @@ const focusInModal = function (e) {
   if (index < 0) {
     index = focusables.length - 1;
   }
-  focusable[index].focus();
+  focusables[index].focus();
 };
 
 window.addEventListener("keydown", function (e) {
