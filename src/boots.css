@@ -2031,7 +2031,7 @@ con-fetti {
   font-family: Inter, sans-serif;
   /* font-weight: 500;
   line-height: 1; */
-  padding-top: 0;
+  padding-top: 0.7rem;
   margin: 0;
   /* padding-top: calc(6 * var(--space));
   padding-bottom: calc(3 * var(--space)); */
@@ -2400,6 +2400,10 @@ con-fetti {
     display: none;
   }
 }
+.course-hero__content{
+  margin-left: 3rem;
+ 
+}
 .rounded {
   border-radius: 50%;
 }
@@ -2458,6 +2462,7 @@ con-fetti {
   display: flex;
   flex: none;
   align-items: center;
+ padding: 1rem;
 }
 .card__description p {
   color: var(--color-light);
