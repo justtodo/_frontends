@@ -13,7 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../src/lib/styles.css" />
   <link rel="modulepreload" href="../../src/lib/js.js" />
-  <link rel="modulepreload" href="../../src/lib/log.css" />
+  <link rel="modulepreload" href="../../src/lib/services.css" />
   <script src="../../src/lib/app.js" type="module" defer></script>
   <script src="../../src/lib/jquery-min.js" type="module" defer></script>
   <meta name="turbolinks-cache-control" content="no-cache" />
@@ -105,69 +105,74 @@
     <!-- burger modals -->
     <aside class="modal-header" aria-hidden="true" role="dialog" aria-labelledby="titlemodal" style="display: none"
       id="moadal-header">
-      <div class="modal-wrapper js-modal-stop">
-        <ul class="header-nav modal-menu">
-          <li>
-            <button class="js-modal-close js-close">
-              <!-- Fermer -->
-              <span class="iconify" data-icon="ci:off-close"></span>
-            </button>
-          </li>
-          <!-- <li class="header__home">
-              <a href="/" class="menuItem" title="Accueil"> "logo "</a>
-            </li> -->
-          <li>
-            <a href="/public/cookie.html" class="menuItem" aria-current="page"><span class="icon iconify"
-                data-icon="akar-icons:home"></span>
-
-              Accueil</a>
-          </li>
-          <li>
-            <a href="/services" class="menuItem"><span class="icon iconify"
-                data-icon="carbon:cloud-satellite-services"></span>
-
-              Services</a>
-          </li>
-
-          <li>
-            <a href="https://#" class="menuItem"><span class="icon iconify"
-                data-icon="fluent:store-microsoft-20-regular"></span>
-
-              Stores</a>
-          </li>
-          <li>
-            <a href="/expert" class="menuItem"><span class="icon iconify" data-icon="fa-solid:blog"></span>
-              Experts</a>
-          </li>
-          <li>
-            <a href="/contact" class="menuItem"><span class="icon iconify" data-icon="cil:contact"></span>
-              Contact</a>
-          </li>
-          <li>
-            <a href="/Blog" class="menuItem"><span class="icon iconify" data-icon="carbon:blog"></span>
-              Blogs</a>
-          </li>
-          <!-- </ul>
-          <ul class="header-side" id="modal-menu"> -->
-          <li class="header__notification">
-            <a href="http://#" class="button"><span>Notifications </span></a>
-            </site-notifications>
-          </li>
-
-          <li class="header-side__auth">
-            <a href="/inscription" class="menuItem">
-              <span class="iconify" data-icon="akar-icons:sign-out"></span>
-
-              <span>S'inscrire</span>
-            </a>
-          </li>
-          <li>
-            <a href="/connexion?redirect=/tutoriels/javascript">
-              <span class="iconify" data-icon="ant-design:login-outlined"></span>
-              <span>Se connecter</span>
-            </a>
-          </li>
+      <div class="modal-wrapper js-modal-stop ">
+        <nav class="header is-open" id="header">
+            <ul class="header-nav modal-menu">
+                <li>
+                  <button class="js-modal-close js-close">
+                    <!-- Fermer -->
+                    <span class="iconify" data-icon="ci:off-close"></span>
+                  </button>
+                </li>
+                <!-- <li class="header__home">
+                    <a href="/" class="menuItem" title="Accueil"> "logo "</a>
+                  </li> -->
+                <li>
+                  <a href="/accueil" class="menuItem" aria-current="page"><span class="icon iconify"
+                      data-icon="akar-icons:home"></span>
+      
+                    Accueil</a>
+                </li>
+                <li>
+                  <a href="/services" class="menuItem"><span class="icon iconify"
+                      data-icon="carbon:cloud-satellite-services"></span>
+      
+                    Services</a>
+                </li>
+      
+                <li>
+                  <a href="/public/pages/stores.html" class="menuItem"><span class="icon iconify"
+                      data-icon="fluent:store-microsoft-20-regular"></span>
+      
+                    Stores</a>
+                </li>
+                <li>
+                  <a href="/expert" class="menuItem"><span class="icon iconify" data-icon="fa-solid:blog"></span>
+                    Experts</a>
+                </li>
+                <li>
+                  <a href="/contact" class="menuItem"><span class="icon iconify" data-icon="cil:contact"></span>
+                    Contact</a>
+                </li>
+                <li>
+                  <a href="/Blog" class="menuItem"><span class="icon iconify" data-icon="carbon:blog"></span>
+                    Blogs</a>
+                </li>
+                <!-- </ul>
+                <ul class="header-side" id="modal-menu"> -->
+              
+              </ul>
+            <ul class="header-side">
+                <li class="header__notification">
+                    <a href="http://#" class="button"><span>Notifications </span></a>
+                    </site-notifications>
+                  </li>
+        
+                  <li class="header-side__auth">
+                    <a href="/inscription" class="menuItem">
+                      <span class="iconify" data-icon="akar-icons:sign-out"></span>
+        
+                      <span>S'inscrire</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/connexion?redirect=/tutoriels/javascript">
+                      <span class="iconify" data-icon="ant-design:login-outlined"></span>
+                      <span>Se connecter</span>
+                    </a>
+                  </li>
         </ul>
+          </nav>
       </div>
     </aside>
     <!-- section promotion -->
@@ -180,7 +185,65 @@
         ==========================end header start body=======================
       ============================================================ -->
  <section class="service__content">
-     
+    <div class="container flex flex-end">
+        <h1 class="reader-only">Blog</h1>
+        <drop-down class="dropdown" id="categories">
+          <button class="btn-secondary" aria-label="Sélectionner une catégorie" aria-haspopup="listbox" id="categoriesbutton" aria-controls="categorieslist">
+            Toutes les catégories
+            <span class="icon icon-arown-down iconify" data-icon="akar-icons:circle-chevron-down" style="font-size: 200px;"></span>
+          </button>
+          <ul hidden="hidden" id="categorieslist" aria-labelledby="categorieslabel" tabindex="-1" role="listbox" aria-hidden="true">
+                      <li role="option" id="categories-index0">
+              <a href="/blog/category/podcast" tabindex="-1">
+                Podcast &amp; Discussions
+                <span class="badge">3</span>
+              </a>
+            </li>
+                      <li role="option" id="categories-index1">
+              <a href="/blog/category/high-tech" tabindex="-1">
+                High-Tech
+                <span class="badge">5</span>
+              </a>
+            </li>
+                      <li role="option" id="categories-index2">
+              <a href="/blog/category/ressources" tabindex="-1">
+                Ressources
+                <span class="badge">3</span>
+              </a>
+            </li>
+                      <li role="option" id="categories-index3">
+              <a href="/blog/category/challenges" tabindex="-1">
+                Challenges
+                <span class="badge">3</span>
+              </a>
+            </li>
+                      <li role="option" id="categories-index4">
+              <a href="/blog/category/concentre-du-web" tabindex="-1">
+                Concentré du Web
+                <span class="badge">11</span>
+              </a>
+            </li>
+                      <li role="option" id="categories-index5">
+              <a href="/blog/category/bonnes-pratiques" tabindex="-1">
+                Bonnes Pratiques
+                <span class="badge">2</span>
+              </a>
+            </li>
+                      <li role="option" id="categories-index6">
+              <a href="/blog/category/a-propos-2" tabindex="-1">
+                A Propos
+                <span class="badge">12</span>
+              </a>
+            </li>
+                      <li role="option" id="categories-index7">
+              <a href="/blog/category/astuce-developpeur" tabindex="-1">
+                Astuces pour développeurs
+                <span class="badge">27</span>
+              </a>
+            </li>
+                    </ul>
+        </drop-down>
+      </div>
  </section>
  
  

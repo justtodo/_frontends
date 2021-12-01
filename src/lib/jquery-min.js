@@ -4,7 +4,7 @@ $("#js-burger").click(function () {
   $(".modal-header").show();
 });
 // close modal
-$(".js-close").click(function () {
+$(".js-close,.js-modal-stop").click(function () {
   $(".modal-header").css("display", "none");
 });
 // active light theme and dark-theme
