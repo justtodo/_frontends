@@ -137,3 +137,8 @@ const loop = () => {
 };
 loop();
 // END PROMOTION
+
+// open js-modal-search
+$(".header__search").click(function (){
+  $("search-popup").show();
+});

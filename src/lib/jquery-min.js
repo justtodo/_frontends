@@ -3,6 +3,10 @@
 $("#js-burger").click(function () {
   $(".modal-header").show();
 });
+// open js-modal-search
+$("#js-modal-search").click(function (){
+  $("*").toggleClass("js-modal-search");
+});
 // close modal
 $(".js-close,.js-modal-stop").click(function () {
   $(".modal-header").css("display", "none");
@@ -11,6 +15,7 @@ $(".js-close,.js-modal-stop").click(function () {
 $(".switch").click(function () {
   $("*").toggleClass("theme-light");
 });
+
 
 // PROMOTION HEADER
 // END PROMOTION
