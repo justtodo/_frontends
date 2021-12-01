@@ -1,0 +1,235 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+}
+body{
+  background: #171933;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+}
+section{
+  /*border: 1px solid red;*/
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+  margin-right: 4rem;
+  margin-left: 4rem;
+}
+.content{
+  /*border: 1px solid red;*/
+  margin-bottom: 1rem;
+  justify-content: center;
+  text-align: center;
+}
+.content h1{
+  color: orange;
+  font-size: 2rem;
+}
+.content p{
+  margin: 1.2rem;
+  color: white;
+  font-size: 1.4rem;
+  margin-bottom: 5rem;
+}
+.products{
+  /*border: 1px solid red;*/
+  margin: 2rem;
+  display: block;
+  columns: 4;
+  align-items: center;
+  justify-content: center;
+}
+.items{
+  /*border: 1px solid red;*/
+  background-color: rgba(1, 0, 0, 0.2);
+  /*width: 100%;*/
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  padding-bottom: 2rem;
+  padding-top: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.4rem;
+}
+.favoris{
+  box-shadow: rgba(1, 0, 0, 1.0);
+  animation: float 2s infinite;
+}
+@keyframes float{
+  0%{
+    box-shadow: 1px 1px 4px 1px gold;
+  }
+  50%{
+    box-shadow: 1px 1px 4px 1px red;
+  }
+  100%{
+
+  }
+}
+.product-content{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.product-content h3{
+  margin-top: 0.7rem;
+  margin-bottom: 0.3rem;
+  max-width: 100px;
+  color: white;
+  margin-left: 1.5rem;
+}
+.product-content p{
+  margin-bottom: 0.7rem;
+  max-width: 200px;
+  color: white;
+  margin-left: 1.5rem;
+}
+.pro-img{
+  width: 80%;
+  border-radius: 4px;
+  margin-left: 1.5rem;
+  margin-top: 0.3rem;
+}
+.like{
+  /*position: absolute;*/
+  /*z-index: 1;*/
+}
+/*.ellipse img{
+  width: 80%;
+}*/
+.heart img{
+  /*width: 55%;*/
+  /*z-index: 1;*/
+  /*position: absolute;*/
+/*  margin-top: -1.55rem;
+  margin-left: 0.25rem;*/
+  padding-top: 0.5rem;
+  margin-left: 0rem;
+}
+.buttom{
+  /*border: 1px solid red;*/
+  max-width: 200px;
+  justify-content: space-between;
+  margin-left: 1.5rem;
+  margin-right: 1.2rem;
+  display: flex;
+  text-align: center;
+}
+.buttom a{
+  text-decoration: none;
+  color: #171933;
+  background-color: orange;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border-radius: 3px;
+}
+.buttom a:hover{  
+  text-decoration: underline;
+}
+
+/*----------responsive-------------*/
+@media only screen and (max-width: 1140px){
+  body{
+    /*background-color: red;*/
+  }
+  .pro-img{
+    margin-left: 1rem;
+  }
+}
+@media only screen and (max-width: 1050px){
+  body{
+    /*background-color: red;*/
+  }
+  .products{
+  /*border: 1px solid red;*/
+    columns: 2;
+  }
+   .pro-img{
+    margin-left: 2rem;
+  }
+  .product-content h3{
+    margin-left: 2rem;
+  }
+  .product-content p{
+    margin-left: 2rem;
+  }
+  .buttom{
+    margin-left: 2rem;
+  }
+}
+@media only screen and (max-width: 950px){
+  body{    
+    /*background-color: red;*/
+  }
+  .pro-img{
+    margin-left: 1.6rem;
+  }
+}
+@media only screen and (max-width: 850px){
+  body{    
+    /*background-color: red;*/
+  }
+  .pro-img{
+    margin-left: 1.2rem;
+  }
+  .product-content h3{
+    margin-left: 1.2rem;
+  }
+  .product-content p{
+    margin-left: 1.2rem;
+  }
+  .buttom{
+    margin-left: 1.2rem;
+  }
+}
+@media only screen and (max-width: 730px){
+  body{    
+    /*background-color: red;*/
+  }
+  .pro-img{
+    margin-left: 1rem;
+  }
+  .product-content h3{
+    margin-left: 1rem;
+  }
+  .product-content p{
+    margin-left: 1rem;
+  }
+  .buttom{
+    margin-left: 1rem;
+  }
+}
+@media only screen and (max-width: 600px){
+  body{    
+    /*background-color: red;*/
+  }
+  .products{
+    columns: 1;
+  }
+  .pro-img{
+    margin-left: 2rem;
+  }
+  .product-content h3{
+    margin-left: 2rem;
+  }
+  .product-content p{
+    margin-left: 2rem;
+  }
+  .buttom{
+    margin-left: 2rem;
+    min-width: 270px;
+  }
+  .content p{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
