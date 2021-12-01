@@ -20,3 +20,116 @@
 .integration-content {
   font-size: small;
 }
+
+.section-card {
+  /*display: flex;
+  */
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  position: relative;
+  grid-template-columns: 25% 25% 25% 25%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.section-card article {
+  min-height: 10vh;
+  min-width: 10vw;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+@media only screen and (max-width: 2040px) {
+  .section-card {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    position: relative;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+  .section-card article {
+    min-height: 10vh;
+    min-width: 10vw;
+    position: relative;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .section-card {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    position: relative;
+    grid-template-columns: 33% 33% 33%;
+  }
+  .section-card article {
+    min-height: 10vh;
+    min-width: 10vw;
+    position: relative;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .section-card {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    position: relative;
+    grid-template-columns: 50% 50%;
+  }
+  .section-card article {
+    min-height: 10vh;
+    min-width: 10vw;
+    position: relative;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .section-card {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    position: relative;
+    grid-template-columns: 100%;
+  }
+  .section-card article {
+    min-height: 25vh;
+    min-width: 10vw;
+    position: relative;
+    flex-wrap: wrap;
+  }
+}
+.card {
+  margin: 1rem 1rem;
+}
+.icon-js {
+  height: 25px;
+  width: 25px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.card__footer {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}

@@ -171,7 +171,7 @@
   perspective: 200px;
   transform: translateX(26px);
 
-  min-height: 25vh;
+  min-height: 30vh;
 }
 .word {
   position: absolute;

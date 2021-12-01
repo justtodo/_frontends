@@ -1,518 +1,526 @@
 <!DOCTYPE html>
 <html lang="fr" style="--vh: 5.61px; --windowHeight: 561px">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Services en Ligne Côte d'ivoire | UpCookie</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../src/lib/css.css" />
-    <link rel="stylesheet" href="../src/lib/custom.css" />
-    <link rel="stylesheet" href="../src/lib/boots.css" />
-    <link rel="modulepreload" href="../src/lib/js.js" />
-    <script src="../src/lib/app.js" type="module" defer></script>
-    <script src="../src/lib/jquery-min.js" type="module" defer></script>
-    <meta name="turbolinks-cache-control" content="no-cache" />
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      title="Upcookie | Flux"
-      href="https://upcookie.ci"
-    />
-    <link rel="apple-touch-icon" sizes="128x128" href="/1.png" />
-    <link rel="shortcut icon" href="/1.png" type="image/x-icon" />
-    <meta property="og:title" content="UpCookie côte d'ivoire " />
-    <meta property="og:site_name" content="upcookie.ci" />
-    <meta property="og:language" content="fr" />
-    <meta name="facebook:author" content="@upcookie.ci" />
-    <link rel="stylesheet" href="../src/lib/print.css" media="print" />
-    <link
-      rel="search"
-      type="application/opensearchdescription+xml"
-      title="UpCookie"
-      href="../src/lib/opensearch.xml"
-    />
-  </head>
 
-  <body class="light user-not-premium" id="">
-    <div class="page-wrapper">
-      <nav class="header" id="header">
-        <ul class="header-nav menu">
-          <li class="header__home">
-            <a href="/" class="menuItem" title="Accueil">
-              <span
-                class="iconify"
-                data-icon="noto:cookie"
-                style="font-size: 200px"
-              ></span>
+<head>
+  <meta charset="UTF-8" />
+  <title>Services en Ligne Côte d'ivoire | UpCookie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../src/lib/css.css" />
+  <link rel="stylesheet" href="../src/lib/custom.css" />
+  <link rel="stylesheet" href="../src/boots.css" />
+  <link rel="modulepreload" href="../src/lib/js.js" />
+  <script src="../src/lib/app.js" type="module" defer></script>
+  <script src="../src/lib/jquery-min.js" type="module" defer></script>
+  <meta name="turbolinks-cache-control" content="no-cache" />
+  <link rel="alternate" type="application/rss+xml" title="Upcookie | Flux" href="https://upcookie.ci" />
+  <link rel="apple-touch-icon" sizes="128x128" href="/1.png" />
+  <link rel="shortcut icon" href="/1.png" type="image/x-icon" />
+  <meta property="og:title" content="UpCookie côte d'ivoire " />
+  <meta property="og:site_name" content="upcookie.ci" />
+  <meta property="og:language" content="fr" />
+  <meta name="facebook:author" content="@upcookie.ci" />
+  <link rel="stylesheet" href="../src/lib/print.css" media="print" />
+  <link rel="search" type="application/opensearchdescription+xml" title="UpCookie" href="../src/lib/opensearch.xml" />
+</head>
+
+<body class="light user-not-premium" id="">
+  <div class="page-wrapper">
+    <nav class="header" id="header">
+      <ul class="header-nav menu">
+        <li class="header__home">
+          <a href="/" class="menuItem" title="Accueil">
+            <span class="iconify" data-icon="noto:cookie" style="font-size: 200px"></span>
+          </a>
+        </li>
+        <li>
+          <a href="/accueil" class="menuItem" aria-current="page"><span class="icon iconify"
+              data-icon="akar-icons:home"></span>
+
+            Accueil</a>
+        </li>
+        <li>
+          <a href="/services" class="menuItem"><span class="icon iconify"
+              data-icon="carbon:cloud-satellite-services"></span>
+
+            Services</a>
+        </li>
+
+        <li>
+          <a href="/stores" class="menuItem"><span class="icon iconify"
+              data-icon="fluent:store-microsoft-20-regular"></span>
+
+            Stores</a>
+        </li>
+        <li>
+          <a href="/expert" class="menuItem"><span class="icon iconify" data-icon="fa-solid:blog"></span>
+            Experts</a>
+        </li>
+        <li>
+          <a href="/contact" class="menuItem"><span class="icon iconify" data-icon="cil:contact"></span>
+            Contact</a>
+        </li>
+        <li>
+          <a href="/Blog" class="menuItem"><span class="icon iconify" data-icon="carbon:blog"></span>
+            Blogs</a>
+        </li>
+      </ul>
+      <ul class="header-side" id="side-bar">
+        <li class="header__notification">
+          <site-notifications><a href="http://#" class="js-modal">
+              <span class="icon icon-bell iconify" data-icon="ic:baseline-notification-add"></span>
             </a>
-          </li>
-          <li>
-            <a href="/accueil" class="menuItem" aria-current="page"
-              ><span class="icon iconify" data-icon="akar-icons:home"></span>
+            <!-- <span class="notification-badge">2</span> -->
+          </site-notifications>
+        </li>
+        <li class="header__search">
+          <search-button><a href="http://#" class="js-modal"><span class="icon icon-search iconify"
+                data-icon="bi:search"></span></a></search-button>
+        </li>
+        <li class="header-side__auth">
+          <a href="/inscription" class="menuItem">
+            <span class="iconify" data-icon="akar-icons:sign-out"></span>
 
-              Accueil</a
-            >
-          </li>
+            <span>S'inscrire</span>
+          </a>
+          <span class="text-muted" class="menuItem">·</span>
+          <a href="/connexion?redirect=/tutoriels/javascript">
+            <span class="iconify" data-icon="ant-design:login-outlined"></span>
+            <span>Se connecter</span>
+          </a>
+        </li>
+        <li class="header__burger">
+          <button id="js-burger">
+            <span>Afficher le menu</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-placeholder"></div>
+    <!-- burger modals -->
+    <aside class="modal-header" aria-hidden="true" role="dialog" aria-labelledby="titlemodal" style="display: none"
+      id="moadal-header">
+      <div class="modal-wrapper js-modal-stop">
+        <ul class="header-nav modal-menu">
           <li>
-            <a href="/services" class="menuItem"
-              ><span
-                class="icon iconify"
-                data-icon="carbon:cloud-satellite-services"
-              ></span>
+            <button class="js-modal-close js-close">
+              <!-- Fermer -->
+              <span class="iconify" data-icon="ci:off-close"></span>
+            </button>
+          </li>
+          <!-- <li class="header__home">
+              <a href="/" class="menuItem" title="Accueil"> "logo "</a>
+            </li> -->
+          <li>
+            <a href="/accueil" class="menuItem" aria-current="page"><span class="icon iconify"
+                data-icon="akar-icons:home"></span>
 
-              Services</a
-            >
+              Accueil</a>
+          </li>
+          <li>
+            <a href="/services" class="menuItem"><span class="icon iconify"
+                data-icon="carbon:cloud-satellite-services"></span>
+
+              Services</a>
           </li>
 
           <li>
-            <a href="/stores" class="menuItem"
-              ><span
-                class="icon iconify"
-                data-icon="fluent:store-microsoft-20-regular"
-              ></span>
+            <a href="/stores" class="menuItem"><span class="icon iconify"
+                data-icon="fluent:store-microsoft-20-regular"></span>
 
-              Stores</a
-            >
+              Stores</a>
           </li>
           <li>
-            <a href="/expert" class="menuItem"
-              ><span class="icon iconify" data-icon="fa-solid:blog"></span>
-              Experts</a
-            >
+            <a href="/expert" class="menuItem"><span class="icon iconify" data-icon="fa-solid:blog"></span>
+              Experts</a>
           </li>
           <li>
-            <a href="/contact" class="menuItem"
-              ><span class="icon iconify" data-icon="cil:contact"></span>
-              Contact</a
-            >
+            <a href="/contact" class="menuItem"><span class="icon iconify" data-icon="cil:contact"></span>
+              Contact</a>
           </li>
           <li>
-            <a href="/Blog" class="menuItem"
-              ><span class="icon iconify" data-icon="carbon:blog"></span>
-              Blogs</a
-            >
+            <a href="/Blog" class="menuItem"><span class="icon iconify" data-icon="carbon:blog"></span>
+              Blogs</a>
           </li>
-        </ul>
-        <ul class="header-side" id="side-bar">
+          <!-- </ul>
+          <ul class="header-side" id="modal-menu"> -->
           <li class="header__notification">
-            <site-notifications
-              ><a href="http://#" class="js-modal">
-                <span
-                  class="icon icon-bell iconify"
-                  data-icon="ic:baseline-notification-add"
-                ></span>
-              </a>
-              <!-- <span class="notification-badge">2</span> -->
+            <a href="http://#" class="button"><span>Notifications </span></a>
             </site-notifications>
           </li>
-          <li class="header__search">
-            <search-button
-              ><a href="http://#" class="js-modal"
-                ><span
-                  class="icon icon-search iconify"
-                  data-icon="bi:search"
-                ></span></a
-            ></search-button>
-          </li>
+
           <li class="header-side__auth">
             <a href="/inscription" class="menuItem">
               <span class="iconify" data-icon="akar-icons:sign-out"></span>
 
               <span>S'inscrire</span>
             </a>
-            <span class="text-muted" class="menuItem">·</span>
+          </li>
+          <li>
             <a href="/connexion?redirect=/tutoriels/javascript">
-              <span
-                class="iconify"
-                data-icon="ant-design:login-outlined"
-              ></span>
+              <span class="iconify" data-icon="ant-design:login-outlined"></span>
               <span>Se connecter</span>
             </a>
           </li>
-          <li class="header__burger">
-            <button id="js-burger">
-              <span>Afficher le menu</span>
-            </button>
-          </li>
         </ul>
-      </nav>
-      <div class="header-placeholder"></div>
-      <!-- burger modals -->
-      <aside
-        class="modal-header"
-        aria-hidden="true"
-        role="dialog"
-        aria-labelledby="titlemodal"
-        style="display: none"
-        id="moadal-header"
-      >
-        <div class="modal-wrapper js-modal-stop">
-          <ul class="header-nav modal-menu">
-            <li>
-              <button class="js-modal-close js-close" >
-                <!-- Fermer -->
-                <span class="iconify" data-icon="ci:off-close"></span>
-              </button>
-            </li>
-            <!-- <li class="header__home">
-              <a href="/" class="menuItem" title="Accueil"> "logo "</a>
-            </li> -->
-            <li>
-              <a href="/accueil" class="menuItem" aria-current="page"
-                ><span class="icon iconify" data-icon="akar-icons:home"></span>
+      </div>
+    </aside>
+    <!-- section promotion -->
+    <section class="promotion">
+      <!-- <h3 class="up">UpCookie</h3> -->
+      <h3 class="cookie" id="target"></h3>
+    </section>
 
-                Accueil</a
-              >
-            </li>
-            <li>
-              <a href="/services" class="menuItem"
-                ><span
-                  class="icon iconify"
-                  data-icon="carbon:cloud-satellite-services"
-                ></span>
-
-                Services</a
-              >
-            </li>
-
-            <li>
-              <a href="/stores" class="menuItem"
-                ><span
-                  class="icon iconify"
-                  data-icon="fluent:store-microsoft-20-regular"
-                ></span>
-
-                Stores</a
-              >
-            </li>
-            <li>
-              <a href="/expert" class="menuItem"
-                ><span class="icon iconify" data-icon="fa-solid:blog"></span>
-                Experts</a
-              >
-            </li>
-            <li>
-              <a href="/contact" class="menuItem"
-                ><span class="icon iconify" data-icon="cil:contact"></span>
-                Contact</a
-              >
-            </li>
-            <li>
-              <a href="/Blog" class="menuItem"
-                ><span class="icon iconify" data-icon="carbon:blog"></span>
-                Blogs</a
-              >
-            </li>
-            <!-- </ul>
-          <ul class="header-side" id="modal-menu"> -->
-            <li class="header__notification">
-              <a href="http://#" class="button"><span>Notifications </span></a>
-              </site-notifications>
-            </li>
-            
-            <li class="header-side__auth">
-              <a href="/inscription" class="menuItem">
-                <span class="iconify" data-icon="akar-icons:sign-out"></span>
-
-                <span>S'inscrire</span>
-              </a>
-            </li>
-            <li>
-              <a href="/connexion?redirect=/tutoriels/javascript">
-                <span
-                  class="iconify"
-                  data-icon="ant-design:login-outlined"
-                ></span>
-                <span>Se connecter</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </aside>
-<!-- section promotion -->
-<section class="promotion">
-  <!-- <h3 class="up">UpCookie</h3> -->
-  <h3 class="cookie" id="target"></h3>
-</section>
-
-      <!-- =========================================================
+    <!-- =========================================================
         ==========================end header start body=======================
       ============================================================ -->
-      
-      <section class="content">
-       <div class="all-content">
 
-      <!-- start section 1 -->
-      <section class="section1">
-        <div class="section-body display-flex">
-          <div class="content text-hero">
-            <h1>UPHUB</h1>
-            <div class="course-hero">
-              <h2>
-                <strong
-                  >Faites vous des micros services a la vitesse <br>de la lumière
-                  avec nos experts.</strong
-                >
-              </h2>
-              <div class="option-hero display-flex">
-                <ul class="contact-expert">
-                  <li class="contact-expert-link-1">
-                    <a href="http://upcookie.ci/expert">Contacter un expert</a>
-                  </li>
+    <section class="content">
+      <div class="all-content">
 
-                  <li class="contact-expert-link-2">
-                    <a href="http://upcookie.ci/services">Voir nos services</a>
-                  </li>
-                </ul>
+        <!-- start section 1 -->
+        <section class="section1">
+          <div class="section-body display-flex">
+            <div class="content text-hero">
+              <h1>UPHUB</h1>
+              <div class="course-hero">
+                <h2>
+                  <strong>Faites vous des micros services a la vitesse <br>de la lumière
+                    avec nos experts.</strong>
+                </h2>
+                <div class="option-hero display-flex">
+                  <ul class="contact-expert">
+                    <li class="contact-expert-link-1">
+                      <a href="http://upcookie.ci/expert">Contacter un expert</a>
+                    </li>
+
+                    <li class="contact-expert-link-2">
+                      <a href="http://upcookie.ci/services">Voir nos services</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="illustration">
+              <!--  -->
+            </div>
+          </div>
+        </section>
+        <!-- end section 1 -->
+        <hr />
+        <!-- start section 2 -->
+        <section class="section section2">
+          <div class="container-section2">
+            <!-- start left content -->
+            <div class="section2-content text-content">
+              <h1>Enjaillez vous avec <span>nos services</span></h1>
+              <p class="paragraphe">
+                Vous chercher un expert pour le logo de votre entreprise, ou
+                encore un monteur de video ?<br />Trouvez Ici et maintenant votre
+                bonheur.
+              </p>
+            </div>
+           
+             <div class="card card-big ">
+              <a class="pill pill-yellow" href="#">Les services populaires</a>
+               <div class="home-list stack-separated" style="--gap: 2">
+                <div class="home-list__item">
+                  <a class="card__title" href="https://www.youtube.com/">DEVELOPPEMENT WEB</a>
+                  <div>19 Demandes</div>
+                </div>
+                <div class="home-list__item">
+                  <a class="card__title" href="https://www.youtube.com/">INTEGRATION WEB</a>
+                  <div>18 Octocbre 2021 Demandes</div>
+                </div>
+                <div class="home-list__item">
+                  <a class="card__title" href="https://www.youtube.com/">CREATION DE CONTENUE LOGOS & DESIGN</a>
+                  <div>17 Demandes</div>
+                </div>
+                 <div class="button">
+                <a href="#"> PASSEZ UNE COMMANDE ! </a>
+              </div>
               </div>
             </div>
           </div>
-
-          <div class="illustration">
-            <!--  -->
-          </div>
-        </div>
-      </section>
-      <!-- end section 1 -->
-      <hr />
-      <!-- start section 2 -->
-      <section class="section section2">
-        <div class="container-section2">
-          <!-- start left content -->
-          <div class="section2-content text-content">
-            <h1>Enjaillez vous avec <span>nos services</span></h1>
-            <p class="paragraphe">
-              Vous chercher un expert pour le logo de votre entreprise, ou
-              encore un monteur de video ?<br/>Trouvez Ici et maintenant votre
-              bonheur.
+        </section>
+        <!-- end section 2 -->
+        <hr />
+        <!-- start section 3 -->
+        <section class="section3">
+          <div class="text-center">
+            <div class="offres-hero">Nos offres premium</div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aut.
+              Reiciendis, laudantium facere? Reiciendis necessitatibus quo
+              voluptatum cumque ipsa quidem illo iure inventore odio nulla.
+              Ratione itaque sequi officia eaque cum, libero quae repudiandae
+              doloribus?
             </p>
           </div>
-          <div class="services-contents container">
-            <!-- start right content -->
-            <div class="service-hero">Les services populaires</div>
-            <div class="service-content">
-              <div class="lefirst">
-                  <a href=""><strong>LOGOS</strong></a><br />
+          <div class="home-push__mosaic container-packs  text-center flex-wrapper ">
+            <!-- first card -->
+            <div class="card card-big free">
+              <a class="pill pill-yellow" href="#"><span>Les Packs Free</span></a>
+               <div class="home-list stack-separated" style="--gap: 2">
+                <div class="home-list__item">
+                  <a class="card__title" href="#/"><span>2 x</span> LOGOS </a>
+                  <div><h6>bonus:</h6>Design UI</div>
+                </div>
+                <div class="home-list__item">
+                  <a class="card__title" href="#/">INTEGRATION WEB</a>
+                  <div><h6>bonus:</h6>Responsives </div>
+                </div>
+                <div class="home-list__item">
+                  <a class="card__title" href="#/">CURRICILIUM VITAE & PORTFOLIO</a>
+                  <div><h6>bonus:</h6>2 uploads</div>
+                </div>
+                 <div class="button">
+                <a href="#"> ACHETEZ LE PACK MAINTENANT !</a>
               </div>
-              <h5>14 demandes</h5>
+              </div>
+            </div>
+            <!-- second card  -->
+            <div class="card card-big premium">
+              <a class="pill pill-yellow" href="#"><span>Les Packs Premium</span></a>
+               <div class="home-list stack-separated" style="--gap: 2">
+                <div class="home-list__item">
+                  <a class="card__title" href="#/"><span>4 x</span> LOGOS </a>
+                  <div><h6>bonus:</h6>Design UI / UX</div>
+                </div>
+                <div class="home-list__item">
+                  <a class="card__title" href="#/"> WEBSITE SINGLE PAGE</a>
+                  <div><h6>bonus:</h6>Responsives <span><BIG>1 site web</BIG>+ Hebergement</span> </div>
+                </div>
+                <div class="home-list__item">
+                  <a class="card__title" href="#/"><span>2 x</span> CURRICILIUM VITAE & <span>2 x</span> PORTFOLIO</a>
+                  <div><h6>bonus:</h6>5 uploads</div>
+                </div>
+                 <div class="button">
+                <a href="#"> ACHETEZ UN PACK PREMIUM !</a>
+              </div>
+              </div>
+            </div>
+            <!-- thirst card  -->
+            <div class="card card-big gold">
+              <a class="pill pill-yellow" href="#"><span>Les Packs Gold</span></a>
+               <div class="home-list stack-separated" style="--gap: 2">
+                <div class="home-list__item">
+                  <a class="card__title" href="#/"><span>10 x</span> LOGOS </a>
+                  <div><h6>bonus:</h6>Design UI / UX</div>
+                </div>
+                <div class="home-list__item">
+                  <a class="card__title" href="#/">DEVELOPPEMENT WEB </a>
+                  <div><h6>bonus:</h6>Responsives <span>+ <big>2 x Sites Web</big> Hebergement</span> Back-End + <span>Front-End</span> </div>
+                </div>
+                <div class="home-list__item">
+                  <a class="card__title" href="#/"><span>8 x</span> CURRICILIUM VITAE & <span>8 x</span> PORTFOLIO</a>
+                  <div><h6>bonus:</h6>15 uploads</div>
+                </div>
+                 <div class="button">
+                <a href="#"> ACHETEZ UN PACK GLOD !</a>
+              </div>
+              </div>
+            </div>
             
-            <hr>
-            </div>
-            <div class="service-content">
-              <a href=""><strong>PORTFOLIO</strong></a><br />
-              <h5>44 demandes</h5>
             
-              <hr>
-            </div>
-            <div class="service-content">
-              <a href=""><strong>DEVELOPPEMENT WEB</strong></a><br />
-              <h5>104 demandes</h5>
-             
-            </div>            
           </div>
-        </div>
-      </section>
-      <!-- end section 2 -->
-      <hr />
-      <!-- start section 3 -->
-      <section class="section3">
-        <div class="text-center">
-          <div class="offres-hero">Nos offres premium</div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aut.
-            Reiciendis, laudantium facere? Reiciendis necessitatibus quo
-            voluptatum cumque ipsa quidem illo iure inventore odio nulla.
-            Ratione itaque sequi officia eaque cum, libero quae repudiandae
-            doloribus?
-          </p>
-        </div>
-        <div class="container packs text-center flex-wrapper">
-          <div class="container-fluid pack-standard">
-            <div class="content text-content text-center">
-              <span>Free packs O<big>$</big></span>
-            </div>            
-            <div class="eee"><div class="pack-content text-center"><span>LOGO</span>x1</div>
-            <span></span>
-            <hr>
-            <div class="pack-content text-center"><span>LOGO</span>x2</div></div>
-            <div class="button">
-              <a href="#"> Acheter </a>
+        </section>
+        <!-- end section 3 -->
+
+
+        <!-- section 4 -->
+        <!-- end section 4 -->
+
+        <section class="body-section">
+          <div class="home-push__mosaic section-body-content ">
+
+            <div class="card card-big">
+              <a class="pill pill-yellow" href="#">Les dernières formations</a>
+              <div class="home-list stack-separated">
+                <div class="home-list__item has-icon">
+                  <a href="/tutoriels/typescript" class="course__icon" tabindex="-1">
+                    <!-- img typscrit -->
+                    <img src="../assets/collections/Vector-ts.svg" alt="initiation a typscript" srcset="">
+                  </a>
+                  <a class="card__title" href="#">Apprendre Le métier de INTEGRATEUR WEB</a>
+                  <div>By Abraham OBED</div>
+                </div>
+                <div class="home-list__item has-icon">
+                  <a href="/#" class="course__icon" tabindex="-1">
+                    <!-- HEBERGEMENTG WEB -->
+                    <img src="../assets/collections/Vector-Cloud.svg" alt="hebergement web" srcset="">
+                  </a>
+                  <a class="card__title" href="/#">Découverte COMMENT HEBERGER UN SITE WEB DINAMYQUE</a>
+                  <div>By Cynthia</div>
+                </div>
+                <div class="home-list__item has-icon">
+                  <a href="/#" class="course__icon" tabindex="-1">
+                    <!-- img js -->
+                    <img src="../assets/collections/Vector-js-visible.svg" alt="initiation a javascript" srcset="">
+                  </a>
+                  <a class="card__title" href="/#">Déboguer son code JavaScript</a>
+                  <div>By Tcodiane</div>
+                </div>
+              </div>
             </div>
-          </div>   
-          <div class="container-fluid pack-standard">
-            <div class="content text-content text-center">
-              <span>Free packs O<big>$</big></span>
-            </div>            
-            <div class="eee"><div class="pack-content text-center"><span>LOGO</span>x1</div>
-            <span></span>
-            <hr>
-            <div class="pack-content text-center"><span>LOGO</span>x2</div></div>
-            <div class="button">
-              <a href="#"> Acheter </a>
+
+            <div class="card card-big">
+              <a class="pill" href="/tutoriels">Les derniers tutoriels</a>
+              <div class="home-list stack-separated">
+                <div class="home-list__item has-icon">
+                  <a href="/#" class="course__icon" tabindex="-1">
+                    <!-- img javascript -->
+                    <img src="../assets/collections/Vector-js.svg" alt=" front-end avec javascript" srcset="">
+                  </a>
+                  <a class="card__title" href="/#">Developper côté client avec JS</a>
+                  <div>By Tcotidiane</div>
+                </div>
+                <div class="home-list__item has-icon">
+                  <a href="/#" class="course__icon" tabindex="-1">
+                    <!--img nodejs  -->
+                    <img src="../assets/collections/Vector-nodejs.svg" alt="backend avec  nodeJS" srcset="">
+                  </a>
+                  <a class="card__title" href="/#">Découvrez NodeJS et Npm</a>
+                  <div>By Moon </div>
+                </div>
+                <div class="home-list__item has-icon">
+                  <a href="/#" class="course__icon" tabindex="-1">
+                    <!-- javascrict -->
+                    <img src="../assets/collections/fa-brands_node-js.svg" alt="" srcset="">
+                  </a>
+                  <a class="card__title" href="/#">Recréer l'effet fisheye du Dock de MacOS</a>
+                  <div>By Yayah HC</div>
+                </div>
+              </div>
             </div>
+
+            <div class="card card-big">
+              <a class="pill pill-green" href="/#">Tous les lives des developpeurs</a>
+              <div class="home-list stack-separated" style="--gap: 2">
+                <div class="home-list__item">
+                  <a class="card__title" href="https://www.youtube.com/">LiveCoding Django/JS : J'essaie d'intégrer un
+                    Back-End (le retour)</a>
+                  <div>19 Novembre 2021 By YAYA HC</div>
+                </div>
+                <div class="home-list__item">
+                  <a class="card__title" href="https://www.youtube.com/">LiveCoding HTML/CSS/JS : J'essaie d'intégrer un
+                    burger</a>
+                  <div>18 Octocbre 2021 By TIDIANE</div>
+                </div>
+                <div class="home-list__item">
+                  <a class="card__title" href="https://www.youtube.com/">LiveCoding REACTJS/VUEJS : On continue la
+                    chasse au bug</a>
+                  <div>17 Novembre2021 By EUREKA</div>
+                </div>
+              </div>
+            </div>
+
           </div>
-        </div>
-      </section>
-      <!-- end section 3 -->
-
-
-      <!-- section 4 -->
-
-      <section>
-        
-      </section>
-
-      <!-- end section 4 -->
-    </div>
-
-      </section>
-      <!-- ===================================================
+        </section>
+        <!-- ===================================================
         ====================================end body start footer=================================
       ====================================================== -->
 
-      <!-- start footer -->
-      <footer class="footer">
-        <div class="footer-content">
-          <div class="footer-title">UPCOOKIES</div>
-          <p class="text-muted mb2">
-            Après avoir appris sur Internet quoi de plus normal que de partager
-            à son tour ? Passionné par le web depuis un peu plus de 15 ans
-            maintenant j'aime partager mes compétences et mes découvertes avec
-            les personnes qui ont cette même passion pour le web;
-          </p>
-          <div class="flex">
-            <div class="hstack">
-              <a href="http://#" title="" target="_blank" rel="noreferrer">
-                <img src="/" alt="" loading="lazy" />
+        <!-- start footer -->
+        <footer class="footer">
+          <div class="footer-content">
+            <div class="footer-title">UPCOOKIES</div>
+            <p class="text-muted mb2">
+              Après avoir appris sur Internet quoi de plus normal que de partager
+              à son tour ? Passionné par le web depuis un peu plus de 15 ans
+              maintenant j'aime partager mes compétences et mes découvertes avec
+              les personnes qui ont cette même passion pour le web;
+            </p>
+            <div class="flex">
+              <div class="hstack">
+                <a href="http://#" title="" target="_blank" rel="noreferrer">
+                  <img src="/" alt="" loading="lazy" />
+                </a>
+                <a href="https://#" title="Github" target="_blank" rel="noreferrer">
+                  <img src="/" class="lighten-dark" alt="" loading="lazy" />
+                </a>
+                <a href="https://www.youtube.com/" title="Youtube" target="_blank" rel="noreferrer">
+                  <img src="/" alt="" loading="lazy" />
+                </a>
+                <a href="" title="Twitter" target="_blank" rel="noreferrer">
+                  <img src="" alt="" loading="lazy" />
+                </a>
+                <a href="" title="" target="_blank" rel="noreferrer">
+                  <img src="" alt="" loading="lazy" />
+                </a>
+              </div>
+              <a href="">
+                <img src="" alt="" loading="lazy" width="150" />
               </a>
-              <a
-                href="https://#"
-                title="Github"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src="/" class="lighten-dark" alt="" loading="lazy" />
-              </a>
-              <a
-                href="https://www.youtube.com/"
-                title="Youtube"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src="/" alt="" loading="lazy" />
-              </a>
-              <a href="" title="Twitter" target="_blank" rel="noreferrer">
-                <img src="" alt="" loading="lazy" />
-              </a>
-              <a href="" title="" target="_blank" rel="noreferrer">
-                <img src="" alt="" loading="lazy" />
-              </a>
-            </div>
-            <a href="">
-              <img src="" alt="" loading="lazy" width="150" />
-            </a>
-          </div>
-        </div>
-
-        <div>
-          <a class="footer-title" href="">Aides</a>
-          <div class="footer-tweets">
-            <div class="footer-tweet">
-              <!-- <svg class="icon icon-quotes">Trouvez un developpeur</svg> -->
-              <a href="" target="_blank" rel="noopener noreferrer"
-                >Trouver un developpeur ?</a
-              >
-            </div>
-            <div class="footer-tweet">
-              <a href="" target="_blank" rel="noopener noreferrer"
-                >Comment devenir developpeur ?</a
-              >
-            </div>
-            <div class="footer-tweet">
-              <a href="" target="_blank" rel="noopener noreferrer"
-                >Quels pack choisir ?</a
-              >
             </div>
           </div>
-        </div>
-        <div>
-          <div class="footer-title">Me contacter</div>
-          <ul>
-            <li>
-              <a href="/contact"
-                ><span class="iconify" data-icon="carbon:email-new"></span> Par
-                email</a
-              >
-            </li>
-            <li>
-              <a href="/tchat"
-                ><span class="iconify" data-icon="akar-icons:chat-dots"></span>
-                Tchat</a
-              >
-            </li>
-            <li>
-              <a href="https://www.youtube.com/"
-                ><span
-                  class="iconify"
-                  data-icon="ant-design:youtube-outlined"
-                ></span>
-                Chaine youtube</a
-              >
-            </li>
-            <li>
-              <a href="/a-propos"
-                ><span class="iconify" data-icon="whh:infosign"></span>
-                <span></span>
-                A propos</a
-              >
-            </li>
-            <li>
-              <a href="/politique-de-confidentialite"
-                ><span
-                  class="iconify"
-                  data-icon="grommet-icons:finger-print"
-                ></span>
-                Politique de confidentialité</a
-              >
-            </li>
-            <p> © Developpement Web 2021 </p>
-          </ul>
-          <div class="footer-title mt3 mb1">Thème</div>
 
-          <theme-switcher class="theme-switcher form-switch">
-            <input
-              type="checkbox"
-              is="input-switch"
-              id="theme-switcher"
-              aria-label="Changer de thème"
-            />
-            <label for="theme-switcher" class="label">
-              <span class="switch  ">
-                <!-- <button id="moon"> -->
-                <span
-                  class="icon icon-moon  iconify"
-                  data-icon="akar-icons:moon"
-                ></span>
-                <!-- </button> -->
-                <!-- <button id="sun"> -->
-                <span
-                  class="icon icon-sun theme-light iconify"
-                  data-icon="akar-icons:sun"
-                ></span>
-                <!-- </button> -->
-              </span>
-            </label>
-          </theme-switcher>
-        </div>
-      </footer>
-    </div>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- jquerie hors ligne  -->
-    <script src="../src/jquery.js"></script>
-    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-  </body>
+          <div>
+            <a class="footer-title" href="">Aides</a>
+            <div class="footer-tweets">
+              <div class="footer-tweet">
+                <!-- <svg class="icon icon-quotes">Trouvez un developpeur</svg> -->
+                <a href="" target="_blank" rel="noopener noreferrer">Trouver un developpeur ?</a>
+              </div>
+              <div class="footer-tweet">
+                <a href="" target="_blank" rel="noopener noreferrer">Comment devenir developpeur ?</a>
+              </div>
+              <div class="footer-tweet">
+                <a href="" target="_blank" rel="noopener noreferrer">Quels pack choisir ?</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="footer-title">Me contacter</div>
+            <ul>
+              <li>
+                <a href="/contact"><span class="iconify" data-icon="carbon:email-new"></span> Par
+                  email</a>
+              </li>
+              <li>
+                <a href="/tchat"><span class="iconify" data-icon="akar-icons:chat-dots"></span>
+                  Tchat</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/"><span class="iconify" data-icon="ant-design:youtube-outlined"></span>
+                  Chaine youtube</a>
+              </li>
+              <li>
+                <a href="/a-propos"><span class="iconify" data-icon="whh:infosign"></span>
+                  <span></span>
+                  A propos</a>
+              </li>
+              <li>
+                <a href="/politique-de-confidentialite"><span class="iconify"
+                    data-icon="grommet-icons:finger-print"></span>
+                  Politique de confidentialité</a>
+              </li>
+              <p> © Developpement Web 2021 </p>
+            </ul>
+            <div class="footer-title mt3 mb1">Thème</div>
+
+            <theme-switcher class="theme-switcher form-switch">
+              <input type="checkbox" is="input-switch" id="theme-switcher" aria-label="Changer de thème" />
+              <label for="theme-switcher" class="label">
+                <span class="switch  ">
+                  <!-- <button id="moon"> -->
+                  <span class="icon icon-moon  iconify" data-icon="akar-icons:moon"></span>
+                  <!-- </button> -->
+                  <!-- <button id="sun"> -->
+                  <span class="icon icon-sun theme-light iconify" data-icon="akar-icons:sun"></span>
+                  <!-- </button> -->
+                </span>
+              </label>
+            </theme-switcher>
+          </div>
+        </footer>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!-- jquerie hors ligne  -->
+      <script src="../src/jquery.js"></script>
+      <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+</body>
+
 </html>
