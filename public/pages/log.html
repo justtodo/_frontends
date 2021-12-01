@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="fr" style="--vh: 5.61px; --windowHeight: 561px">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Services en Ligne Côte d'ivoire | UpCookie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../../src/lib/css.css" />
+  <link rel="stylesheet" href="../../src/lib/custom.css" />
+  <link rel="stylesheet" href="../../src/boots.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../src/lib/log.css" />
+  <link rel="stylesheet" href="../../src/lib/styles.css" />
+  <link rel="modulepreload" href="../../src/lib/js.js" />
+  <script src="../../src/lib/app.js" type="module" defer></script>
+  <script src="../../src/lib/jquery-min.js" type="module" defer></script>
+  <meta name="turbolinks-cache-control" content="no-cache" />
+  <link rel="alternate" type="application/rss+xml" title="Upcookie | Flux" href="https://upcookie.ci" />
+  <link rel="apple-touch-icon" sizes="128x128" href="/1.png" />
+  <link rel="shortcut icon" href="/1.png" type="image/x-icon" />
+  <meta property="og:title" content="UpCookie côte d'ivoire " />
+  <meta property="og:site_name" content="upcookie.ci" />
+  <meta property="og:language" content="fr" />
+  <meta name="facebook:author" content="@upcookie.ci" />
+  <link rel="stylesheet" href="../../src/lib/print.css" media="print" />
+  <link rel="search" type="application/opensearchdescription+xml" title="UpCookie"
+    href="../../src/lib/opensearch.xml" />
+</head>
+
+<body class="light user-not-premium" id="">
+  <div class="page-wrapper">
+    <nav class="header" id="header">
+      <ul class="header-nav menu">
+        <li class="header__home">
+          <a href="/" class="menuItem" title="Accueil">
+            <span class="iconify" data-icon="noto:cookie" style="font-size: 200px"></span>
+          </a>
+        </li>
+        <li>
+          <a href="/public/cookie.html" class="menuItem" aria-current="page"><span class="icon iconify"
+              data-icon="akar-icons:home"></span>
+
+            Accueil</a>
+        </li>
+        <li>
+          <a href="/services" class="menuItem"><span class="icon iconify"
+              data-icon="carbon:cloud-satellite-services"></span>
+
+            Services</a>
+        </li>
+
+        <li>
+          <a href="#" class="menuItem"><span class="icon iconify"
+              data-icon="fluent:store-microsoft-20-regular"></span>
+
+            Stores</a>
+        </li>
+        <li>
+          <a href="/expert" class="menuItem"><span class="icon iconify" data-icon="fa-solid:blog"></span>
+            Experts</a>
+        </li>
+        <li>
+          <a href="/contact" class="menuItem"><span class="icon iconify" data-icon="cil:contact"></span>
+            Contact</a>
+        </li>
+        <li>
+          <a href="/Blog" class="menuItem"><span class="icon iconify" data-icon="carbon:blog"></span>
+            Blogs</a>
+        </li>
+      </ul>
+      <ul class="header-side" id="side-bar">
+        <li class="header__notification">
+          <site-notifications><a href="http://#" class="js-modal">
+              <span class="icon icon-bell iconify" data-icon="ic:baseline-notification-add"></span>
+            </a>
+            <!-- <span class="notification-badge">2</span> -->
+          </site-notifications>
+        </li>
+        <li class="header__search">
+          <search-button><a href="http://#" class="js-modal"><span class="icon icon-search iconify"
+                data-icon="bi:search"></span></a></search-button>
+        </li>
+        <li class="header-side__auth">
+          <a href="/inscription" class="menuItem">
+            <span class="iconify" data-icon="akar-icons:sign-out"></span>
+
+            <span>S'inscrire</span>
+          </a>
+          <span class="text-muted" class="menuItem">·</span>
+          <a href="/connexion?redirect=/tutoriels/javascript">
+            <span class="iconify" data-icon="ant-design:login-outlined"></span>
+            <span>Se connecter</span>
+          </a>
+        </li>
+        <li class="header__burger">
+          <button id="js-burger">
+            <span>Afficher le menu</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-placeholder"></div>
+    <!-- burger modals -->
+    <aside class="modal-header" aria-hidden="true" role="dialog" aria-labelledby="titlemodal" style="display: none"
+      id="moadal-header">
+      <div class="modal-wrapper js-modal-stop">
+        <ul class="header-nav modal-menu">
+          <li>
+            <button class="js-modal-close js-close">
+              <!-- Fermer -->
+              <span class="iconify" data-icon="ci:off-close"></span>
+            </button>
+          </li>
+          <!-- <li class="header__home">
+              <a href="/" class="menuItem" title="Accueil"> "logo "</a>
+            </li> -->
+          <li>
+            <a href="/public/cookie.html" class="menuItem" aria-current="page"><span class="icon iconify"
+                data-icon="akar-icons:home"></span>
+
+              Accueil</a>
+          </li>
+          <li>
+            <a href="/services" class="menuItem"><span class="icon iconify"
+                data-icon="carbon:cloud-satellite-services"></span>
+
+              Services</a>
+          </li>
+
+          <li>
+            <a href="https://#" class="menuItem"><span class="icon iconify"
+                data-icon="fluent:store-microsoft-20-regular"></span>
+
+              Stores</a>
+          </li>
+          <li>
+            <a href="/expert" class="menuItem"><span class="icon iconify" data-icon="fa-solid:blog"></span>
+              Experts</a>
+          </li>
+          <li>
+            <a href="/contact" class="menuItem"><span class="icon iconify" data-icon="cil:contact"></span>
+              Contact</a>
+          </li>
+          <li>
+            <a href="/Blog" class="menuItem"><span class="icon iconify" data-icon="carbon:blog"></span>
+              Blogs</a>
+          </li>
+          <!-- </ul>
+          <ul class="header-side" id="modal-menu"> -->
+          <li class="header__notification">
+            <a href="http://#" class="button"><span>Notifications </span></a>
+            </site-notifications>
+          </li>
+
+          <li class="header-side__auth">
+            <a href="/inscription" class="menuItem">
+              <span class="iconify" data-icon="akar-icons:sign-out"></span>
+
+              <span>S'inscrire</span>
+            </a>
+          </li>
+          <li>
+            <a href="/connexion?redirect=/tutoriels/javascript">
+              <span class="iconify" data-icon="ant-design:login-outlined"></span>
+              <span>Se connecter</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!-- section promotion -->
+    <section class="promotion">
+      <!-- <h3 class="up">UpCookie</h3> -->
+      <h3 class="cookie" id="target"></h3>
+    </section>
+
+    <!-- =========================================================
+        ==========================end header start body=======================
+      ============================================================ -->
+ <section class="login__content">
+     <div class="course-hero">
+
+         <h1>Créer mon <strong> profil</strong></h1>
+     </div>
+    <hr id="hr">
+    <form action="submit">
+
+        <div class="form__content">
+            
+            <div class="nom">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom">
+            </div>
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="monemail@demo.fr">
+            </div>
+            <div class="adresse">
+                <label for="adresse">Adresse</label>
+                <input type="text" id="adresse">
+            </div>
+            <div class="prenom">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom">
+            </div>
+            <div class="phone">
+                <label for="phone">Téléphone (mobile)</label>
+                <input type="text" id="phone">
+            </div>
+            <div class="ville">
+                <label for="ville">Ville</label>
+                <input type="text" id="ville">
+            </div>
+            <div class="bio_container">
+                <label>Bio</label>
+                <textarea class="bio" rows="7"></textarea>
+            </div>
+            <div class="code_postal">
+                <label for="code_postal">Code Postal</label>
+                <input type="text" id="code_postal">
+            </div>
+        </div>
+
+        <div class="newsletter">
+            <input type="checkbox" id="newsletter">
+            <span></span>
+            <label for="newsletter">Je souhaite recevoir la newsletter</label>
+        </div>
+        <div class="newsletter_partenaires">
+            <input type="checkbox" id="newsletter_partenaires">
+            <span></span>
+            <label for="newsletter_partenaires">Je souhaite recevoir la newsletter des partenaires</label>
+        </div>
+
+        <button type="submit">Enregistrer </button>
+
+    </form>
+ </section>
+ 
+ 
+      <!-- =========================================================
+        ==========================end body start footer=======================
+      ============================================================ -->
+
+
+    <!-- start footer -->
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-title">UPCOOKIES</div>
+          <p class="text-muted mb2">
+            Après avoir appris sur Internet quoi de plus normal que de partager
+            à son tour ? Passionné par le web depuis un peu plus de 15 ans
+            maintenant j'aime partager mes compétences et mes découvertes avec
+            les personnes qui ont cette même passion pour le web;
+          </p>
+          <div class="flex">
+            <div class="hstack">
+              <a href="http://#" title="" target="_blank" rel="noreferrer">
+                <img src="/" alt="" loading="lazy" />
+              </a>
+              <a href="https://#" title="Github" target="_blank" rel="noreferrer">
+                <img src="/" class="lighten-dark" alt="" loading="lazy" />
+              </a>
+              <a href="https://www.youtube.com/" title="Youtube" target="_blank" rel="noreferrer">
+                <img src="/" alt="" loading="lazy" />
+              </a>
+              <a href="" title="Twitter" target="_blank" rel="noreferrer">
+                <img src="" alt="" loading="lazy" />
+              </a>
+              <a href="" title="" target="_blank" rel="noreferrer">
+                <img src="" alt="" loading="lazy" />
+              </a>
+            </div>
+            <a href="">
+              <img src="" alt="" loading="lazy" width="150" />
+            </a>
+          </div>
+        </div>
+  
+        <div>
+          <a class="footer-title" href="">Aides</a>
+          <div class="footer-tweets">
+            <div class="footer-tweet">
+              <!-- <svg class="icon icon-quotes">Trouvez un developpeur</svg> -->
+              <a href="" target="_blank" rel="noopener noreferrer">Trouver un developpeur ?</a>
+            </div>
+            <div class="footer-tweet">
+              <a href="" target="_blank" rel="noopener noreferrer">Comment devenir developpeur ?</a>
+            </div>
+            <div class="footer-tweet">
+              <a href="" target="_blank" rel="noopener noreferrer">Quels pack choisir ?</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">Me contacter</div>
+          <ul>
+            <li>
+              <a href="/contact"><span class="iconify" data-icon="carbon:email-new"></span> Par
+                email</a>
+            </li>
+            <li>
+              <a href="/tchat"><span class="iconify" data-icon="akar-icons:chat-dots"></span>
+                Tchat</a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/"><span class="iconify" data-icon="ant-design:youtube-outlined"></span>
+                Chaine youtube</a>
+            </li>
+            <li>
+              <a href="/a-propos"><span class="iconify" data-icon="whh:infosign"></span>
+                <span></span>
+                A propos</a>
+            </li>
+            <li>
+              <a href="/politique-de-confidentialite"><span class="iconify" data-icon="grommet-icons:finger-print"></span>
+                Politique de confidentialité</a>
+            </li>
+            <p> © Developpement Web 2021 </p>
+          </ul>
+          <div class="footer-title mt3 mb1">Thème</div>
+  
+          <theme-switcher class="theme-switcher form-switch">
+            <input type="checkbox" is="input-switch" id="theme-switcher" aria-label="Changer de thème" />
+            <label for="theme-switcher" class="label">
+              <span class="switch  ">
+                <!-- <button id="moon"> -->
+                <span class="icon icon-moon  iconify" data-icon="akar-icons:moon"></span>
+                <!-- </button> -->
+                <!-- <button id="sun"> -->
+                <span class="icon icon-sun theme-light iconify" data-icon="akar-icons:sun"></span>
+                <!-- </button> -->
+              </span>
+            </label>
+          </theme-switcher>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquerie hors ligne  -->
+    <script src="../../src/jquery.js"></script>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+  </body>
+  
+  </html>
