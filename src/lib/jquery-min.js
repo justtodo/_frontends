@@ -2,12 +2,12 @@
 // open modal
 $("#js-burger").click(function () {
   $(".modal-header").toggle();
-  $(".modal-header").fadeIn();;
+  $(".modal-header").fadeIn(2000);;
 });
 
 // open search popup modal 
 $("#js-modal-search").click(function () {
-  $("*").show("search-popup").toggleClass(".modal-header");
+  $("*").show("search-popup").toggleClass(".modal-header").css("transition","2s");
 });
 
 // close modal

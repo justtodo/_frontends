@@ -143,7 +143,4 @@ const loop = () => {
 loop();
 // END PROMOTION
 
-// // open js-modal-search
-// $(".js-modal-search").click(function (){
-//   $("*").toggleClass("js-modal-close")
-// });
+

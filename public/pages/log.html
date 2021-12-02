@@ -79,9 +79,22 @@
           </site-notifications>
         </li>
         <li class="header__search">
-          <search-button><a href="http://#" class="js-modal"><span class="icon icon-search iconify"
-                data-icon="bi:search"></span></a></search-button>
-        </li>
+          <button id="js-modal-search">
+           <span class="icon icon-search iconify" id="js-modal-search" data-icon="bi:search"></span>
+          </button>
+       </li>
+       <!-- start modal search -->
+       <div class="search-popup" aria-hidden="true" role="dialog" aria-labelledby="titlemodal" style="display: none"
+       id="search-popup" >
+           <form action="/recherche" class="search-input form-group">
+               <input autofocus="" type="text" name="q"
+                   autocomplete="on" placeholder="Rechercher un contenu...">
+                   <button type="submit">
+                       <span class="icon icon-search iconify" id="js-modal-search" data-icon="bi:search"></span>
+                   </button>
+               </form>
+       </div>
+       <!-- end modal search -->
         <li class="header-side__auth">
           <a href="/inscription" class="menuItem">
             <span class="iconify" data-icon="akar-icons:sign-out"></span>
