@@ -140,5 +140,5 @@ loop();
 
 // open js-modal-search
 $(".js-modal-search").click(function (){
-  $("search-popup").removeAttr(this.style).show();
+  $("*").toggleClass("js-modal-close")
 });

@@ -1,12 +1,9 @@
 // jquerie make a burger
 // open modal
 $("#js-burger").click(function () {
-  $(".modal-header").show();
+  $(".modal-header").toggle();;
 });
-// open js-modal-search
-$("#js-modal-search").click(function (){
-  $("*").toggleClass("js-modal-search");
-});
+
 // close modal
 $(".js-close,.js-modal-stop").click(function () {
   $(".modal-header").css("display", "none");
