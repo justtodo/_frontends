@@ -41,9 +41,14 @@ const stopPropagation = function (e) {
   e.stopPropagation();
 };
 
-//
+// burgur modal
 document.querySelectorAll(".js-modal").forEach((a) => {
   a.addEventListener("click", openModal);
+});
+
+// search popup modal
+document.querySelectorAll(".search-popup").forEach((e) => {
+  e.addEventListener("click", openModal);
 });
 
 // fermer au click du button esc
@@ -96,7 +101,7 @@ let array = [
   "Assistance",
   "Accompagnement",
   "Consultation UX / UI",
-  "Installation",
+  "Installations",
   "Accessoires Informatiques",
 ];
 let wordIndex = 0;
@@ -138,7 +143,7 @@ const loop = () => {
 loop();
 // END PROMOTION
 
-// open js-modal-search
-$(".js-modal-search").click(function (){
-  $("*").toggleClass("js-modal-close")
-});
+// // open js-modal-search
+// $(".js-modal-search").click(function (){
+//   $("*").toggleClass("js-modal-close")
+// });

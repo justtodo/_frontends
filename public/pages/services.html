@@ -13,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../src/lib/styles.css" />
     <link rel="modulepreload" href="../../src/lib/js.js" />
-    <link rel="modulepreload" href="../../src/lib/services.css" />
     <script src="../../src/lib/app.js" type="module" defer></script>
     <script src="../../src/lib/jquery-min.js" type="module" defer></script>
     <meta name="turbolinks-cache-control" content="no-cache" />
@@ -84,7 +83,8 @@
                    </button>
                 </li>
                 <!-- start modal search -->
-                <div class="search-popup " style="display: none">
+                <div class="search-popup" aria-hidden="true" role="dialog" aria-labelledby="titlemodal" style="display: none"
+                id="search-popup" >
                     <form action="/recherche" class="search-input form-group">
                         <input autofocus="" type="text" name="q"
                             autocomplete="on" placeholder="Rechercher un contenu...">
@@ -116,7 +116,7 @@
         <div class="header-placeholder"></div>
         <!-- burger modals -->
         <aside class="modal-header" aria-hidden="true" role="dialog" aria-labelledby="titlemodal" style="display: none"
-            id="moadal-header">
+            id="modal-header">
             <div class="modal-wrapper js-modal-stop ">
                 <nav class="header is-open" id="header">
                     <ul class="header-nav modal-menu">
@@ -130,7 +130,7 @@
                     <a href="/" class="menuItem" title="Accueil"> "logo "</a>
                   </li> -->
                         <li>
-                            <a href="/accueil" class="menuItem" aria-current="page"><span class="icon iconify"
+                            <a href="/public/cookie.html" class="menuItem" aria-current="page"><span class="icon iconify"
                                     data-icon="akar-icons:home"></span>
 
                                 Accueil</a>
@@ -167,11 +167,6 @@
 
                     </ul>
                     <ul class="header-side">
-                        <!-- <li class="header__notification">
-                            <a href="http://#" class="button"><span>Notifications </span></a>
-                            </site-notifications>
-                        </li> -->
-
                         <li class="header-side__auth">
                             <a href="/inscription" class="menuItem">
                                 <span class="iconify" data-icon="akar-icons:sign-out"></span>
