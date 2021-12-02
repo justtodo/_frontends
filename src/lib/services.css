@@ -1,5 +1,5 @@
-.header-side {
-    cursor: pointer;
+.search-popup form{
+    display: none ;
     background-color: orangered;
-    padding: 2rem;
+    color: orchid;
 }

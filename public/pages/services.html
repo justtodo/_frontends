@@ -75,14 +75,16 @@
                     <site-notifications><a href="http://#" class="js-modal">
                             <span class="icon icon-bell iconify" data-icon="ic:baseline-notification-add"></span>
                         </a>
-                        <!-- <span class="notification-badge">2</span> -->
+                        
                     </site-notifications>
                 </li>
                 <li class="header__search">
+                   <button id="js-modal-search">
                     <span class="icon icon-search iconify" id="js-modal-search" data-icon="bi:search"></span>
+                   </button>
                 </li>
                 <!-- start modal search -->
-                <div class="search-popup js-modal-search" style="display: none;">
+                <div class="search-popup " style="display: none">
                     <form action="/recherche" class="search-input form-group">
                         <input autofocus="" type="text" name="q"
                             autocomplete="on" placeholder="Rechercher un contenu...">
