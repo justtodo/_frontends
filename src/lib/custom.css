@@ -149,3 +149,18 @@
   box-decoration-break: 3xp solid red;
   -webkit-box-decoration-break: 3xp solid red;
 }
+/* service pages  */
+bottomBg_32AqJ {
+  background-image: url(https://cdna.iconscout.com/production/img/942a2f4.svg);
+  background-size: cover;
+  height: 200px;
+}
+.pb-10, .py-10 {
+  padding-bottom: 7rem!important;
+}
+.pt-5, .py-5 {
+  padding-top: 1.25rem!important;
+}
+.mt-6, .my-6 {
+  margin-top: 2rem!important;
+}
