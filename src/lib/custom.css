@@ -154,10 +154,10 @@
   margin-bottom: 2rem;
 }
 
-.integration{
+.integration , .dev {
   display: block;
   margin: 1rem ;
-  background: rgba(12, 121, 200, 0.4);
+  background: rgba(12, 122, 200, 0.171);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -165,7 +165,7 @@
   -o-border-radius: 10px;
 
 }
-.integration h1 {
+.integration h1, .dve H1 {
   margin: 3px 0;
 }
 .x{
@@ -174,20 +174,28 @@
   justify-content: center;
   align-items: center;
 }
-.integration-img{
+.integration-img {
   display: flex;
-  transform: translateX(35%);
-  -webkit-transform: translateX(35%);
-  -moz-transform: translateX(35%);
-  -ms-transform: translateX(35%);
-  -o-transform: translateX(35%);
+  transform: translateX(40%);
+  -webkit-transform: translateX(40%);
+  -moz-transform: translateX(40%);
+  -ms-transform: translateX(40%);
+  -o-transform: translateX(40%);
 }
-.integration-img__content{
+ .dev-img{
+  display: flex;
+  transform: translateX(10%);
+  -webkit-transform: translateX(10%);
+  -moz-transform: translateX(10%);
+  -ms-transform: translateX(10%);
+  -o-transform: translateX(10%);
+}
+.integration-img__content , .dev-img__content{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.integration-img__text{
+.integration-img__text , .dev-img__text{
   font-size: 1rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: bold;
@@ -202,7 +210,18 @@
   padding: 10px 10px;
   margin: 5px ;
 }
-.illustration-integration{
+.illustration-integration , .illustration-dev{
+  width: 100%;
+  border-radius: 6%;
+  /*height: 100px;
+  */background: url(../../assets/collections/servives/code.png
+  ) center/cover fixed   ;
+  -webkit-border-radius: 6%;
+  -moz-border-radius: 6%;
+  -ms-border-radius: 6%;
+  -o-border-radius: 6%;
+}
+.illustration-dev{
   width: 100%;
   border-radius: 6%;
   /*height: 100px;
