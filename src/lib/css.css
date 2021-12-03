@@ -4711,7 +4711,23 @@ a.text-pinterest:hover {
     --small-font-size: .85em
   }
 }
-
+/* acess */
+.acess{
+  margin: 0;
+}
+@media (min-width:1010px) and (max-width:1200px) {
+  .freebox{
+    display: none;
+    /* background: red; */
+  }
+  
+}
+@media (min-wkidth:800px) and (max-width:1000px){
+  .frontbox{
+    
+    display: none;
+  }
+}
 .container_RcHP6 .bg_YccC9 {
   position: relative
 }
@@ -5002,8 +5018,9 @@ a.text-pinterest:hover {
 }
 
 .container_3qUJQ {
-  max-width: 74rem;
-  margin: 1rem auto 0
+  max-width: 79rem;
+  /* margin: 1rem auto 0; */
+  
 }
 
 .container_3qUJQ .customRow_2EITA {
@@ -5017,6 +5034,7 @@ a.text-pinterest:hover {
     flex-direction: column;
     align-items: center
   }
+  
 }
 
 .container_3qUJQ .customRow_2EITA .customCol_3PJep {
@@ -5036,6 +5054,7 @@ a.text-pinterest:hover {
   .container_3qUJQ .customRow_2EITA .customCol_3PJep:first-child {
     order: 1
   }
+  
 }
 
 .container_hLHjO {
@@ -5044,9 +5063,19 @@ a.text-pinterest:hover {
   box-shadow: 0 1px 4px rgba(0, 0, 0, .03), 0 4px 10px rgba(0, 0, 0, .02), 0 5px 30px rgba(0, 0, 0, .06);
   background: #fff;
   overflow: hidden;
-  padding: 1.875rem 2.1875rem 2.1875rem
+  padding: 1.875rem 2.1875rem 2.1875rem;
+  
 }
 
+@media (min-width:1200px) and (max-width:1923.98px) {
+  .container_hLHjO{
+
+    display: block;
+    height: 39vh;
+    width: 15vw;
+  }
+
+}
 @media (max-width:1023.98px) {
   .container_hLHjO {
     padding: 1.5625rem 1.25rem 1.25rem
@@ -5148,13 +5177,22 @@ a.text-pinterest:hover {
 .container_2o1j3 .pricing_194Zu {
   display: flex;
   align-items: flex-end;
-  margin-bottom: .5rem
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  width: 23rem;
+
+  font-weight: bold;
+  color: var(--red);
+  /* font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
 
 .container_2o1j3 .pricing_194Zu .slashedTxt_8SZeo {
   text-decoration: line-through;
   color: #596080;
-  font-weight: 500
+  font-weight: BOLD;
+    border-radius: 12px;
+    background: aqua;
+    padding: 0.1rem 0.3rem;
 }
 
 .container_2o1j3 .pricing_194Zu .badge_hHqOs {
