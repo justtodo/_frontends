@@ -4715,6 +4715,9 @@ a.text-pinterest:hover {
 .acess{
   margin: 0;
 }
+.frontbox{
+ padding:1rem
+}
 @media (min-width:1010px) and (max-width:1200px) {
   .freebox{
     display: none;
@@ -4723,8 +4726,7 @@ a.text-pinterest:hover {
   
 }
 @media (min-wkidth:800px) and (max-width:1000px){
-  .frontbox{
-    
+  .frontbox{ 
     display: none;
   }
 }
@@ -5040,7 +5042,8 @@ a.text-pinterest:hover {
 .container_3qUJQ .customRow_2EITA .customCol_3PJep {
   max-width: 24.6875rem;
   padding: 0 10px;
-  width: 100%
+  width: 100%;
+  margin-right: -1rem;
 }
 
 @media (max-width:1023.98px) {
@@ -5144,7 +5147,10 @@ a.text-pinterest:hover {
 }
 
 .container_2o1j3 .title_3f19_ {
-  margin-bottom: 3.25rem
+  margin-bottom: 3.25rem;
+  font-size: xx-large;
+    font-stretch: condensed;
+    font-weight: bold;
 }
 
 @media (max-width:1023.98px) {
@@ -5235,7 +5241,10 @@ a.text-pinterest:hover {
 }
 
 .container_1C7oa .title_2Vcey {
-  margin-bottom: 3.25rem
+  margin-bottom: 3.25rem;
+  font-size: xx-large;
+    font-stretch: condensed;
+    font-weight: bold;
 }
 
 @media (max-width:1023.98px) {
