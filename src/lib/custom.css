@@ -235,3 +235,38 @@
 .illustration-text{
   font-family: 'Comic Neue', Verdana, Garamond, Tahoma, sans-serif
 }
+/* contact cascading style sheet */
+.contact{
+  background: transparent;
+}
+.contact .container-fluid {
+  background: rgba(255, 255, 255, 0.075);
+}
+#textarea{
+  box-shadow: 1px 2px 4px 4px rgba(0, 0, 0, 0.637);
+  margin:1rem 0.5rem;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.form-body{
+  display: grid ;
+  grid-template-columns: 50% 50%;
+}
+.form-body label{
+  text-transform: lowercase;
+}
+.submit input{
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: midnightblue;
+  font-weight: bold;
+  font-size: 1rem;
+  min-width: 30%;
+
+}
