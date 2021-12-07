@@ -569,8 +569,8 @@ padding: 1rem; */
 
 
 .section3 {
-  border: 1px solid red;
-  margin: 2px 3rem;
+  /* border: 1px solid red; */
+  margin: 2px 2rem;
 }
 
 .section3 .container-packs {
@@ -626,7 +626,7 @@ padding: 1rem; */
   justify-content: center;
   align-items: center;
   /*margin-right: 10rem;*/
-  /*margin-left: 10rem;*/
+  margin-left: 0rem;
   width: 100%;
 }
 
@@ -8353,12 +8353,17 @@ a.tree-item__title:hover {
   }
 
   .home-push__mosaic .card {
-    background-color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    /* background-color: red; */
+    min-width: 47%;
+      margin: 2rem 1rem;
+    
   }
+ .home-push__mosaic{
+  display: block;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+ }
 
   .home-push__mosaic> :first-child {
     display: block;
@@ -8368,7 +8373,7 @@ a.tree-item__title:hover {
     display: block;
   }
 
-  /*
+  
   .home-push__mosaic > :nth-child(3) {
     grid-row: 2 / span 1;
     grid-column-end: span 13;
@@ -8385,9 +8390,22 @@ a.tree-item__title:hover {
   }
   .home-push__mosaic > :last-child {
     width: 300px;
-  } */
+  }
 }
-
+@media only screen and (max-width:800px){
+  .home-push__mosaic .card {
+    background-color: rgb(34, 52, 53);
+    min-width: 90%;
+    margin: 1rem 0.5rem !important;
+    
+  }
+ .home-push__mosaic{
+  display: block;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2rem 1rem;
+ }
+}
 @media (min-width: 1400px) {
   .home-push__body {
     margin-top: 40px;
