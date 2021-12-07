@@ -18,8 +18,8 @@
 .promotion {
   /*display: flex;  */
   /* border: 1px solid #ec006e; */
-  /* min-height: 10vh; */
-
+  min-height: 50vh;
+  background: url(../../assets/collections/servives/promo.jpg) center/cover fixed;
   font-family: "Josefin Sans", sans-serif;
   display: grid;
   /* grid-template-columns: 50%; */
