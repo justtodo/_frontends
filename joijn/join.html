@@ -1,0 +1,740 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+        (window.NREUM || (NREUM = {})).init = {
+            ajax: {
+                deny_list: ["bam-cell.nr-data.net"]
+            }
+        };
+        (window.NREUM || (NREUM = {})).loader_config = {
+            licenseKey: "b76de0635f",
+            applicationID: "487378958"
+        };
+        window.NREUM || (NREUM = {}), __nr_require = function(t, e, n) {
+            function r(n) {
+                if (!e[n]) {
+                    var i = e[n] = {
+                        exports: {}
+                    };
+                    t[n][0].call(i.exports, function(e) {
+                        var i = t[n][1][e];
+                        return r(i || e)
+                    }, i, i.exports)
+                }
+                return e[n].exports
+            }
+            if ("function" == typeof __nr_require) return __nr_require;
+            for (var i = 0; i < n.length; i++) r(n[i]);
+            return r
+        }({
+            1: [function(t, e, n) {
+                function r() {}
+
+                function i(t, e, n, r) {
+                    return function() {
+                        return s.recordSupportability("API/" + e + "/called"), o(t + e, [u.now()].concat(c(arguments)), n ? null : this, r), n ? void 0 : this
+                    }
+                }
+                var o = t("handle"),
+                    a = t(10),
+                    c = t(11),
+                    f = t("ee").get("tracer"),
+                    u = t("loader"),
+                    s = t(4),
+                    d = NREUM;
+                "undefined" == typeof window.newrelic && (newrelic = d);
+                var p = ["setPageViewName", "setCustomAttribute", "setErrorHandler", "finished", "addToTrace", "inlineHit", "addRelease"],
+                    l = "api-",
+                    v = l + "ixn-";
+                a(p, function(t, e) {
+                    d[e] = i(l, e, !0, "api")
+                }), d.addPageAction = i(l, "addPageAction", !0), d.setCurrentRouteName = i(l, "routeName", !0), e.exports = newrelic, d.interaction = function() {
+                    return (new r).get()
+                };
+                var m = r.prototype = {
+                    createTracer: function(t, e) {
+                        var n = {},
+                            r = this,
+                            i = "function" == typeof e;
+                        return o(v + "tracer", [u.now(), t, n], r),
+                            function() {
+                                if (f.emit((i ? "" : "no-") + "fn-start", [u.now(), r, i], n), i) try {
+                                    return e.apply(this, arguments)
+                                } catch (t) {
+                                    throw f.emit("fn-err", [arguments, this, t], n), t
+                                } finally {
+                                    f.emit("fn-end", [u.now()], n)
+                                }
+                            }
+                    }
+                };
+                a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","), function(t, e) {
+                    m[e] = i(v, e)
+                }), newrelic.noticeError = function(t, e) {
+                    "string" == typeof t && (t = new Error(t)), s.recordSupportability("API/noticeError/called"), o("err", [t, u.now(), !1, e])
+                }
+            }, {}],
+            2: [function(t, e, n) {
+                function r(t) {
+                    if (NREUM.init) {
+                        for (var e = NREUM.init, n = t.split("."), r = 0; r < n.length - 1; r++)
+                            if (e = e[n[r]], "object" != typeof e) return;
+                        return e = e[n[n.length - 1]]
+                    }
+                }
+                e.exports = {
+                    getConfiguration: r
+                }
+            }, {}],
+            3: [function(t, e, n) {
+                var r = !1;
+                try {
+                    var i = Object.defineProperty({}, "passive", {
+                        get: function() {
+                            r = !0
+                        }
+                    });
+                    window.addEventListener("testPassive", null, i), window.removeEventListener("testPassive", null, i)
+                } catch (o) {}
+                e.exports = function(t) {
+                    return r ? {
+                        passive: !0,
+                        capture: !!t
+                    } : !!t
+                }
+            }, {}],
+            4: [function(t, e, n) {
+                function r(t, e) {
+                    var n = [a, t, {
+                        name: t
+                    }, e];
+                    return o("storeMetric", n, null, "api"), n
+                }
+
+                function i(t, e) {
+                    var n = [c, t, {
+                        name: t
+                    }, e];
+                    return o("storeEventMetrics", n, null, "api"), n
+                }
+                var o = t("handle"),
+                    a = "sm",
+                    c = "cm";
+                e.exports = {
+                    constants: {
+                        SUPPORTABILITY_METRIC: a,
+                        CUSTOM_METRIC: c
+                    },
+                    recordSupportability: r,
+                    recordCustom: i
+                }
+            }, {}],
+            5: [function(t, e, n) {
+                function r() {
+                    return c.exists && performance.now ? Math.round(performance.now()) : (o = Math.max((new Date).getTime(), o)) - a
+                }
+
+                function i() {
+                    return o
+                }
+                var o = (new Date).getTime(),
+                    a = o,
+                    c = t(12);
+                e.exports = r, e.exports.offset = a, e.exports.getLastTimestamp = i
+            }, {}],
+            6: [function(t, e, n) {
+                function r(t) {
+                    return !(!t || !t.protocol || "file:" === t.protocol)
+                }
+                e.exports = r
+            }, {}],
+            7: [function(t, e, n) {
+                function r(t, e) {
+                    var n = t.getEntries();
+                    n.forEach(function(t) {
+                        "first-paint" === t.name ? p("timing", ["fp", Math.floor(t.startTime)]) : "first-contentful-paint" === t.name && p("timing", ["fcp", Math.floor(t.startTime)])
+                    })
+                }
+
+                function i(t, e) {
+                    var n = t.getEntries();
+                    if (n.length > 0) {
+                        var r = n[n.length - 1];
+                        if (f && f < r.startTime) return;
+                        p("lcp", [r])
+                    }
+                }
+
+                function o(t) {
+                    t.getEntries().forEach(function(t) {
+                        t.hadRecentInput || p("cls", [t])
+                    })
+                }
+
+                function a(t) {
+                    if (t instanceof g && !y) {
+                        var e = Math.round(t.timeStamp),
+                            n = {
+                                type: t.type
+                            };
+                        e <= l.now() ? n.fid = l.now() - e : e > l.offset && e <= Date.now() ? (e -= l.offset, n.fid = l.now() - e) : e = l.now(), y = !0, p("timing", ["fi", e, n])
+                    }
+                }
+
+                function c(t) {
+                    "hidden" === t && (f = l.now(), p("pageHide", [f]))
+                }
+                if (!("init" in NREUM && "page_view_timing" in NREUM.init && "enabled" in NREUM.init.page_view_timing && NREUM.init.page_view_timing.enabled === !1)) {
+                    var f, u, s, d, p = t("handle"),
+                        l = t("loader"),
+                        v = t(9),
+                        m = t(3),
+                        g = NREUM.o.EV;
+                    if ("PerformanceObserver" in window && "function" == typeof window.PerformanceObserver) {
+                        u = new PerformanceObserver(r);
+                        try {
+                            u.observe({
+                                entryTypes: ["paint"]
+                            })
+                        } catch (h) {}
+                        s = new PerformanceObserver(i);
+                        try {
+                            s.observe({
+                                entryTypes: ["largest-contentful-paint"]
+                            })
+                        } catch (h) {}
+                        d = new PerformanceObserver(o);
+                        try {
+                            d.observe({
+                                type: "layout-shift",
+                                buffered: !0
+                            })
+                        } catch (h) {}
+                    }
+                    if ("addEventListener" in document) {
+                        var y = !1,
+                            w = ["click", "keydown", "mousedown", "pointerdown", "touchstart"];
+                        w.forEach(function(t) {
+                            document.addEventListener(t, a, m(!1))
+                        })
+                    }
+                    v(c)
+                }
+            }, {}],
+            8: [function(t, e, n) {
+                function r(t, e) {
+                    if (!i) return !1;
+                    if (t !== i) return !1;
+                    if (!e) return !0;
+                    if (!o) return !1;
+                    for (var n = o.split("."), r = e.split("."), a = 0; a < r.length; a++)
+                        if (r[a] !== n[a]) return !1;
+                    return !0
+                }
+                var i = null,
+                    o = null,
+                    a = /Version\/(\S+)\s+Safari/;
+                if (navigator.userAgent) {
+                    var c = navigator.userAgent,
+                        f = c.match(a);
+                    f && c.indexOf("Chrome") === -1 && c.indexOf("Chromium") === -1 && (i = "Safari", o = f[1])
+                }
+                e.exports = {
+                    agent: i,
+                    version: o,
+                    match: r
+                }
+            }, {}],
+            9: [function(t, e, n) {
+                function r(t) {
+                    function e() {
+                        t(c && document[c] ? document[c] : document[o] ? "hidden" : "visible")
+                    }
+                    "addEventListener" in document && a && document.addEventListener(a, e, i(!1))
+                }
+                var i = t(3);
+                e.exports = r;
+                var o, a, c;
+                "undefined" != typeof document.hidden ? (o = "hidden", a = "visibilitychange", c = "visibilityState") : "undefined" != typeof document.msHidden ? (o = "msHidden", a = "msvisibilitychange") : "undefined" != typeof document.webkitHidden && (o = "webkitHidden", a = "webkitvisibilitychange", c = "webkitVisibilityState")
+            }, {}],
+            10: [function(t, e, n) {
+                function r(t, e) {
+                    var n = [],
+                        r = "",
+                        o = 0;
+                    for (r in t) i.call(t, r) && (n[o] = e(r, t[r]), o += 1);
+                    return n
+                }
+                var i = Object.prototype.hasOwnProperty;
+                e.exports = r
+            }, {}],
+            11: [function(t, e, n) {
+                function r(t, e, n) {
+                    e || (e = 0), "undefined" == typeof n && (n = t ? t.length : 0);
+                    for (var r = -1, i = n - e || 0, o = Array(i < 0 ? 0 : i); ++r < i;) o[r] = t[e + r];
+                    return o
+                }
+                e.exports = r
+            }, {}],
+            12: [function(t, e, n) {
+                e.exports = {
+                    exists: "undefined" != typeof window.performance && window.performance.timing && "undefined" != typeof window.performance.timing.navigationStart
+                }
+            }, {}],
+            ee: [function(t, e, n) {
+                function r() {}
+
+                function i(t) {
+                    function e(t) {
+                        return t && t instanceof r ? t : t ? u(t, f, a) : a()
+                    }
+
+                    function n(n, r, i, o, a) {
+                        if (a !== !1 && (a = !0), !l.aborted || o) {
+                            t && a && t(n, r, i);
+                            for (var c = e(i), f = m(n), u = f.length, s = 0; s < u; s++) f[s].apply(c, r);
+                            var p = d[w[n]];
+                            return p && p.push([b, n, r, c]), c
+                        }
+                    }
+
+                    function o(t, e) {
+                        y[t] = m(t).concat(e)
+                    }
+
+                    function v(t, e) {
+                        var n = y[t];
+                        if (n)
+                            for (var r = 0; r < n.length; r++) n[r] === e && n.splice(r, 1)
+                    }
+
+                    function m(t) {
+                        return y[t] || []
+                    }
+
+                    function g(t) {
+                        return p[t] = p[t] || i(n)
+                    }
+
+                    function h(t, e) {
+                        l.aborted || s(t, function(t, n) {
+                            e = e || "feature", w[n] = e, e in d || (d[e] = [])
+                        })
+                    }
+                    var y = {},
+                        w = {},
+                        b = {
+                            on: o,
+                            addEventListener: o,
+                            removeEventListener: v,
+                            emit: n,
+                            get: g,
+                            listeners: m,
+                            context: e,
+                            buffer: h,
+                            abort: c,
+                            aborted: !1
+                        };
+                    return b
+                }
+
+                function o(t) {
+                    return u(t, f, a)
+                }
+
+                function a() {
+                    return new r
+                }
+
+                function c() {
+                    (d.api || d.feature) && (l.aborted = !0, d = l.backlog = {})
+                }
+                var f = "nr@context",
+                    u = t("gos"),
+                    s = t(10),
+                    d = {},
+                    p = {},
+                    l = e.exports = i();
+                e.exports.getOrSetContext = o, l.backlog = d
+            }, {}],
+            gos: [function(t, e, n) {
+                function r(t, e, n) {
+                    if (i.call(t, e)) return t[e];
+                    var r = n();
+                    if (Object.defineProperty && Object.keys) try {
+                        return Object.defineProperty(t, e, {
+                            value: r,
+                            writable: !0,
+                            enumerable: !1
+                        }), r
+                    } catch (o) {}
+                    return t[e] = r, r
+                }
+                var i = Object.prototype.hasOwnProperty;
+                e.exports = r
+            }, {}],
+            handle: [function(t, e, n) {
+                function r(t, e, n, r) {
+                    i.buffer([t], r), i.emit(t, e, n)
+                }
+                var i = t("ee").get("handle");
+                e.exports = r, r.ee = i
+            }, {}],
+            id: [function(t, e, n) {
+                function r(t) {
+                    var e = typeof t;
+                    return !t || "object" !== e && "function" !== e ? -1 : t === window ? 0 : a(t, o, function() {
+                        return i++
+                    })
+                }
+                var i = 1,
+                    o = "nr@id",
+                    a = t("gos");
+                e.exports = r
+            }, {}],
+            loader: [function(t, e, n) {
+                function r() {
+                    if (!T++) {
+                        var t = P.info = NREUM.info,
+                            e = g.getElementsByTagName("script")[0];
+                        if (setTimeout(u.abort, 3e4), !(t && t.licenseKey && t.applicationID && e)) return u.abort();
+                        f(O, function(e, n) {
+                            t[e] || (t[e] = n)
+                        });
+                        var n = a();
+                        c("mark", ["onload", n + P.offset], null, "api"), c("timing", ["load", n]);
+                        var r = g.createElement("script");
+                        0 === t.agent.indexOf("http://") || 0 === t.agent.indexOf("https://") ? r.src = t.agent : r.src = v + "://" + t.agent, e.parentNode.insertBefore(r, e)
+                    }
+                }
+
+                function i() {
+                    "complete" === g.readyState && o()
+                }
+
+                function o() {
+                    c("mark", ["domContent", a() + P.offset], null, "api")
+                }
+                var a = t(5),
+                    c = t("handle"),
+                    f = t(10),
+                    u = t("ee"),
+                    s = t(8),
+                    d = t(6),
+                    p = t(2),
+                    l = t(3),
+                    v = p.getConfiguration("ssl") === !1 ? "http" : "https",
+                    m = window,
+                    g = m.document,
+                    h = "addEventListener",
+                    y = "attachEvent",
+                    w = m.XMLHttpRequest,
+                    b = w && w.prototype,
+                    E = !d(m.location);
+                NREUM.o = {
+                    ST: setTimeout,
+                    SI: m.setImmediate,
+                    CT: clearTimeout,
+                    XHR: w,
+                    REQ: m.Request,
+                    EV: m.Event,
+                    PR: m.Promise,
+                    MO: m.MutationObserver
+                };
+                var x = "" + location,
+                    O = {
+                        beacon: "bam.nr-data.net",
+                        errorBeacon: "bam.nr-data.net",
+                        agent: "js-agent.newrelic.com/nr-1212.min.js"
+                    },
+                    M = w && b && b[h] && !/CriOS/.test(navigator.userAgent),
+                    P = e.exports = {
+                        offset: a.getLastTimestamp(),
+                        now: a,
+                        origin: x,
+                        features: {},
+                        xhrWrappable: M,
+                        userAgent: s,
+                        disabled: E
+                    };
+                if (!E) {
+                    t(1), t(7), g[h] ? (g[h]("DOMContentLoaded", o, l(!1)), m[h]("load", r, l(!1))) : (g[y]("onreadystatechange", i), m[y]("onload", r)), c("mark", ["firstbyte", a.getLastTimestamp()], null, "api");
+                    var T = 0
+                }
+            }, {}],
+            "wrap-function": [function(t, e, n) {
+                function r(t, e) {
+                    function n(e, n, r, f, u) {
+                        function nrWrapper() {
+                            var o, a, s, p;
+                            try {
+                                a = this, o = d(arguments), s = "function" == typeof r ? r(o, a) : r || {}
+                            } catch (l) {
+                                i([l, "", [o, a, f], s], t)
+                            }
+                            c(n + "start", [o, a, f], s, u);
+                            try {
+                                return p = e.apply(a, o)
+                            } catch (v) {
+                                throw c(n + "err", [o, a, v], s, u), v
+                            } finally {
+                                c(n + "end", [o, a, p], s, u)
+                            }
+                        }
+                        return a(e) ? e : (n || (n = ""), nrWrapper[p] = e, o(e, nrWrapper, t), nrWrapper)
+                    }
+
+                    function r(t, e, r, i, o) {
+                        r || (r = "");
+                        var c, f, u, s = "-" === r.charAt(0);
+                        for (u = 0; u < e.length; u++) f = e[u], c = t[f], a(c) || (t[f] = n(c, s ? f + r : r, i, f, o))
+                    }
+
+                    function c(n, r, o, a) {
+                        if (!v || e) {
+                            var c = v;
+                            v = !0;
+                            try {
+                                t.emit(n, r, o, e, a)
+                            } catch (f) {
+                                i([f, n, r, o], t)
+                            }
+                            v = c
+                        }
+                    }
+                    return t || (t = s), n.inPlace = r, n.flag = p, n
+                }
+
+                function i(t, e) {
+                    e || (e = s);
+                    try {
+                        e.emit("internal-error", t)
+                    } catch (n) {}
+                }
+
+                function o(t, e, n) {
+                    if (Object.defineProperty && Object.keys) try {
+                        var r = Object.keys(t);
+                        return r.forEach(function(n) {
+                            Object.defineProperty(e, n, {
+                                get: function() {
+                                    return t[n]
+                                },
+                                set: function(e) {
+                                    return t[n] = e, e
+                                }
+                            })
+                        }), e
+                    } catch (o) {
+                        i([o], n)
+                    }
+                    for (var a in t) l.call(t, a) && (e[a] = t[a]);
+                    return e
+                }
+
+                function a(t) {
+                    return !(t && t instanceof Function && t.apply && !t[p])
+                }
+
+                function c(t, e) {
+                    var n = e(t);
+                    return n[p] = t, o(t, n, s), n
+                }
+
+                function f(t, e, n) {
+                    var r = t[e];
+                    t[e] = c(r, n)
+                }
+
+                function u() {
+                    for (var t = arguments.length, e = new Array(t), n = 0; n < t; ++n) e[n] = arguments[n];
+                    return e
+                }
+                var s = t("ee"),
+                    d = t(11),
+                    p = "nr@original",
+                    l = Object.prototype.hasOwnProperty,
+                    v = !1;
+                e.exports = r, e.exports.wrapFunction = c, e.exports.wrapInPlace = f, e.exports.argsToArray = u
+            }, {}]
+        }, {}, ["loader"]);
+    </script>
+    <title>UPHUB - Join Us</title>
+    <meta property="og:type" content="portal">
+    <meta property="og:site_name" content="uphub join">
+    <meta property="og:title" content="uphub Program">
+    <meta property="og:description" content="uphub join, ultimate Portal for Content Creators. Earn commissions using your website, blog or social media.">
+    <meta property="og:url" content="/">
+    <meta property="og:image" content="assets/images/jumia-logo.png">
+    <meta property="og:locale" content="en_EN">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/images/uphub_logo.png">
+    <link href="assets/css/home.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="bg-container pt-4 lg:pt-6">       
+    </header>
+    <main>
+        <section class="bg-container py-6 lg:py-20">
+            <div class="max-w-screen-xl mx-auto px-4 pt-4 lg:py-5">
+                <div class="md:flex justify-between items-center">
+                    <div class="text-center md:text-left lg:w-5/12">
+                        <h1 class="text-4xl lg:text-7xl tracking-tight font-medium text-primary">
+                            Rejoint la Team
+                            <span class="md:block font-light text-gray-800"><strong>UPHUB</strong></span>
+                        </h1>
+                        <h2 class="mt-4 lg:mt-6 text-sm lg:text-2xl lg:leading-9">
+                            Si tu est créateur de contenu de tout genre, rejoint notre team avoir des commisions.
+                        </h2>
+                        <a id="register-teaser" href="pages/contacts.html" class="mt-4 lg:mt-8 px-5 lg:px-11 py-2 lg:py-3 inline-block text-xs lg:text-lg leading-4 lg:leading-6 font-medium rounded text-white bg-primary hover:bg-primary-dark">
+                        Nous Rejoindre
+                    </a>
+                    </div>
+                    <div class="sm:text-center pt-6 md:pt-0">
+                        <img class="inline-block" src="assets/images/jumia-kol-program.svg" alt="ill">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="max-w-screen-xl mx-auto px-4 py-6 lg:py-20">
+            <div class="w-full mb-4">
+                <div class="h-1 mx-auto w-10 bg-primary my-0 py-0 rounded"></div>
+            </div>
+            <h2 class="text-center text-2xl lg:text-3xl font-medium divide-y divide-yellow-500 pb-6 lg:pb-12">Qui peux nous réjoindre?</h2>
+            <div class="flex flex-col md:flex-row justify-between gap-8 lg:gap-10">
+                <div class="flex-1 text-center">
+                    <img class="inline mb-2 lg:mb-6 h-16 lg:h-auto" src="assets/images/account-types/micro-influencer-creator.svg" alt="Micro-Influencer / Creator">
+                    <h3 class="text-lg lg:text-2xl font-medium pb-2 lg:pb-4">Developpeur</h3>
+                    <p class="text-sm lg:text-base leading-6 lg:leading-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="flex-1 text-center">
+                    <img class="inline mb-2 lg:mb-6 h-16 lg:h-auto" src="assets/images/account-types/mega-influencer.svg" alt="Mega-Influencer">
+                    <h3 class="text-lg lg:text-2xl font-medium pb-2 lg:pb-4">Createur de contenu</h3>
+                    <p class="text-sm lg:text-base leading-6 lg:leading-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!</p>
+                </div>
+                <div class="flex-1 text-center">
+                    <img class="inline mb-2 lg:mb-6 h-16 lg:h-auto" src="assets/images/account-types/affiliate.svg" alt="Affiliate">
+                    <h3 class="text-lg lg:text-2xl font-medium pb-2 lg:pb-4">Influenceur</h3>
+                    <p class="text-sm lg:text-base leading-6 lg:leading-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+        </section>
+       <!--  <section class="bg-container py-6 lg:py-20">
+            <div class="max-w-screen-xl mx-auto px-4">
+                <div class="w-full mb-4">
+                    <div class="h-1 mx-auto w-10 bg-primary my-0 py-0 rounded"></div>
+                </div>
+                <h2 class="text-center text-2xl lg:text-3xl font-medium divide-y divide-yellow-500 pb-6 lg:pb-12">How does it work?</h2>
+                <div class="flex flex-col md:flex-row justify-between gap-8">
+                    <div class="flex-1 text-center">
+                        <img class="inline mb-2 lg:mb-6 h-20 lg:h-auto" src="assets/images/register.svg" alt="Register">
+                        <h3 class="text-lg lg:text-2xl font-medium pb-2 lg:pb-4">Register</h3>
+                        <p class="text-sm lg:text-base leading-6 lg:leading-normal">Start working immediately if you are an affiliate or receive approval within a week if you&#039;re a content creator / influencer.</p>
+                    </div>
+                    <div class="flex-1 text-center">
+                        <img class="inline mb-2 lg:mb-6 h-20 lg:h-auto" src="assets/images/advertise.svg" alt="Advertise">
+                        <h3 class="text-lg lg:text-2xl font-medium pb-2 lg:pb-4">Advertise</h3>
+                        <p class="text-sm lg:text-base leading-6 lg:leading-normal">Promote Jumia’s various campaigns and enjoy tracking links up to 7 days as well as discount codes.</p>
+                    </div>
+                    <div class="flex-1 text-center">
+                        <img class="inline mb-2 lg:mb-6 h-20 lg:h-auto" src="assets/images/earn.svg" alt="Earn">
+                        <h3 class="text-lg lg:text-2xl font-medium pb-2 lg:pb-4">Earn</h3>
+                        <p class="text-sm lg:text-base leading-6 lg:leading-normal">Get compensated for your sales with the payment method you choose at the end of every month.</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+       <!--  <section class="max-w-screen-xl mx-auto md:px-4 pt-6 pb-0 md:pb-6 lg:py-20">
+            <div class="w-full mb-4">
+                <div class="h-1 mx-auto w-10 bg-primary my-0 py-0 rounded"></div>
+            </div>
+            <h2 class="text-center text-2xl lg:text-3xl font-medium divide-y divide-yellow-500 md:pb-6 lg:pb-12">What are our partners saying?</h2>
+            <div class="splide flex md:flex-none">
+                <div class="splide__track py-6 md:py-0">
+                    <div class="splide__list flex flex-row justify-between md:gap-8">
+                        <div class="splide__slide flex-grow md:flex-1 flex flex-col text-center shadow-lg rounded py-6 px-4 md:px-8">
+                            <div class="pb-6">
+                                <img class="inline h-2.5 lg:h-auto" src="assets/images/quotes.svg" alt="Quoting">
+                            </div>
+                            <p class="flex-1 text-sm leading-7 lg:text-base lg:leading-7 pb-5 lg:pb-6">I&#039;ve been working with Jumia since 2016. Jumia is one of the region&#039;s most successful ecommerce in Egypt and one of the top companies that focuses on customer satisfaction. I am glad and honoured to have been a part
+                                of this journey from the start, and we are still moving forward.</p>
+                            <p class="text-gray-500 font-medium leading-none text-xs lg:text-base">Aliaa Hany - Egyptian Influencer</p>
+                        </div>
+                        <div class="splide__slide flex-grow md:flex-1 flex flex-col text-center shadow-lg rounded py-6 px-4 md:px-8">
+                            <div class="pb-6">
+                                <img class="inline h-2.5 lg:h-auto" src="assets/images/quotes.svg" alt="Quoting">
+                            </div>
+                            <p class="flex-1 text-sm leading-7 lg:text-base lg:leading-7 pb-5 lg:pb-6">I am very satisfied with my collaboration with Jumia’s professional team and always listening. I am very pleased with the availability of the products and the speed of delivery. My subscribers are always looking for a promotional
+                                code, which encourages me to continue to collaborate with great pleasure.</p>
+                            <p class="text-gray-500 font-medium leading-none text-xs lg:text-base">Donia Ellouze - Tunisian Creator</p>
+                        </div>
+                        <div class="splide__slide flex-grow md:flex-1 flex flex-col text-center shadow-lg rounded py-6 px-4 md:px-8">
+                            <div class="pb-6">
+                                <img class="inline h-2.5 lg:h-auto" src="assets/images/quotes.svg" alt="Quoting">
+                            </div>
+                            <p class="flex-1 text-sm leading-7 lg:text-base lg:leading-7 pb-5 lg:pb-6">We work with the KOL program for quite some time. From the very beginning, it was and still is a very pleasant journey. Their affiliate panel is neat and clear. We can always count on my account manager who is ready to help
+                                and resolve all doubts. We are looking forward to the future partnership and We recommend working with Jumia to anyone.</p>
+                            <p class="text-gray-500 font-medium leading-none text-xs lg:text-base">Picodi - Global Affiliate Partner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section class="bg-primary px-4 py-8 lg:py-20 text-center">
+            <h2 class="text-3xl lg:text-5xl font-medium text-white">Plus de temps a perdre</h2>
+            <a id="register-bottom-teaser" href="pages/contacts.html" class="mt-6 lg:mt-12 px-5 lg:px-11 py-2 lg:py-3 inline-block text-xs lg:text-lg leading-4 lg:leading-6 font-medium rounded text-primary hover:text-secondary bg-white">
+            Réjoint nous meintenant
+        </a>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <!-- Google Tag Manager -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KNWNSBS');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNWNSBS"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <script src="assets/js/home.js?id=2985d254ff4c526e17a3"></script>
+    <script type="text/javascript">
+        window.NREUM || (NREUM = {});
+        NREUM.info = {
+            "beacon": "bam-cell.nr-data.net",
+            "licenseKey": "b76de0635f",
+            "applicationID": "487378958",
+            "transactionName": "NVxXYhMHChFYVUELDQwWdFUVDwsMFl5aDwc=",
+            "queueTime": 0,
+            "applicationTime": 78,
+            "atts": "GRtUFFsdGR8=",
+            "errorBeacon": "bam-cell.nr-data.net",
+            "agent": ""
+        }
+    </script>
+</body>
+
+</html>

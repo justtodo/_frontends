@@ -172,6 +172,7 @@ hr {
 }
 
 .contact-expert a:hover {
+  color: orange;
   /*font-size: 1.5rem;*/
   text-decoration: none;
   flex-direction: row;
@@ -208,7 +209,7 @@ padding: 1rem; */
   padding-left: 1rem;
   padding-right: 1rem;
   border-radius: 12px;
-  -webkit-border-radius: 12px;
+  -webkit-border-radius: 7px;
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
@@ -571,7 +572,7 @@ padding: 1rem; */
 
 
 .section3 {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   margin: 2px 3rem;
 }
 
@@ -580,7 +581,8 @@ padding: 1rem; */
   align-items: center;
   justify-content: center;
   display: flex;
-
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .text-center {
@@ -3036,7 +3038,7 @@ con-fetti {
 }
 
 .card a:not([class^="btn"]):not([class^="pill"]):hover {
-  color: var(--contrast);
+  /*color: var(--contrast);*/
 }
 
 .card__link {
@@ -4722,7 +4724,9 @@ button:not([class]):hover .icon-delete {
   overflow: hidden;
   border-radius: 20px;
 }
-
+.pill:hover{
+  color: orange;
+}
 .pill::after {
   content: "";
   position: absolute;
@@ -8218,7 +8222,9 @@ a.tree-item__title:hover {
   padding-left: 1rem;
   padding-right: 3rem;
 }
-
+.home-list__item .card__title:hover{
+  color: white;
+}
 .home-list__item .card__title {
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -8366,9 +8372,11 @@ a.tree-item__title:hover {
   .section-body-packs {
     display: block;
   }
-
+  .section3 .container-packs{
+    display: flex;
+  }
   .home-push__mosaic .card {
-    background-color: red;
+    /*background-color: red;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9631,3 +9639,6 @@ form.profil-header__avatar:hover img {
 
 /*-----------------------------------------------------------------------------------------------------------------*/
 
+.body-section{
+  padding-bottom: 5rem;
+}
