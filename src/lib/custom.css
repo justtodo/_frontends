@@ -273,12 +273,19 @@
 
 /* blog cascading style sheet */
 .blog-body{
+  color: darkcyan;
   background: url(../../assets/collections/graffic.svg) center/cover fixed;
   background-blend-mode: soft-light;
 }
-.my5{
+.stack{
+  color: darkcyan;
+  background: url(../../assets/collections/graffic.svg) center/cover fixed;
+  background-blend-mode: soft-light;
+}
+.my5, .py5{
   background: rgba(0, 255, 255, 0.068);
   opacity: 100%;
+  color: darkcyan;
   visibility: visible;
   border-radius: 10px;
   -webkit-border-radius: 10px;

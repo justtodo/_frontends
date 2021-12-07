@@ -196,15 +196,152 @@
       <!-- insert category -->
   <section class="expert-body">
     <section id="page-header" class="stack text-inversed py5" style="margin-bottom: 150px;">
-        <h1 class="hero-title">Devenir premium</h1>
+        <h1 class="hero-title">Devenir Expert</h1>
         <div class="hero-text formatted">
-          Devenir premium sur Grafikart, c'est <strong>soutenir</strong> la création de nouveaux contenus chaque semaine
+          Devenir expert sur UpCookie, c'est <strong>soutenir</strong> la création de nouveaux contenus chaque semaine
           et accéder à du contenu exclusif pour apprendre et s'améliorer (comme le téléchargement des vidéos et des
           sources).
         </div>
       </section>
+      <div class="premium-grid">
+        <div class="premium-grid__body stack">
+          <h2 class="h2">
+            Pourquoi cette offre ?
+          </h2>
+          <div class="hero-text formatted">
+            <p>
+              Nôtre but à travers UpCookie.ci est de partager nos connaissances avec le plus grand nombre, c'est pourquoi
+              nous essayons de rendre un maximum de contenu gratuit et public.
+            </p>
+            <p>
+              Malgré tout, la préparation, l'enregistrement et le montage des tutoriels prend un temps considérable (10 à
+              20 heures par semaine). Du coup proposer des options payantes, comme le téléchargement des sources, nous
+              permettent d'amortir une partie du temps passé et de continuer à faire vivre le site.
+            </p>
+          </div>
+        </div>
+        <div class="premium-grid__price">
+          
+  <nav-tabs class="tabs-toggle" style="margin-bottom: 35px;" role="tablist">
+        <button aria-controls="plan1" role="tab" aria-selected="true" tabindex="0" id="tab-plan1">1 mois</button>
+        <button aria-controls="plan2" role="tab" aria-selected="false" tabindex="-1" id="tab-plan2">3 mois</button>
+    </nav-tabs>
+  
+    <div class="card pricing" id="plan1" role="tabpanel" aria-labelledby="tab-plan1" tabindex="0">
+      <div class="pricing__price">5<sup>€ TTC</sup></div>
+          <div class="pricing__item">
+        Participez aux meilleures mission freelance
+        <strong>en avance</strong>
+      </div>
+     
+    
+      <div class="pricing__action">
+        <premium-button plan="1" price="5" duration="1" >
+            <a href="/" class="btn-primary btn-block"><slot>
+          Devenir expert (1 mois)
+        </slot></a></premium-button>
+      </div>
+    </div>
+   
+        </div>
+      </div>
    
   </section>
+  <article>
+    <div class="premium-grid">
+        <!-- start bio -->
+        <div class="premium-grid__body stack">
+          <h2 class="h2">
+            FRANKY BICICI
+          </h2>
+          <div class="hero-text formatted">
+            <p>
+              developpeur web full stack et createur de contenue gratuit.
+            </p>
+            <p>
+              Malgré tout, il besion d'argent pour faire vivre le site.
+            </p>
+          </div>
+        </div>
+        <!-- end bio -->
+        <!-- start conpetences and profile -->
+        <div class="premium-grid__price">
+          
+  <nav-tabs class="tabs-toggle" style="margin-bottom: 35px;" role="tablist">
+        <button aria-controls="plan1" role="tab" aria-selected="true" tabindex="0" id="tab-plan1">1 semaine</button>
+        <button aria-controls="plan2" role="tab" aria-selected="false" tabindex="-1" id="tab-plan2">3 semaines</button>
+    </nav-tabs>
+  <div class="card img" style="height: 150px; width:150px; border-radius:100px; display:flex;justify-content:center;align-items:center " >
+      <img src="../../assets/profiles/1 (4).png" style="border-radius:100px;" alt="" srcset="">
+  </div>
+    <div class="card pricing" id="plan1" role="tabpanel" aria-labelledby="tab-plan1" tabindex="0">
+      <div class="pricing__price">5000<sup>XOF TTC</sup></div>
+          <div class="pricing__item">
+        Developpeur chez HTEC
+        <strong>HTML CSS RUBY </strong>
+      </div>
+     
+    
+      <div class="pricing__action">
+        <premium-button plan="1" price="5" duration="1" >
+            <a href="/" class="btn-primary btn-block"><slot>
+          Contacter FRANKY BICICI (1 mois)
+        </slot></a></premium-button>
+      </div>
+    </div>
+   
+        </div>
+        <!-- end profiles -->
+      </div>
+  </article>
+  <!-- second dev  -->
+  <article>
+    <div class="premium-grid">
+        <!-- start bio -->
+        <div class="premium-grid__body stack">
+          <h2 class="h2">
+            OUVRIER PEGEON
+          </h2>
+          <div class="hero-text formatted">
+            <p>
+              developpeur web full stack et createur de contenue gratuit.
+            </p>
+            <p>
+              Malgré tout, il besion d'argent pour faire vivre le site.
+            </p>
+          </div>
+        </div>
+        <!-- end bio -->
+        <!-- start conpetences and profile -->
+        <div class="premium-grid__price">
+          
+  <nav-tabs class="tabs-toggle" style="margin-bottom: 35px;" role="tablist">
+        <button aria-controls="plan1" role="tab" aria-selected="true" tabindex="0" id="tab-plan1">1 semaine</button>
+        <button aria-controls="plan2" role="tab" aria-selected="false" tabindex="-1" id="tab-plan2">3 semaines</button>
+    </nav-tabs>
+  <div class="card img" style="height: 150px; width:150px; border-radius:100px; display:flex;justify-content:center;align-items:center " >
+      <img src="../../assets/profiles/1 (3).png" style="border-radius:100px;" alt="" srcset="">
+  </div>
+    <div class="card pricing" id="plan1" role="tabpanel" aria-labelledby="tab-plan1" tabindex="0">
+      <div class="pricing__price">5000<sup>XOF TTC</sup></div>
+          <div class="pricing__item">
+        Developpeur chez HTEC
+        <strong>HTML CSS RUBY </strong>
+      </div>
+     
+    
+      <div class="pricing__action">
+        <premium-button plan="1" price="5" duration="1" >
+            <a href="/" class="btn-primary btn-block"><slot>
+          Contacter FRANKY PEGEON (1 mois)
+        </slot></a></premium-button>
+      </div>
+    </div>
+   
+        </div>
+        <!-- end profiles -->
+      </div>
+  </article>
         <!-- =========================================================
         ==========================end body start footer=======================
       ============================================================ -->
