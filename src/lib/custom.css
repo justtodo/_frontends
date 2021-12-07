@@ -270,6 +270,15 @@
   min-width: 30%;
 
 }
+.add-team-2 .card{
+  width: 30vw;
+  height: 50vh;
+  display: flex;
+}
+.card-team{
+	display: grid;
+	grid-template-columns: 33% 34% 33%;
+}
 
 /* blog cascading style sheet */
 .blog-body{
