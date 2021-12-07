@@ -1264,7 +1264,23 @@ body {
 }
 
 .text-center {
-    text-align: center
+    text-align: center;
+
+}
+.flex-1{
+    /*border: 1px solid orange;*/
+    border-radius: 5px;
+    background-color: #22244a;
+    padding: 1rem;
+}
+.flex-1 img{
+    background-color: transparent;
+}
+.flex-1 h3{
+    background-color: transparent;
+}
+.flex-1 p{
+    background-color: transparent;
 }
 
 .text-right {
@@ -1294,7 +1310,8 @@ body {
 
 .text-sm {
     font-size: .875rem;
-    line-height: 1.25rem
+    line-height: 1.25rem;
+    color: white;
 }
 
 .text-lg {
@@ -1322,7 +1339,8 @@ body {
 }
 
 .font-medium {
-    font-weight: 500
+    font-weight: 500;
+    color: white;
 }
 
 .font-bold {
@@ -1391,7 +1409,7 @@ body {
 
 .text-white {
     --tw-text-opacity: 1;
-    color: rgba(255, 255, 255, var(--tw-text-opacity))
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 .text-gray-400 {
@@ -1413,10 +1431,14 @@ body {
     --tw-text-opacity: 1;
     color: orange;
 }
+.text-pr {
+    background-color: orange;
+    color: white;
+}
 
 .hover\:text-gray-900:hover {
     --tw-text-opacity: 1;
-    color: rgba(17, 24, 39, var(--tw-text-opacity))
+    color: rgba(17, 24, 39, var(--tw-text-opacity));
 }
 
 .hover\:text-secondary:hover {
@@ -1617,6 +1639,9 @@ html {
     }
     .md\:text-left {
         text-align: left
+    }
+    .text-white{
+        background-color: orange;
     }
 }
 
