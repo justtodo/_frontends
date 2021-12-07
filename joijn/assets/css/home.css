@@ -1275,6 +1275,7 @@ body {
 }
 .flex-1 img{
     background-color: transparent;
+    width: 50%;
 }
 .flex-1 h3{
     background-color: transparent;
