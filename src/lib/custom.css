@@ -270,3 +270,19 @@
   min-width: 30%;
 
 }
+
+/* blog cascading style sheet */
+.blog-body{
+  background: url(../../assets/collections/graffic.svg) center/cover fixed;
+  background-blend-mode: soft-light;
+}
+.my5{
+  background: rgba(0, 255, 255, 0.068);
+  opacity: 100%;
+  visibility: visible;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
