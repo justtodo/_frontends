@@ -130,6 +130,9 @@
     -ms-transform: translateX(16px);
     -o-transform: translateX(16px);
   }
+  .contact-body{
+   
+  }
 }
 
 /* +++++++++++===============BODY================ */
@@ -184,6 +187,7 @@
 }
  .dev-img{
   display: flex;
+  transition: all 3s ;
   transform: translateX(10%);
   -webkit-transform: translateX(10%);
   -moz-transform: translateX(10%);
@@ -242,6 +246,11 @@
 .contact .container-fluid {
   background: rgba(255, 255, 255, 0.075);
 }
+.textarea{
+  min-width: 20vw;
+  min-height: 40vh;
+  display: grid;
+}
 #textarea{
   box-shadow: 1px 2px 4px 4px rgba(0, 0, 0, 0.637);
   margin:1rem 0.5rem;
@@ -272,6 +281,7 @@
 }
 .add-team{
   display: block;
+  margin: 0 1rem auto;
   justify-content: center;
   align-items: center;
 }
@@ -290,10 +300,12 @@
  
 }
 .card-team{
-	
-	
   width: 62vw;
   height: 60vh;
+ 
+  justify-content: center;
+
+
 }
 .card-1 , .card-2 , .card-3{
   width: 60vw;
@@ -313,6 +325,10 @@
   display: grid;
   justify-content: center;
   align-items: center;
+}
+.article .card{
+  height: 43vh;
+    width: fit-content;
 }
 .card__description {
   display: inline-block;
