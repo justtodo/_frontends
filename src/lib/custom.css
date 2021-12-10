@@ -270,16 +270,52 @@
   min-width: 30%;
 
 }
+.add-team{
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.article{
+  display: grid;
+  /* grid-template-columns: 33% 34% 33%; */
+  grid-template-columns: repeat(auto-fill,500px);
+  grid-gap: 30px;
+  justify-content: center;
+}
 .add-team-2 .card{
   width: 30vw;
-  height: 50vh;
+  height: 70vh;
   display: flex;
+ 
 }
 .card-team{
-	display: grid;
-	grid-template-columns: 33% 34% 33%;
+	
+	
+  width: 62vw;
+  height: 60vh;
+}
+.card-1 , .card-2 , .card-3{
+  width: 60vw;
+  height: 50vh;
+  display: inline-block;
 }
 
+.card-body-team{
+  display: block;
+}
+.card-img{
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  height: 19rem;
+  width: 19rem;
+}
+.card__description {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  font-size: 2rem;
+}
 /* blog cascading style sheet */
 .blog-body{
   color: darkcyan;
