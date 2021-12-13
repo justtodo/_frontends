@@ -1,0 +1,139 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Open Sans", Helvetica, arial, sans-serif;
+}
+
+/* feuille de style de l’agent utilisateur  */
+
+section {
+  display: block;
+}
+
+.not-found {
+    width: 560px;
+    height: 225px;
+    margin-right: -10px;
+  }
+  .starry-sky {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+  .search-icon {
+    display: inline-block;
+  }
+  .notfound-copy {
+    color: #fff;
+    position: fixed;
+    top: 25px;
+    right: 10%;
+    text-align: right;
+  }
+  h1 {
+     font-weight: 700;
+    font-size: 40px;
+  }
+  a {
+    font-weight: 300;
+    color: #fff;
+    border-bottom: 1.5px solid #5581d4;
+    text-decoration: none;
+  }
+  a:hover {
+    font-weight: 300;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    text-decoration: none;
+  }
+  /* change to alternating star opacities */
+  .all-stars {
+    animation: blinkblink 7s linear infinite;
+  }
+  
+  @keyframes blinkblink {  
+    50% { opacity: 0.1; }
+  }
+  .moon {
+  }
+  input[type=text] {
+    color: #fff;
+    background-color: #0a1821;
+    padding:5px; 
+    border: none; 
+    border-bottom:2px solid #ccc; 
+    font-size: 18px;
+  }
+  input[type=text]:focus {
+    border-color:none; 
+    border-bottom:2px solid #ccc;
+    }
+  /* mobile test * /
+  @media (max-width: 647px) { 
+    .moon {
+      padding-top: -500px;
+    }
+  }
+  */
+.css-cookie {
+  background: rgb(250, 250, 250);
+  border-style: solid;
+  border-color: rgb(218, 223, 226);
+  border-width: 1 px 0 px;
+  margin: 0 px;
+  position: relative;
+}
+
+.css-cookie::before {
+  left: 0 px;
+  background: linear-gradient(
+    to right,
+    rgb(250, 250, 250),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.css-cookie::before,
+.css-cookie::after {
+  content: "";
+  position: absolute;
+  width: 50 px;
+  top: 1 px;
+  bottom: 1 px;
+  z-index: 1;
+}
+
+.css-cookie::after {
+  right: 0 px;
+  background: linear-gradient(
+    to left,
+    rgb(250, 250, 250),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+/* firts section */
+.css-section {
+  padding: 34 px 0 px;
+  overflow: hidden;
+}
+/* first division */
+.css-logos {
+  display: flex;
+  width: 1000 vw;
+}
+/* second div */
+.css-logo {
+  display: flex;
+  gap: 15px;
+  -webkit-box-align: center;
+  align-items: center;
+  animation: 120s linear 0s infinite normal none running animation-oairv5;
+}
+img {
+}
