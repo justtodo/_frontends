@@ -19,30 +19,31 @@
   }
   .nav-link{
       display: grid ;
-      grid-template-columns: 15% 15% 15% 20% 15% 10% 10%;
-    justify-content: center;
+      grid-template-columns: 15% 15% 15% 15% 15% 15% 15%;
+    justify-content: flex-end;
     flex-wrap: wrap;
     position: relative;
     align-items: center;
-      gap: 30px;
+      gap: 16px;
   }  
   @media only screen and (max-width:1000px){
       .nav-link{
           display: block;
+          transform: translateX(-30%);
           transition: all 3s ease-in-out;
-          width:50%;
+          width:100%;
           gap: 20px;
-          right:0;
+          /* right:0; */
           color: #0a1821;
           min-height: 17vh;
-          flex-wrap: wrap;
+          flex-wrap:wrap-reverse;
           justify-content: space-around;
       }
       .nav-link li{
         margin: 0.6rem auto 0;
         display: flex;
-        float:right;
-        justify-content: center;
+        /* float:inline-end; */
+        justify-content: flex-end;
         align-items: center;
         border-radius: 12px;
         width: 90px;
@@ -56,9 +57,10 @@
       .nav-link{
           display: block;
           width:50%;
+        
           transition: all 3s ease-in-out;
           gap: 15px;
-          right:0;
+          /* right:0; */
           min-height: 17vh;
           flex-wrap: wrap;
           color: #0a1821;
@@ -67,9 +69,9 @@
       .nav-link li{
         margin: 0.3rem auto 0;
         display: flex;
-        float:right;
-        justify-content: center;
-        align-items: center;
+        /* float:right; */
+        justify-content: flex-end;
+        /* align-items: center; */
         border-radius: 12px;
         width: 90px;
         height:30px;
@@ -239,5 +241,19 @@ section {
   align-items: center;
   animation: 120s linear 0s infinite normal none running animation-oairv5;
 }
-img {
+.mySwiper{
+  /* min-height: 30vh; */
+  z-index: 1;
+  border-radius: 12px;
+  opacity: 80%;
+  visibility: visible;
+  
+}
+.swiper-slide img{
+  margin-top: 13rem;
+  border-radius: 12px;
+  size: cover;
+  min-height: 50vh;
+  justify-content: center;
+  background-attachment: fixed;
 }
