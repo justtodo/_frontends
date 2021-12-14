@@ -8394,7 +8394,7 @@ a.tree-item__title:hover {
 }
 @media only screen and (max-width:800px){
   .home-push__mosaic .card {
-    background-color: rgb(34, 52, 53);
+    background-color: rgba(144, 240, 245, 0.397);
     min-width: 90%;
     margin: 1rem 0.5rem !important;
     
