@@ -14,6 +14,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../src/lib/styles.css" />
     <link rel="modulepreload" href="../../src/lib/js.js" />
+     <!-- Link Swiper's CSS -->
+     <link
+     rel="stylesheet"
+     href="https://unpkg.com/swiper/swiper-bundle.min.css"
+   />
     <script src="../../src/lib/app.js" type="module" defer></script>
     <script src="../../src/lib/jquery-min.js" type="module" defer></script>
     <meta name="turbolinks-cache-control" content="no-cache" />
@@ -323,7 +328,30 @@
         ==========================end body start footer=======================
       ============================================================ -->
 
-
+<!-- SLIDE PAGINATOR -->
+<center class="swipers">
+    <!-- Swiper -->
+<div class="swiper mySwiper">
+	<div class="swiper-wrapper">
+	  <div class="swiper-slide"><img src="../../assets/templates/PROMO1.jpg"  alt="pages" srcset=""></div>
+	  <div class="swiper-slide"><img src="../../assets/templates/PROMO7.jpg" alt="pages" srcset=""></div>
+	  <div class="swiper-slide"><img src="../../assets/templates/PROMO2.jpg" alt="pages" srcset=""></div>
+	  <div class="swiper-slide"><img src="../../assets/templates/PROMO22.jpg" alt="pages" srcset=""></div>
+	  <div class="swiper-slide"><img src="../../assets/templates/PROMO23.png" alt="pages" srcset=""></div>
+	  <div class="swiper-slide"><img src="../../assets/templates/PROMO24.jpg" alt="pages" srcset=""></div>
+	  <div class="swiper-slide"><img src="../../assets/templates/PROMO25.png" alt="pages" srcset=""></div>
+	  <div class="swiper-slide"><img src="../../assets/templates/PROMO3.jpg" alt="pages" srcset=""></div>
+	  <div class="swiper-slide"><img src="../../assets/templates/PROMO4.jpg" alt="pages" srcset=""></div>
+	  <div class="swiper-slide"><img src="../../assets/templates/PROMO5.jpg" alt="pages" srcset=""></div>
+	  <div class="swiper-slide"><img src="../../assets/templates/PROMO6.jpg" alt="pages" srcset=""></div>
+	  
+	  
+	</div>
+	<div class="swiper-button-next"></div>
+	<div class="swiper-button-prev"></div>
+	<div class="swiper-pagination"></div>
+  </div>
+</center>
         <!-- start footer -->
         <footer class="footer">
             <div class="footer-content">
@@ -419,6 +447,29 @@
             </div>
         </footer>
     </div>
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+	spaceBetween: 30,
+	centeredSlides: true,
+	autoplay: {
+	  delay: 2500,
+	  disableOnInteraction: false,
+	},
+	pagination: {
+	  el: ".swiper-pagination",
+	  clickable: true,
+	},
+	navigation: {
+	  nextEl: ".swiper-button-next",
+	  prevEl: ".swiper-button-prev",
+	},
+  });
+</script>
+<!-- END PAGINATOR -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>

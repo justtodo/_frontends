@@ -359,3 +359,21 @@
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
+
+/* swiper and paginator */
+.mySwiper{
+  /* min-height: 30vh; */
+  z-index: 1;
+  border-radius: 12px;
+  opacity: 80%;
+  visibility: visible;
+  
+}
+.swiper-slide img{
+  margin-top: 13rem;
+  border-radius: 12px;
+  size: cover;
+  min-height: 50vh;
+  justify-content: center;
+  background-attachment: fixed;
+}
