@@ -1,3 +1,4 @@
-./SRC/LIB/
+# ./SRC/LIB/
 ./PUBLIC/COOKIE
+./node_modules
 node_modules
