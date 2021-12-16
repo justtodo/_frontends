@@ -1,4 +1,4 @@
 # ./SRC/LIB/
-./PUBLIC/COOKIE
-./node_modules
+# ./PUBLIC/COOKIE
+# ./node_modules
 node_modules

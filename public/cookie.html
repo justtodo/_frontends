@@ -5,6 +5,11 @@
   <meta charset="UTF-8" />
   <title>Services en Ligne Côte d'ivoire | UpCookie</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/2.1.99/css/materialdesignicons.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="../src/lib/css.css" />
   <link rel="stylesheet" href="../src/lib/custom.css" />
   <link rel="stylesheet" href="../src/boots.css" />
@@ -18,11 +23,8 @@
   <meta property="og:title" content="UpCookie côte d'ivoire " />
   <meta property="og:site_name" content="upcookie.ci" />
   <meta property="og:language" content="fr" />
-      <!-- Link Swiper's CSS -->
-      <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <meta name="facebook:author" content="@upcookie.ci" />
   <link rel="stylesheet" href="../src/lib/print.css" media="print" />
   <link rel="search" type="application/opensearchdescription+xml" title="UpCookie" href="../src/lib/opensearch.xml" />
@@ -79,21 +81,20 @@
         </li>
         <li class="header__search">
           <button id="js-modal-search">
-           <span class="icon icon-search iconify" id="js-modal-search" data-icon="bi:search"></span>
+            <span class="icon icon-search iconify" id="js-modal-search" data-icon="bi:search"></span>
           </button>
-       </li>
-       <!-- start modal search -->
-       <div class="search-popup" aria-hidden="true" role="dialog" aria-labelledby="titlemodal" style="display: none"
-       id="search-popup" >
-           <form action="/recherche" class="search-input form-group">
-               <input autofocus="" type="text" name="q"
-                   autocomplete="on" placeholder="Rechercher un contenu...">
-                   <button type="submit">
-                       <span class="icon icon-search iconify" id="js-modal-search" data-icon="bi:search"></span>
-                   </button>
-               </form>
-       </div>
-       <!-- end modal search -->
+        </li>
+        <!-- start modal search -->
+        <div class="search-popup" aria-hidden="true" role="dialog" aria-labelledby="titlemodal" style="display: none"
+          id="search-popup">
+          <form action="/recherche" class="search-input form-group">
+            <input autofocus="" type="text" name="q" autocomplete="on" placeholder="Rechercher un contenu...">
+            <button type="submit">
+              <span class="icon icon-search iconify" id="js-modal-search" data-icon="bi:search"></span>
+            </button>
+          </form>
+        </div>
+        <!-- end modal search -->
         <li class="header-side__auth">
           <a href="/inscription" class="menuItem">
             <span class="iconify" data-icon="akar-icons:sign-out"></span>
@@ -116,77 +117,77 @@
     <div class="header-placeholder"></div>
     <!-- burger modals -->
     <aside class="modal-header" aria-hidden="true" role="dialog" aria-labelledby="titlemodal" style="display: none"
-    id="moadal-header">
-    <div class="modal-wrapper js-modal-stop">
-      <nav class="header is-open" id="header">
+      id="moadal-header">
+      <div class="modal-wrapper js-modal-stop">
+        <nav class="header is-open" id="header">
           <ul class="header-nav modal-menu">
-              <li>
-                <button class="js-modal-close js-close">
-                  <!-- Fermer -->
-                  <span class="iconify" data-icon="ci:off-close"></span>
-                </button>
-              </li>
-              <!-- <li class="header__home">
+            <li>
+              <button class="js-modal-close js-close">
+                <!-- Fermer -->
+                <span class="iconify" data-icon="ci:off-close"></span>
+              </button>
+            </li>
+            <!-- <li class="header__home">
                   <a href="/" class="menuItem" title="Accueil"> "logo "</a>
                 </li> -->
-              <li>
-                <a href="/accueil" class="menuItem" aria-current="page"><span class="icon iconify"
-                    data-icon="akar-icons:home"></span>
-    
-                  Accueil</a>
-              </li>
-              <li>
-                <a href="/services" class="menuItem"><span class="icon iconify"
-                    data-icon="carbon:cloud-satellite-services"></span>
-    
-                  Services</a>
-              </li>
-    
-              <li>
-                <a href="/public/pages/stores.html" class="menuItem"><span class="icon iconify"
-                    data-icon="fluent:store-microsoft-20-regular"></span>
-    
-                  Stores</a>
-              </li>
-              <li>
-                <a href="/expert" class="menuItem"><span class="icon iconify" data-icon="fa-solid:blog"></span>
-                  Experts</a>
-              </li>
-              <li>
-                <a href="/contact" class="menuItem"><span class="icon iconify" data-icon="cil:contact"></span>
-                  Contact</a>
-              </li>
-              <li>
-                <a href="/Blog" class="menuItem"><span class="icon iconify" data-icon="carbon:blog"></span>
-                  Blogs</a>
-              </li>
-              <!-- </ul>
+            <li>
+              <a href="/accueil" class="menuItem" aria-current="page"><span class="icon iconify"
+                  data-icon="akar-icons:home"></span>
+
+                Accueil</a>
+            </li>
+            <li>
+              <a href="/services" class="menuItem"><span class="icon iconify"
+                  data-icon="carbon:cloud-satellite-services"></span>
+
+                Services</a>
+            </li>
+
+            <li>
+              <a href="/public/pages/stores.html" class="menuItem"><span class="icon iconify"
+                  data-icon="fluent:store-microsoft-20-regular"></span>
+
+                Stores</a>
+            </li>
+            <li>
+              <a href="/expert" class="menuItem"><span class="icon iconify" data-icon="fa-solid:blog"></span>
+                Experts</a>
+            </li>
+            <li>
+              <a href="/contact" class="menuItem"><span class="icon iconify" data-icon="cil:contact"></span>
+                Contact</a>
+            </li>
+            <li>
+              <a href="/Blog" class="menuItem"><span class="icon iconify" data-icon="carbon:blog"></span>
+                Blogs</a>
+            </li>
+            <!-- </ul>
               <ul class="header-side" id="modal-menu"> -->
-            
-            </ul>
+
+          </ul>
           <ul class="header-side">
-              <li class="header__notification">
-                  <a href="http://#" class="button"><span>Notifications </span></a>
-                  </site-notifications>
-                </li>
-      
-                <li class="header-side__auth">
-                  <a href="/inscription" class="menuItem">
-                    <span class="iconify" data-icon="akar-icons:sign-out"></span>
-      
-                    <span>S'inscrire</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="/connexion?redirect=/tutoriels/javascript">
-                    <span class="iconify" data-icon="ant-design:login-outlined"></span>
-                    <span>Se connecter</span>
-                  </a>
-                </li>
-      </ul>
+            <li class="header__notification">
+              <a href="http://#" class="button"><span>Notifications </span></a>
+              </site-notifications>
+            </li>
+
+            <li class="header-side__auth">
+              <a href="/inscription" class="menuItem">
+                <span class="iconify" data-icon="akar-icons:sign-out"></span>
+
+                <span>S'inscrire</span>
+              </a>
+            </li>
+            <li>
+              <a href="/connexion?redirect=/tutoriels/javascript">
+                <span class="iconify" data-icon="ant-design:login-outlined"></span>
+                <span>Se connecter</span>
+              </a>
+            </li>
+          </ul>
         </nav>
-    </div>
-  </aside>
+      </div>
+    </aside>
     <!-- section promotion -->
     <section class="promotion">
       <!-- <h3 class="up">UpCookie</h3> -->
@@ -243,10 +244,10 @@
                 bonheur.
               </p>
             </div>
-        
-             <div class="home-push__mosaic-1 card card-big ">
+
+            <div class="home-push__mosaic-1 card card-big ">
               <a class="pill pill-yellow" href="#">Les services populaires</a>
-               <div class="home-list stack-separated" style="--gap: 2">
+              <div class="home-list stack-separated" style="--gap: 2">
                 <div class="home-list__item">
                   <a class="card__title" href="https://www.youtube.com/">DEVELOPPEMENT WEB</a>
                   <div>19 Demandes</div>
@@ -259,91 +260,106 @@
                   <a class="card__title" href="https://www.youtube.com/">CREATION DE CONTENUE LOGOS & DESIGN</a>
                   <div>17 Demandes</div>
                 </div>
-                 <div class="button">
-                <a href="#"> PASSEZ UNE COMMANDE ! </a>
-              </div>
+                <div class="button">
+                  <a href="#"> PASSEZ UNE COMMANDE ! </a>
+                </div>
               </div>
             </div>
           </div>
         </section>
         <!-- end section 2 -->
-        <hr />
-        <!--  paginator GALLERY -->
-        <div class="title">
-          <h1><span>Creation Photographique</span> UpCookie Gallery</h1>
-        </div>
-        
-        <!--Carousel Gallery-->
-        <div class="carousel-gallery">
+
+        <section>
+          <!-- partial:index.partial.html -->
+          <div class="title">
+            <h1><span>Responsive</span> Carousel Gallery</h1>
+          </div>
+
+          <!--Carousel Gallery-->
+          <div class="carousel-gallery">
             <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="https://images.pexels.com/photos/48794/boy-walking-teddy-bear-child-48794.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery">
-                            <div class="image" style="background-image: url(https://images.pexels.com/photos/48794/boy-walking-teddy-bear-child-48794.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)">
-                                <div class="overlay">
-                                    <em class="mdi mdi-magnify-plus"></em>
-                                </div>
-                            </div>
-                        </a>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="https://images.pexels.com/photos/48794/boy-walking-teddy-bear-child-48794.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                    data-fancybox="gallery">
+                    <div class="image"
+                      style="background-image: url(https://images.pexels.com/photos/48794/boy-walking-teddy-bear-child-48794.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)">
+                      <div class="overlay">
+                        <em class="mdi mdi-magnify-plus"></em>
+                      </div>
                     </div>
-                    <div class="swiper-slide">
-                        <a href="https://images.pexels.com/photos/248280/pexels-photo-248280.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery">
-                            <div class="image" style="background-image: url(https://images.pexels.com/photos/248280/pexels-photo-248280.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)">
-                                <div class="overlay">
-                                    <em class="mdi mdi-magnify-plus"></em>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="https://images.pexels.com/photos/89095/pexels-photo-89095.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery">
-                            <div class="image" style="background-image: url(https://images.pexels.com/photos/89095/pexels-photo-89095.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)">
-                                <div class="overlay">
-                                    <em class="mdi mdi-magnify-plus"></em>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="https://images.pexels.com/photos/669319/pexels-photo-669319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery">
-                            <div class="image" style="background-image: url(https://images.pexels.com/photos/669319/pexels-photo-669319.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)">
-                                <div class="overlay">
-                                    <em class="mdi mdi-magnify-plus"></em>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="https://images.pexels.com/photos/277477/pexels-photo-277477.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery">
-                            <div class="image" style="background-image: url(https://images.pexels.com/photos/277477/pexels-photo-277477.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)">
-                                <div class="overlay">
-                                    <em class="mdi mdi-magnify-plus"></em>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="https://images.pexels.com/photos/928276/pexels-photo-928276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery">
-                            <div class="image" style="background-image: url(https://images.pexels.com/photos/928276/pexels-photo-928276.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)">
-                                <div class="overlay">
-                                    <em class="mdi mdi-magnify-plus"></em>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                  </a>
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-slide">
+                  <a href="https://images.pexels.com/photos/248280/pexels-photo-248280.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                    data-fancybox="gallery">
+                    <div class="image"
+                      style="background-image: url(https://images.pexels.com/photos/248280/pexels-photo-248280.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)">
+                      <div class="overlay">
+                        <em class="mdi mdi-magnify-plus"></em>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://images.pexels.com/photos/89095/pexels-photo-89095.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                    data-fancybox="gallery">
+                    <div class="image"
+                      style="background-image: url(https://images.pexels.com/photos/89095/pexels-photo-89095.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)">
+                      <div class="overlay">
+                        <em class="mdi mdi-magnify-plus"></em>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://images.pexels.com/photos/669319/pexels-photo-669319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                    data-fancybox="gallery">
+                    <div class="image"
+                      style="background-image: url(https://images.pexels.com/photos/669319/pexels-photo-669319.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)">
+                      <div class="overlay">
+                        <em class="mdi mdi-magnify-plus"></em>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://images.pexels.com/photos/277477/pexels-photo-277477.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                    data-fancybox="gallery">
+                    <div class="image"
+                      style="background-image: url(https://images.pexels.com/photos/277477/pexels-photo-277477.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)">
+                      <div class="overlay">
+                        <em class="mdi mdi-magnify-plus"></em>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://images.pexels.com/photos/928276/pexels-photo-928276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                    data-fancybox="gallery">
+                    <div class="image"
+                      style="background-image: url(https://images.pexels.com/photos/928276/pexels-photo-928276.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)">
+                      <div class="overlay">
+                        <em class="mdi mdi-magnify-plus"></em>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
-        </div>
-        <!--#Carousel Gallery-->
-        
-        <div class="plugins">
-          <h3>Photo & Design</h3>
-          
-          <a href="http://idangero.us/swiper/" target="_blank">Cookie</a>
-          <a href="https://fancyapps.com/fancybox/3/" target="_blank">Collection</a>
-        </div>
-        
+          </div>
+          <!--#Carousel Gallery-->
+
+          <div class="plugins">
+            <h3>Plugins</h3>
+
+            <a href="http://idangero.us/swiper/" target="_blank">Swiper Slide</a>
+            <a href="https://fancyapps.com/fancybox/3/" target="_blank">fancyBox3</a>
+          </div>
+          <!-- partial -->
+        </section>
+
         <!-- END GALERY -->
         <!-- start section 3 -->
         <section class="section3">
@@ -361,75 +377,90 @@
             <!-- first card -->
             <div class="card card-big free">
               <a class="pill pill-yellow" href="#"><span>Les Packs Free</span></a>
-               <div class="home-list stack-separated" style="--gap: 2">
+              <div class="home-list stack-separated" style="--gap: 2">
                 <div class="home-list__item">
                   <a class="card__title" href="#/"><span>2 x</span> LOGOS </a>
-                  <div><h6>bonus:</h6>Design UI</div>
+                  <div>
+                    <h6>bonus:</h6>Design UI
+                  </div>
                 </div>
                 <div class="home-list__item">
                   <a class="card__title" href="#/">INTEGRATION WEB</a>
-                  <div><h6>bonus:</h6>Responsives </div>
+                  <div>
+                    <h6>bonus:</h6>Responsives
+                  </div>
                 </div>
                 <div class="home-list__item">
                   <a class="card__title" href="#/">CURRICILIUM VITAE & PORTFOLIO</a>
-                  <div><h6>bonus:</h6>2 uploads</div>
+                  <div>
+                    <h6>bonus:</h6>2 uploads
+                  </div>
                 </div>
-                 <div class="button">
-                <a href="#"> ACHETEZ !</a>
-              </div>
+                <div class="button">
+                  <a href="#"> ACHETEZ !</a>
+                </div>
               </div>
             </div>
             <!-- second card  -->
             <div class="card card-big premium">
               <a class="pill pill-yellow" href="#"><span>Les Packs Premium</span></a>
-               <div class="home-list stack-separated" style="--gap: 2">
+              <div class="home-list stack-separated" style="--gap: 2">
                 <div class="home-list__item">
                   <a class="card__title" href="#/"><span>4 x</span> LOGOS </a>
-                  <div><h6>bonus:</h6>Design UI / UX</div>
+                  <div>
+                    <h6>bonus:</h6>Design UI / UX
+                  </div>
                 </div>
                 <div class="home-list__item">
                   <a class="card__title" href="#/"> WEBSITE SINGLE PAGE</a>
-                  <div><h6>bonus:</h6>Responsives <span><BIG>1 site web</BIG>+ Hebergement</span> </div>
+                  <div>
+                    <h6>bonus:</h6>Responsives <span><BIG>1 site web</BIG>+ Hebergement</span>
+                  </div>
                 </div>
                 <div class="home-list__item">
                   <a class="card__title" href="#/"><span>2 x</span> CURRICILIUM VITAE & <span>2 x</span> PORTFOLIO</a>
-                  <div><h6>bonus:</h6>5 uploads</div>
+                  <div>
+                    <h6>bonus:</h6>5 uploads
+                  </div>
                 </div>
-                 <div class="button">
-                <a href="#"> ACHETEZ !</a>
-              </div>
+                <div class="button">
+                  <a href="#"> ACHETEZ !</a>
+                </div>
               </div>
             </div>
             <!-- thirst card  -->
             <div class="card card-big gold">
               <a class="pill pill-yellow" href="#"><span>Les Packs Gold</span></a>
-               <div class="home-list stack-separated" style="--gap: 2">
+              <div class="home-list stack-separated" style="--gap: 2">
                 <div class="home-list__item">
                   <a class="card__title" href="#/"><span>10 x</span> LOGOS </a>
-                  <div><h6>bonus:</h6>Design UI / UX</div>
+                  <div>
+                    <h6>bonus:</h6>Design UI / UX
+                  </div>
                 </div>
                 <div class="home-list__item">
                   <a class="card__title" href="#/">DEVELOPPEMENT WEB </a>
-                  <div><h6>bonus:</h6>Responsives <span>+ <big>2 x Sites Web</big> Hebergement</span> Back-End + <span>Front-End</span> </div>
+                  <div>
+                    <h6>bonus:</h6>Responsives <span>+ <big>2 x Sites Web</big> Hebergement</span> Back-End +
+                    <span>Front-End</span>
+                  </div>
                 </div>
                 <div class="home-list__item">
                   <a class="card__title" href="#/"><span>8 x</span> CURRICILIUM VITAE & <span>8 x</span> PORTFOLIO</a>
-                  <div><h6>bonus:</h6>15 uploads</div>
+                  <div>
+                    <h6>bonus:</h6>15 uploads
+                  </div>
                 </div>
-                 <div class="button">
-                <a href="#"> ACHETEZ !</a>
-              </div>
+                <div class="button">
+                  <a href="#"> ACHETEZ !</a>
+                </div>
               </div>
             </div>
-            
-            
+
+
           </div>
         </section>
         <!-- end section 3 -->
-
-
-        <!-- section 4 -->
-        <!-- end section 4 -->
 
         <section class="body-section section-body-packs">
           <div class="home-push__mosaic section-body-content ">
@@ -520,31 +551,31 @@
         <!-- ===================================================
         ====================================end body start footer=================================
       ====================================================== -->
-   
-<!-- SLIDE PAGINATOR -->
-<center class="swipers">
-	<!-- Swiper -->
-<div class="swiper mySwiper">
-	<div class="swiper-wrapper">
-	  <div class="swiper-slide"><img src="../assets/templates/PROMO1.jpg"  alt="pages" srcset=""></div>
-	  <div class="swiper-slide"><img src="../assets/templates/PROMO7.jpg" alt="pages" srcset=""></div>
-	  <div class="swiper-slide"><img src="../assets/templates/PROMO2.jpg" alt="pages" srcset=""></div>
-	  <div class="swiper-slide"><img src="../assets/templates/PROMO22.jpg" alt="pages" srcset=""></div>
-	  <div class="swiper-slide"><img src="../assets/templates/PROMO23.png" alt="pages" srcset=""></div>
-	  <div class="swiper-slide"><img src="../assets/templates/PROMO24.jpg" alt="pages" srcset=""></div>
-	  <div class="swiper-slide"><img src="../assets/templates/PROMO25.png" alt="pages" srcset=""></div>
-	  <div class="swiper-slide"><img src="../assets/templates/PROMO3.jpg" alt="pages" srcset=""></div>
-	  <div class="swiper-slide"><img src="../assets/templates/PROMO4.jpg" alt="pages" srcset=""></div>
-	  <div class="swiper-slide"><img src="../assets/templates/PROMO5.jpg" alt="pages" srcset=""></div>
-	  <div class="swiper-slide"><img src="../assets/templates/PROMO6.jpg" alt="pages" srcset=""></div>
-	  
-	  
-	</div>
-	<div class="swiper-button-next"></div>
-	<div class="swiper-button-prev"></div>
-	<div class="swiper-pagination"></div>
-  </div>
-</center>
+
+        <!-- SLIDE PAGINATOR -->
+        <center class="swipers">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="../assets/templates/PROMO1.jpg" alt="pages" srcset=""></div>
+              <div class="swiper-slide"><img src="../assets/templates/PROMO7.jpg" alt="pages" srcset=""></div>
+              <div class="swiper-slide"><img src="../assets/templates/PROMO2.jpg" alt="pages" srcset=""></div>
+              <div class="swiper-slide"><img src="../assets/templates/PROMO22.jpg" alt="pages" srcset=""></div>
+              <div class="swiper-slide"><img src="../assets/templates/PROMO23.png" alt="pages" srcset=""></div>
+              <div class="swiper-slide"><img src="../assets/templates/PROMO24.jpg" alt="pages" srcset=""></div>
+              <div class="swiper-slide"><img src="../assets/templates/PROMO25.png" alt="pages" srcset=""></div>
+              <div class="swiper-slide"><img src="../assets/templates/PROMO3.jpg" alt="pages" srcset=""></div>
+              <div class="swiper-slide"><img src="../assets/templates/PROMO4.jpg" alt="pages" srcset=""></div>
+              <div class="swiper-slide"><img src="../assets/templates/PROMO5.jpg" alt="pages" srcset=""></div>
+              <div class="swiper-slide"><img src="../assets/templates/PROMO6.jpg" alt="pages" srcset=""></div>
+
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </center>
         <!-- start footer -->
         <footer class="footer">
           <div class="footer-content">
@@ -640,30 +671,17 @@
         </footer>
       </div>
       <!-- Initialize Swiper -->
-<script>
-  var swiper = new Swiper(".mySwiper", {
-	spaceBetween: 30,
-	centeredSlides: true,
-	autoplay: {
-	  delay: 2500,
-	  disableOnInteraction: false,
-	},
-	pagination: {
-	  el: ".swiper-pagination",
-	  clickable: true,
-	},
-	navigation: {
-	  nextEl: ".swiper-button-next",
-	  prevEl: ".swiper-button-prev",
-	},
-  });
-</script>
-<!-- END PAGINATOR -->
+
+      <!-- END PAGINATOR -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       <!-- jquerie hors ligne  -->
-      <script src="../src/jquery.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js">
+        <script src="../src/jquery.js"></script>
+      <script src="../src/lib/app.js"></script>
       <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
 </body>
 
