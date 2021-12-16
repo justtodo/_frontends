@@ -1,5 +1,5 @@
 {
-  "name": "fronts",
+  "name": "Swiper - Autoplay",
   "version": "1.0.0",
   "description": "frontend news",
   "main": "index.js",
@@ -17,18 +17,11 @@
   },
   "homepage": "https://github.com/tcotidiane33/fronts#readme",
   "dependencies": {
-    "ejs": "^3.1.6",
-    "express": "^4.17.1",
-    "nodemon": "^2.0.15"
+    "body-parser": "^1.19.1",
+    "parcel-bundler": "^1.6.1",
+    "swiper": "latest"
   },
-  
-    "tags": [
-      "swiper"
-    ],
-    "name": "Swiper - Autoplay",
-    "dependencies": {
-      "swiper": "latest",
-      "parcel-bundler": "^1.6.1"
-    }
-  
+  "tags": [
+    "swiper"
+  ]
 }
