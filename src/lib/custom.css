@@ -529,10 +529,11 @@ video {
 }
 
 .section_pagination_body {
-  background-color: rgba(0, 0, 0, 0.082);
-  color: #fff;
-  padding: 10rem;
+  background-color: #2e334d;
+  color: rgb(255, 255, 255);
+  padding: 0;
   border-radius: 16px;
+  z-index: 1;
 }
 @media only screen and (max-width: 1000px) {
   .section_pagination_body {
@@ -554,7 +555,7 @@ video {
 .slider {
   display: flex;
   width: 500%;
-  height: 55rem;
+  height: 60rem;
   transition: all 0.25s ease-in;
   transform: translateX(0);
 }
