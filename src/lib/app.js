@@ -55,7 +55,7 @@ $(function () {
       // And if we need scrollbar
       scrollbar: '.swiper-scrollbar',
   
-      autoplay: 3000
+      autoplay: 4000
     });
   
     var v = document.getElementsByTagName("video")[0];

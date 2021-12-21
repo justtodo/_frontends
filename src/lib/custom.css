@@ -408,6 +408,7 @@
 }
 
 /* swiper and paginator */
+
 .mySwiper {
   /* min-height: 30vh; */
   z-index: 1;
@@ -448,7 +449,7 @@
 .carousel-gallery {
   margin: 50px 0;
   padding: 0 30px;
-  /* height: 50vh; */
+  /* height: 90vh; */
 }
 .carousel-gallery .swiper-slide a {
   display: block;
@@ -538,7 +539,10 @@
   width: 100%;
   height: 100vh;
 }
-
+.swiper-wrapper{
+  height: 120vh;
+  gap: 10px;
+}
 .swiper-slides {
   overflow: hidden;
 }
