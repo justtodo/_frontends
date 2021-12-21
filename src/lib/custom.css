@@ -505,43 +505,6 @@
 /* second animate footer slide */
 
 
-.section_pagination {
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  font-size: 62.5%;
-  box-shadow: 1px 2px 3px 3px  #02bbab;
-  /* background: transparent; */
-}
-@media only screen and (max-width: 800px) {
-  .section_pagination {
-    font-size: 57%;
-  }
-}
-
-.section_pagination_body {
-  /* background-color: #464b66; */
-  color: rgb(255, 255, 255);
-  padding: 0;
-  border-radius: 5px;
-  
-  /* z-index: 1; */
-}
-@media only screen and (max-width: 1000px) {
-  .section_pagination_body {
-    padding: 0;
-  }
-}
-
-.containers {
-  position: relative;
-  overflow: hidden;
-  border-radius: 5rem;
-}
-@media only screen and (max-width: 1000px) {
-  .containers {
-    border-radius: 0;
-  }
-}
 
 .slider {
   display: flex;
@@ -581,7 +544,7 @@
 .slider .box .bg {
   padding: 2rem;
   /* background-color: rgba(0, 0, 0, 0.2); */
-  width: 70%%;
+  width: 70%;
 
   transform: skewX(7deg);
   position: absolute;
