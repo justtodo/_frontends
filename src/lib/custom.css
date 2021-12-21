@@ -18,8 +18,8 @@
   /*display: flex;  */
   /* border: 1px solid #ec006e; */
   min-height: 50vh;
-  background: url(../../assets/collections/servives/promo.jpg) center/cover
-    fixed;
+  /* background: url(../../assets/collections/servives/promo.jpg) center/cover
+    fixed; */
   font-family: 'Josefin Sans', sans-serif;
   display: grid;
   /* grid-template-columns: 50%; */
@@ -34,6 +34,40 @@
   -moz-transition: 2s all;
   -ms-transition: 2s all;
   -o-transition: 2s all;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80");
+  animation: bg-change 20s infinite ease-in forwards;
+  transition: all 0.25s ease-in;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: 1;
+}
+
+@keyframes bg-change {
+  0% {
+    background-image: url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80");
+  }
+  25% {
+    background-image: url("https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=974&q=80");
+  }
+
+  50% {
+    background-image: url("https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  }
+
+  75% {
+    background-image: url("https://images.unsplash.com/photo-1446329813274-7c9036bd9a1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  }
+
+  100% {
+    background-image: url("https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=975&q=80");
+  }
 }
 /* .up, */
 .cookie {
@@ -467,7 +501,6 @@
   transform: scale(1.1, 1.1);
 }
 
-
 /*# Carousel Gallery*/
 .plugins {
   text-align: center;
@@ -501,22 +534,57 @@
   overflow: hidden;
 }
 
-
 /* second animate footer slide */
 
+.section_pagination {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+  box-shadow: 1px 2px 3px 3px #02bbab;
+  /* background: transparent; */
+}
+@media only screen and (max-width: 800px) {
+  .section_pagination {
+    font-size: 57%;
+  }
+}
 
+.section_pagination_body {
+  /* background-color: #464b66; */
+  color: rgb(255, 255, 255);
+  padding: 0;
+  border-radius: 5px;
+
+  /* z-index: 1; */
+}
+@media only screen and (max-width: 1000px) {
+  .section_pagination_body {
+    padding: 0;
+  }
+}
+
+.containers {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5rem;
+}
+@media only screen and (max-width: 1000px) {
+  .containers {
+    border-radius: 0;
+  }
+}
 
 .slider {
   display: flex;
- opacity: 400%;
+  opacity: 400%;
   width: 500%;
   height: 60rem;
   transition: all 0.25s ease-in;
   transform: translateX(0);
   opacity: 100%;
- 
-  visibility:visible;
- 
+
+  visibility: visible;
+
   background-color: rgba(139, 225, 252, 0.37);
   /* z-index: -3; */
 }
@@ -610,7 +678,7 @@
 .slider .box .details p {
   display: inline-block;
   font-size: 1.3rem;
-  color: #B5B4B4;
+  color: #b5b4b4;
   margin-bottom: 2rem;
   margin-right: 5rem;
 }
@@ -640,61 +708,66 @@
   background-color: #500033;
 }
 .slider .box1 .illustration .inner {
-  background-color: #FF0077;
+  background-color: #ff0077;
 }
-.slider .box1 .illustration .inner::after, .slider .box1 .illustration .inner::before {
+.slider .box1 .illustration .inner::after,
+.slider .box1 .illustration .inner::before {
   background-color: rgba(255, 0, 119, 0.4);
 }
 .slider .box1 button {
-  background-color: #FF0077;
+  background-color: #ff0077;
 }
 .slider .box2 {
   background-color: #000050;
 }
 .slider .box2 .illustration .inner {
-  background-color: #0033FF;
+  background-color: #0033ff;
 }
-.slider .box2 .illustration .inner::after, .slider .box2 .illustration .inner::before {
+.slider .box2 .illustration .inner::after,
+.slider .box2 .illustration .inner::before {
   background-color: rgba(0, 51, 255, 0.4);
 }
 .slider .box2 button {
-  background-color: #0033FF;
+  background-color: #0033ff;
 }
 .slider .box3 {
-  background-color: #00501D;
+  background-color: #00501d;
 }
 .slider .box3 .illustration .inner {
-  background-color: #00FF44;
+  background-color: #00ff44;
 }
-.slider .box3 .illustration .inner::after, .slider .box3 .illustration .inner::before {
+.slider .box3 .illustration .inner::after,
+.slider .box3 .illustration .inner::before {
   background-color: rgba(0, 255, 68, 0.4);
 }
 .slider .box3 button {
-  background-color: #00FF44;
+  background-color: #00ff44;
 }
 .slider .box4 {
-  background-color: #554D00;
+  background-color: #554d00;
 }
 .slider .box4 .illustration .inner {
-  background-color: #FF4E00;
+  background-color: #ff4e00;
 }
-.slider .box4 .illustration .inner::after, .slider .box4 .illustration .inner::before {
+.slider .box4 .illustration .inner::after,
+.slider .box4 .illustration .inner::before {
   background-color: rgba(255, 78, 0, 0.4);
 }
 .slider .box4 button {
-  background-color: #FF4E00;
+  background-color: #ff4e00;
 }
 .slider .box5 {
   background-color: #300050;
 }
 .slider .box5 .illustration .inner {
-  background-color: #8000FF;
+  background-color: #8000ff;
 }
-.slider .box5 .illustration .inner::after, .slider .box5 .illustration .inner::before {
+.slider .box5 .illustration .inner::after,
+.slider .box5 .illustration .inner::before {
   background-color: rgba(128, 0, 255, 0.4);
 }
 .slider .box5 button {
-  background-color: #8000FF;
+  background-color: #8000ff;
 }
 .slider .illustration {
   grid-column: 2/-1;
@@ -714,7 +787,7 @@
   height: 25rem;
   width: 18rem;
   border-radius: 3rem;
-  background-color: #FF0077;
+  background-color: #ff0077;
   position: relative;
   transform: skewX(-10deg);
 }
@@ -724,7 +797,8 @@
     width: 15rem;
   }
 }
-.slider .illustration div::after, .slider .illustration div::before {
+.slider .illustration div::after,
+.slider .illustration div::before {
   content: "";
   position: absolute;
   height: 100%;
@@ -756,7 +830,7 @@
 }
 @media only screen and (max-width: 650px) {
   .prev,
-.next {
+  .next {
     display: none;
   }
 }
