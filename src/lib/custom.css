@@ -39,14 +39,15 @@
 .background {
   width: 100%;
   height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80");
-  animation: bg-change 20s infinite ease-in forwards;
+  background-image: url("https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  animation: bg-change 25s infinite ease-in forwards;
   transition: all 1.5s ease-in;
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 @keyframes bg-change {
@@ -68,6 +69,10 @@
   100% {
     background-image: url("https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
   }
+  /* 125% {
+    background-image: url("https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  } */
+
 }
 /* .up, */
 .cookie {
@@ -149,7 +154,7 @@
     /* font-size: 2rem; */
   }
   .promotion h3 {
-    font-size: 3rem;
+    font-size: 8rem;
   }
   #target {
     width: 300px;
@@ -167,7 +172,11 @@
   .contact-body {
   }
 }
-
+.become_dev{
+  color: rgb(0, 0, 0);
+  background: rgb(7, 250, 250);
+  border-radius: 2%;
+}
 /* +++++++++++===============BODY================ */
 
 .body-section {
